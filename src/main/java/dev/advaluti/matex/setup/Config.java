@@ -7,6 +7,7 @@ import net.minecraftforge.fml.config.ModConfig;
 public class Config {
 
     public static final String CATEGORY_GENERAL = "general";
+    public static final String CATEGORY_OREGEN = "ore generation";
 
     public static ForgeConfigSpec SERVER_CONFIG;
     public static ForgeConfigSpec CLIENT_CONFIG;
@@ -18,6 +19,8 @@ public class Config {
 
         SERVER_BUILDER.comment("General settings").push(CATEGORY_GENERAL);
         SERVER_BUILDER.pop();
+
+        SERVER_BUILDER.comment("General settings").push(CATEGORY_GENERAL);
 
         SERVER_CONFIG = SERVER_BUILDER.build();
         CLIENT_CONFIG = CLIENT_BUILDER.build();

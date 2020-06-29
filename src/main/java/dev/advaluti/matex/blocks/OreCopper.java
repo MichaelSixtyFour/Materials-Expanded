@@ -6,15 +6,14 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.common.ToolType;
 
-public class OreBase extends Block {
+public class OreCopper extends Block {
 
-    public OreBase() {
+    public OreCopper() {
         super(AbstractBlock.Properties.create(Material.ROCK)
                 .sound(SoundType.STONE)
-                .hardnessAndResistance(2.5f)
+                .hardnessAndResistance(2.0f)
                 .harvestTool(ToolType.PICKAXE)
                 .harvestLevel(1)
         );
     }
-
 }
