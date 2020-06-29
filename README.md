@@ -5,6 +5,7 @@ A material base for 1.16, ideal for modpack makers
 - New metals (copper. lead, silver, aluminium)
 - Ingots for each
 - Ores for each
+- Gears (for vanilla materals)
 
 ## Planned Features
 - More metals (tin, zinc, platinum, uranium?, titanium, nickel)
