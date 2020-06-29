@@ -5,6 +5,7 @@ A material base for 1.16, ideal for modpack makers (modid: matex)
 - New metals (copper, tin, lead, aluminium, silver, tungsten, platinum, titanium, nickel)
 - Ingots, ores, blocks and dusts for each
 - Ore generation
+- Config for ore generation
 - Recipes, smelting and blasting
 
 ## Planned Features
@@ -13,5 +14,4 @@ A material base for 1.16, ideal for modpack makers (modid: matex)
 - Tools/Armor?
 - Gears (disabled currently)
 - Config for item/block enabling/disabling
-- Config for ore generation
 - Mod support (tconstruct/crafttweaker)
