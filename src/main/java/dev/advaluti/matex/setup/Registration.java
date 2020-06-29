@@ -3,11 +3,13 @@ package dev.advaluti.matex.setup;
 import dev.advaluti.matex.blocks.*;
 import dev.advaluti.matex.items.GearBase;
 import dev.advaluti.matex.items.IngotBase;
+import dev.advaluti.matex.world.OreGen;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -23,6 +25,7 @@ public class Registration {
     public static void init() {
         BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+
     }
     //GEARS
     public static final RegistryObject<GearBase> GEARWOOD = ITEMS.register("gearwood", GearBase::new);
@@ -42,7 +45,7 @@ public class Registration {
     public static final RegistryObject<IngotBase> INGOTCOPPER = ITEMS.register("ingotcopper", IngotBase::new);
     //TIN
     public static final RegistryObject<OreTin> ORETIN = BLOCKS.register("oretin", OreTin::new);
-    public static final RegistryObject<Item> ORETIN_ITEM = ITEMS.register("oretin", () -> new BlockItem(ORECOPPER.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Item> ORETIN_ITEM = ITEMS.register("oretin", () -> new BlockItem(ORETIN.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
     public static final RegistryObject<IngotBase> INGOTTIN = ITEMS.register("ingottin", IngotBase::new);
     //LEAD
     public static final RegistryObject<OreLead> ORELEAD = BLOCKS.register("orelead", OreLead::new);
@@ -57,4 +60,7 @@ public class Registration {
     public static final RegistryObject<Item> OREALUMINIUM_ITEM = ITEMS.register("orealuminium", () -> new BlockItem(OREALUMINIUM.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
     public static final RegistryObject<IngotBase> INGOTALUMINIUM = ITEMS.register("ingotaluminium", IngotBase::new);
 
+    public static void modSetup(final FMLCommonSetupEvent event) {
+        OreGen.OreGenerate();
+    }
 }
