@@ -1,5 +1,5 @@
 # MaterialsExpanded
-A material base for 1.16, ideal for modpack makers
+A material base for 1.16, ideal for modpack makers (modid: matex)
 
 ## Features
 - New metals (copper. lead, silver, aluminium)
@@ -13,6 +13,7 @@ A material base for 1.16, ideal for modpack makers
 - Dusts
 - Alloys
 - Tools/Armor?
+- Gears (for MatEx materials)
 - Ore generation
 - Config for item/block enabling/disabling
 - Config for ore generation
