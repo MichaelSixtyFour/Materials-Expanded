@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "matex:ingotcopper"
+    }
+  },
+  "result":
+  {
+    "item": "matex:blockcopper",
+    "count": 1
+  }
+}

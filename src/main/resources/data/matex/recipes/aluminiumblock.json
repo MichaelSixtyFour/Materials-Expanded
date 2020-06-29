@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "matex:ingotaluminium"
+    }
+  },
+  "result":
+  {
+    "item": "matex:blockaluminium",
+    "count": 1
+  }
+}

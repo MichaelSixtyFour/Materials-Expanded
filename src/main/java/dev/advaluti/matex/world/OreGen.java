@@ -14,11 +14,13 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class OreGen {
     public static void OreGenerate() {
         for(Biome biome : ForgeRegistries.BIOMES) {
-            ConfiguredPlacement copperGen = Placement.COUNT_RANGE.configure(new CountRangeConfig(16, 30,2,86));
-            ConfiguredPlacement tinGen = Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 8,3,72));
-            ConfiguredPlacement leadGen = Placement.COUNT_RANGE.configure(new CountRangeConfig(8, 8,5,64));
-            ConfiguredPlacement aluminiumGen = Placement.COUNT_RANGE.configure(new CountRangeConfig(8, 8,5,64));
-            ConfiguredPlacement silverGen = Placement.COUNT_RANGE.configure(new CountRangeConfig(2, 4,5,32));
+            ConfiguredPlacement copperGen = Placement.COUNT_RANGE.configure(new CountRangeConfig(16, 30,2,90));
+            ConfiguredPlacement tinGen = Placement.COUNT_RANGE.configure(new CountRangeConfig(12, 8,3,72));
+            ConfiguredPlacement leadGen = Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 8,5,64));
+            ConfiguredPlacement aluminiumGen = Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 8,5,64));
+            ConfiguredPlacement silverGen = Placement.COUNT_RANGE.configure(new CountRangeConfig(4, 4,5,32));
+            ConfiguredPlacement tungstenGen = Placement.COUNT_RANGE.configure(new CountRangeConfig(8, 8,5,48));
+            ConfiguredPlacement platinumGen = Placement.COUNT_RANGE.configure(new CountRangeConfig(3, 4,5,24));
 
             biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
                     new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.ORECOPPER.get().getDefaultState(), 10)).withPlacement(copperGen));
@@ -34,6 +36,12 @@ public class OreGen {
 
             biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
                     new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.ORESILVER.get().getDefaultState(), 10)).withPlacement(silverGen));
+
+            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
+                    new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.ORETUNGSTEN.get().getDefaultState(), 10)).withPlacement(tungstenGen));
+
+            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
+                    new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.OREPLATINUM.get().getDefaultState(), 10)).withPlacement(platinumGen));
         }
     }
 }
