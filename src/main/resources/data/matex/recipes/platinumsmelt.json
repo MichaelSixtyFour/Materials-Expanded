@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+
+  "ingredient": {
+      "item": "matex:oreplatinum"
+  },
+
+  "result": "matex:ingotplatinum",
+  "experience": 2.5,
+  "cookingtime": 200
+}

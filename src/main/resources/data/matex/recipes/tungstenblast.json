@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+
+  "ingredient": {
+      "item": "matex:oretungsten"
+  },
+
+  "result": "matex:ingottungsten",
+  "experience": 1.25,
+  "cookingtime": 100
+}

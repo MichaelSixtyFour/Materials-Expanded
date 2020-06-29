@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+
+  "ingredient": {
+      "item": "matex:oretungsten"
+  },
+
+  "result": "matex:ingottungsten",
+  "experience": 2.5,
+  "cookingtime": 200
+}
