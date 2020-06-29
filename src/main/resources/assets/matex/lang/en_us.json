@@ -11,6 +11,12 @@
   "item.matex.ingotsilver": "Silver Ingot",
   "item.matex.ingotaluminium": "Aluminium Ingot",
 
+  "item.matex.gearwood": "Wooden Gear",
+  "item.matex.gearstone": "Stone Gear",
+  "item.matex.geariron": "Iron Gear",
+  "item.matex.geargold": "Gold Gear",
+  "item.matex.geardiamond": "Diamond Gear",
+
   "_comment_": "Creative Tabs",
   "itemGroup.matex": "Materials Expanded"
 }

@@ -1,6 +1,7 @@
 package dev.advaluti.matex.setup;
 
 import dev.advaluti.matex.blocks.*;
+import dev.advaluti.matex.items.GearBase;
 import dev.advaluti.matex.items.IngotBase;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
@@ -20,6 +21,17 @@ public class Registration {
         BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
+    //GEARS
+    public static final RegistryObject<GearBase> GEARWOOD = ITEMS.register("gearwood", GearBase::new);
+    public static final RegistryObject<GearBase> GEARSTONE = ITEMS.register("gearstone", GearBase::new);
+    public static final RegistryObject<GearBase> GEARIRON = ITEMS.register("geariron", GearBase::new);
+    public static final RegistryObject<GearBase> GEARGOLD = ITEMS.register("geargold", GearBase::new);
+    public static final RegistryObject<GearBase> GEARDIAMOND = ITEMS.register("geardiamond", GearBase::new);
+
+    //public static final RegistryObject<GearBase> GEARCOPPER = ITEMS.register("gearcopper", GearBase::new);
+    //public static final RegistryObject<GearBase> GEARLEAD = ITEMS.register("gearlead", GearBase::new);
+    //public static final RegistryObject<GearBase> GEARSILVER = ITEMS.register("gearsilver", GearBase::new);
+    //public static final RegistryObject<GearBase> GEARALUMINIUM = ITEMS.register("gearaluminium", GearBase::new);
 
     //COPPER
     public static final RegistryObject<OreBase> ORECOPPER = BLOCKS.register("orecopper", OreBase::new);
