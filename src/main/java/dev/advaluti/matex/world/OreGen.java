@@ -1,6 +1,5 @@
 package dev.advaluti.matex.world;
 
-import dev.advaluti.matex.blocks.*;
 import dev.advaluti.matex.setup.Registration;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStage;

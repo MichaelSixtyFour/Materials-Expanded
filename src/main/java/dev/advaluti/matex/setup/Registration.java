@@ -1,6 +1,7 @@
 package dev.advaluti.matex.setup;
 
 import dev.advaluti.matex.blocks.*;
+import dev.advaluti.matex.items.DustBase;
 import dev.advaluti.matex.items.GearBase;
 import dev.advaluti.matex.items.IngotBase;
 import dev.advaluti.matex.world.OreGen;
@@ -58,6 +59,15 @@ public class Registration {
     public static final RegistryObject<IngotBase> INGOTTUNGSTEN = ITEMS.register("ingottungsten", IngotBase::new);
     public static final RegistryObject<IngotBase> INGOTPLATINUM = ITEMS.register("ingotplatinum", IngotBase::new);
 
+    //DUSTS
+    public static final RegistryObject<DustBase> DUSTCOPPER = ITEMS.register("dustcopper", DustBase::new);
+    public static final RegistryObject<DustBase> DUSTTIN = ITEMS.register("dusttin", DustBase::new);
+    public static final RegistryObject<DustBase> DUSTLEAD = ITEMS.register("dustlead", DustBase::new);
+    public static final RegistryObject<DustBase> DUSTALUMINIUM = ITEMS.register("dustaluminium", DustBase::new);
+    public static final RegistryObject<DustBase> DUSTSILVER = ITEMS.register("dustsilver", DustBase::new);
+    public static final RegistryObject<DustBase> DUSTTUNGSTEN = ITEMS.register("dusttungsten", DustBase::new);
+    public static final RegistryObject<DustBase> DUSTPLATINUM = ITEMS.register("dustplatinum", DustBase::new);
+
     //BLOCKS
     public static final RegistryObject<BlockBase> BLOCKCOPPER = BLOCKS.register("blockcopper", BlockBase::new);
     public static final RegistryObject<Item> BLOCKCOPPER_ITEM = ITEMS.register("blockcopper", () -> new BlockItem(BLOCKCOPPER.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
@@ -81,11 +91,11 @@ public class Registration {
     public static final RegistryObject<Item> BLOCKPLATINUM_ITEM = ITEMS.register("blockplatinum", () -> new BlockItem(BLOCKPLATINUM.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
 
     //GEARS
-    public static final RegistryObject<GearBase> GEARWOOD = ITEMS.register("gearwood", GearBase::new);
-    public static final RegistryObject<GearBase> GEARSTONE = ITEMS.register("gearstone", GearBase::new);
-    public static final RegistryObject<GearBase> GEARIRON = ITEMS.register("geariron", GearBase::new);
-    public static final RegistryObject<GearBase> GEARGOLD = ITEMS.register("geargold", GearBase::new);
-    public static final RegistryObject<GearBase> GEARDIAMOND = ITEMS.register("geardiamond", GearBase::new);
+    //public static final RegistryObject<GearBase> GEARWOOD = ITEMS.register("gearwood", GearBase::new);
+    //public static final RegistryObject<GearBase> GEARSTONE = ITEMS.register("gearstone", GearBase::new);
+    //public static final RegistryObject<GearBase> GEARIRON = ITEMS.register("geariron", GearBase::new);
+    //public static final RegistryObject<GearBase> GEARGOLD = ITEMS.register("geargold", GearBase::new);
+    //public static final RegistryObject<GearBase> GEARDIAMOND = ITEMS.register("geardiamond", GearBase::new);
     //public static final RegistryObject<GearBase> GEARCOPPER = ITEMS.register("gearcopper", GearBase::new);
     //public static final RegistryObject<GearBase> GEARLEAD = ITEMS.register("gearlead", GearBase::new);
     //public static final RegistryObject<GearBase> GEARALUMINIUM = ITEMS.register("gearaluminium", GearBase::new);

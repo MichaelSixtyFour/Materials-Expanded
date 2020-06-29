@@ -26,6 +26,15 @@
   "item.matex.ingottungsten": "Tungsten Ingot",
   "item.matex.ingotplatinum": "Platinum Ingot",
 
+  "_comment_": "Dusts",
+  "item.matex.dustcopper": "Copper Dust",
+  "item.matex.dusttin": "Tin Dust",
+  "item.matex.dustaluminium": "Aluminium Dust",
+  "item.matex.dustlead": "Lead Dust",
+  "item.matex.dustsilver": "Silver Dust",
+  "item.matex.dusttungsten": "Tungsten Dust",
+  "item.matex.dustplatinum": "Platinum Dust",
+
   "_comment_": "Gears",
   "item.matex.gearwood": "Wooden Gear",
   "item.matex.gearstone": "Stone Gear",
