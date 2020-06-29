@@ -1,7 +1,7 @@
 package dev.advaluti.matex;
 
 import dev.advaluti.matex.setup.ClientSetup;
-import dev.advaluti.matex.setup.Config;
+import dev.advaluti.matex.setup.MatExConfig;
 import dev.advaluti.matex.setup.ModSetup;
 import dev.advaluti.matex.setup.Registration;
 import net.minecraftforge.fml.ModLoadingContext;
@@ -19,8 +19,7 @@ public class MatEx {
     private static final Logger LOGGER = LogManager.getLogger();
 
     public MatEx() {
-        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, Config.CLIENT_CONFIG);
-        ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, Config.SERVER_CONFIG);
+        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, MatExConfig.spec);
 
         Registration.init();
 

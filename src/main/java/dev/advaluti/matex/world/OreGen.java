@@ -1,5 +1,6 @@
 package dev.advaluti.matex.world;
 
+import dev.advaluti.matex.setup.MatExConfig;
 import dev.advaluti.matex.setup.Registration;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStage;
@@ -13,42 +14,69 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class OreGen {
     public static void OreGenerate() {
         for(Biome biome : ForgeRegistries.BIOMES) {
-            ConfiguredPlacement copperGen = Placement.COUNT_RANGE.configure(new CountRangeConfig(16, 30,2,90));
-            ConfiguredPlacement tinGen = Placement.COUNT_RANGE.configure(new CountRangeConfig(12, 8,3,72));
-            ConfiguredPlacement leadGen = Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 8,5,64));
-            ConfiguredPlacement aluminiumGen = Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 8,5,64));
-            ConfiguredPlacement silverGen = Placement.COUNT_RANGE.configure(new CountRangeConfig(4, 4,5,32));
-            ConfiguredPlacement tungstenGen = Placement.COUNT_RANGE.configure(new CountRangeConfig(8, 8,5,48));
-            ConfiguredPlacement platinumGen = Placement.COUNT_RANGE.configure(new CountRangeConfig(3, 4,5,24));
-            ConfiguredPlacement nickelGen = Placement.COUNT_RANGE.configure(new CountRangeConfig(6, 4,3,64));
-            ConfiguredPlacement titaniumGen = Placement.COUNT_RANGE.configure(new CountRangeConfig(8, 4,5,48));
 
-            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
-                    new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.ORECOPPER.get().getDefaultState(), 10)).withPlacement(copperGen));
+            if(MatExConfig.enableAluminium.get()) {
+                ConfiguredPlacement AluminiumGen = Placement.COUNT_RANGE.configure(
+                        new CountRangeConfig(MatExConfig.VPCAluminium.get(), MatExConfig.MinHeightAluminium.get(), 0, MatExConfig.MaxHeightAluminium.get()));
+                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
+                        new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.OREALUMINIUM.get().getDefaultState(), MatExConfig.VSAluminium.get())).withPlacement(AluminiumGen));
+            }
 
-            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
-                    new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.ORETIN.get().getDefaultState(), 10)).withPlacement(tinGen));
+            if(MatExConfig.enableCopper.get()) {
+                ConfiguredPlacement CopperGen = Placement.COUNT_RANGE.configure(
+                        new CountRangeConfig(MatExConfig.VPCCopper.get(), MatExConfig.MinHeightCopper.get(), 0, MatExConfig.MaxHeightCopper.get()));
+                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
+                        new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.ORECOPPER.get().getDefaultState(), MatExConfig.VSCopper.get())).withPlacement(CopperGen));
+            }
 
-            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
-                            new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.ORELEAD.get().getDefaultState(), 10)).withPlacement(leadGen));
+            if(MatExConfig.enableLead.get()) {
+                ConfiguredPlacement LeadGen = Placement.COUNT_RANGE.configure(
+                        new CountRangeConfig(MatExConfig.VPCLead.get(), MatExConfig.MinHeightLead.get(), 0, MatExConfig.MaxHeightLead.get()));
+                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
+                        new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.ORELEAD.get().getDefaultState(), MatExConfig.VSLead.get())).withPlacement(LeadGen));
+            }
 
-            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
-                    new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.OREALUMINIUM.get().getDefaultState(), 10)).withPlacement(aluminiumGen));
+            if(MatExConfig.enableNickel.get()) {
+                ConfiguredPlacement NickelGen = Placement.COUNT_RANGE.configure(
+                        new CountRangeConfig(MatExConfig.VPCNickel.get(), MatExConfig.MinHeightNickel.get(), 0, MatExConfig.MaxHeightNickel.get()));
+                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
+                        new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.ORENICKEL.get().getDefaultState(), MatExConfig.VSNickel.get())).withPlacement(NickelGen));
+            }
 
-            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
-                    new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.ORESILVER.get().getDefaultState(), 10)).withPlacement(silverGen));
+            if(MatExConfig.enablePlatinum.get()) {
+                ConfiguredPlacement PlatinumGen = Placement.COUNT_RANGE.configure(
+                        new CountRangeConfig(MatExConfig.VPCPlatinum.get(), MatExConfig.MinHeightPlatinum.get(), 0, MatExConfig.MaxHeightPlatinum.get()));
+                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
+                        new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.OREPLATINUM.get().getDefaultState(), MatExConfig.VSPlatinum.get())).withPlacement(PlatinumGen));
+            }
 
-            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
-                    new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.ORETUNGSTEN.get().getDefaultState(), 10)).withPlacement(tungstenGen));
+            if(MatExConfig.enableSilver.get()) {
+                ConfiguredPlacement SilverGen = Placement.COUNT_RANGE.configure(
+                        new CountRangeConfig(MatExConfig.VPCSilver.get(), MatExConfig.MinHeightSilver.get(), 0, MatExConfig.MaxHeightSilver.get()));
+                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
+                        new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.ORESILVER.get().getDefaultState(), MatExConfig.VSSilver.get())).withPlacement(SilverGen));
+            }
 
-            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
-                    new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.OREPLATINUM.get().getDefaultState(), 10)).withPlacement(platinumGen));
+            if(MatExConfig.enableTin.get()) {
+                ConfiguredPlacement TinGen = Placement.COUNT_RANGE.configure(
+                        new CountRangeConfig(MatExConfig.VPCTin.get(), MatExConfig.MinHeightTin.get(), 0, MatExConfig.MaxHeightTin.get()));
+                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
+                        new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.ORETIN.get().getDefaultState(), MatExConfig.VSTin.get())).withPlacement(TinGen));
+            }
 
-            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
-                    new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.ORENICKEL.get().getDefaultState(), 10)).withPlacement(nickelGen));
+            if(MatExConfig.enableTitanium.get()) {
+                ConfiguredPlacement TitaniumGen = Placement.COUNT_RANGE.configure(
+                        new CountRangeConfig(MatExConfig.VPCTitanium.get(), MatExConfig.MinHeightTitanium.get(), 0, MatExConfig.MaxHeightTitanium.get()));
+                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
+                        new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.ORETITANIUM.get().getDefaultState(), MatExConfig.VSTitanium.get())).withPlacement(TitaniumGen));
+            }
 
-            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
-                    new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.ORETITANIUM.get().getDefaultState(), 10)).withPlacement(titaniumGen));
+            if(MatExConfig.enableTungsten.get()) {
+                ConfiguredPlacement TungstenGen = Placement.COUNT_RANGE.configure(
+                        new CountRangeConfig(MatExConfig.VPCTungsten.get(), MatExConfig.MinHeightTungsten.get(), 0, MatExConfig.MaxHeightTungsten.get()));
+                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
+                        new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.ORETUNGSTEN.get().getDefaultState(), MatExConfig.VSTungsten.get())).withPlacement(TungstenGen));
+            }
         }
     }
 }
