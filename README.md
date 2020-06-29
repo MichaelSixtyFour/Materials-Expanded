@@ -8,6 +8,7 @@ A material base for 1.16, ideal for modpack makers (modid: matex)
 - Blocks for each
 - Gears (for vanilla materals)
 - Ore generation
+- Recipes, smelting and blasting
 
 ## Planned Features
 - More metals (titanium, nickel, zinc?, uranium?)
