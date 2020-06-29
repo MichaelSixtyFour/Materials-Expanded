@@ -8,7 +8,16 @@
   "block.matex.oretungsten": "Tungsten Ore",
   "block.matex.oreplatinum": "Platinum Ore",
 
-  "_comment_": "Items",
+  "_Blocks_": "Blocks",
+  "block.matex.blockcopper": "Block of Copper",
+  "block.matex.blocktin": "Block of Tin Block",
+  "block.matex.blockaluminium": "Block of Aluminium",
+  "block.matex.blocklead": "Block of Lead",
+  "block.matex.blocksilver": "Block of Silver",
+  "block.matex.blocktungsten": "Block of Tungsten",
+  "block.matex.blockplatinum": "Block of Platinum",
+
+  "_comment_": "Ingots",
   "item.matex.ingotcopper": "Copper Ingot",
   "item.matex.ingottin": "Tin Ingot",
   "item.matex.ingotaluminium": "Aluminium Ingot",
@@ -17,6 +26,7 @@
   "item.matex.ingottungsten": "Tungsten Ingot",
   "item.matex.ingotplatinum": "Platinum Ingot",
 
+  "_comment_": "Gears",
   "item.matex.gearwood": "Wooden Gear",
   "item.matex.gearstone": "Stone Gear",
   "item.matex.geariron": "Iron Gear",

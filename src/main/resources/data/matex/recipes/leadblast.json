@@ -2,10 +2,10 @@
   "type": "minecraft:blasting",
 
   "ingredient": {
-      "item": "matex:oreblast"
+      "item": "matex:orelead"
   },
 
-  "result": "matex:ingotblast",
+  "result": "matex:ingotlead",
   "experience": 1.25,
   "cookingtime": 100
 }

@@ -10,7 +10,7 @@ public class BlockBase extends Block {
 
     public BlockBase() {
             super(AbstractBlock.Properties.create(Material.ROCK)
-            .sound(SoundType.GROUND)
+            .sound(SoundType.METAL)
                 .hardnessAndResistance(2.5f)
                 .harvestTool(ToolType.PICKAXE)
                 .harvestLevel(2)

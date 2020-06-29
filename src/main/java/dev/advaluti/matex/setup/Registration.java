@@ -62,6 +62,24 @@ public class Registration {
     public static final RegistryObject<BlockBase> BLOCKCOPPER = BLOCKS.register("blockcopper", BlockBase::new);
     public static final RegistryObject<Item> BLOCKCOPPER_ITEM = ITEMS.register("blockcopper", () -> new BlockItem(BLOCKCOPPER.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
 
+    public static final RegistryObject<BlockBase> BLOCKTIN = BLOCKS.register("blocktin", BlockBase::new);
+    public static final RegistryObject<Item> BLOCKTIN_ITEM = ITEMS.register("blocktin", () -> new BlockItem(BLOCKTIN.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+
+    public static final RegistryObject<BlockBase> BLOCKLEAD = BLOCKS.register("blocklead", BlockBase::new);
+    public static final RegistryObject<Item> BLOCKLEAD_ITEM = ITEMS.register("blocklead", () -> new BlockItem(BLOCKLEAD.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+
+    public static final RegistryObject<BlockBase> BLOCKALUMINIUM = BLOCKS.register("blockaluminium", BlockBase::new);
+    public static final RegistryObject<Item> BLOCKALUMINIUM_ITEM = ITEMS.register("blockaluminium", () -> new BlockItem(BLOCKALUMINIUM.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+
+    public static final RegistryObject<BlockBase> BLOCKSILVER = BLOCKS.register("blocksilver", BlockBase::new);
+    public static final RegistryObject<Item> BLOCKSILVER_ITEM = ITEMS.register("blocksilver", () -> new BlockItem(BLOCKSILVER.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+
+    public static final RegistryObject<BlockBase> BLOCKTUNGSTEN = BLOCKS.register("blocktungsten", BlockBase::new);
+    public static final RegistryObject<Item> BLOCKTUNGSTEN_ITEM = ITEMS.register("blocktungsten", () -> new BlockItem(BLOCKTUNGSTEN.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+
+    public static final RegistryObject<BlockBase> BLOCKPLATINUM = BLOCKS.register("blockplatinum", BlockBase::new);
+    public static final RegistryObject<Item> BLOCKPLATINUM_ITEM = ITEMS.register("blockplatinum", () -> new BlockItem(BLOCKPLATINUM.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+
     //GEARS
     public static final RegistryObject<GearBase> GEARWOOD = ITEMS.register("gearwood", GearBase::new);
     public static final RegistryObject<GearBase> GEARSTONE = ITEMS.register("gearstone", GearBase::new);
