@@ -1,0 +1,12 @@
+{
+  "_comment_": "Blocks",
+  "block.matex.orecopper": "Copper Ore",
+  "block.matex.orelead": "Lead Ore",
+
+  "_comment_": "Items",
+  "item.matex.ingotcopper": "Copper Ingot",
+  "item.matex.ingotlead": "Lead Ingot",
+
+  "_comment_": "Creative Tabs",
+  "itemGroup.matex": "Materials Expanded"
+}

@@ -1,0 +1,7 @@
+Mat. Textures		Block	Item	Dust
+Copper			    Y	    Y	    N
+Tin                 N       Y       N
+Lead			    Y	    N	    N
+Silver			    N	    Y	    N
+Zinc			    N	    Y	    N
+Aluminium		    N	    N	    N
