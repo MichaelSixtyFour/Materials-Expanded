@@ -2,14 +2,15 @@
 A material base for 1.16, ideal for modpack makers (modid: matex)
 
 ## Features
-- New metals (copper, lead, silver, aluminium, tin)
+- New metals (copper, tin, lead, aluminium, silver, tungsten, platinum)
 - Ingots for each
 - Ores for each
+- Blocks for each
 - Gears (for vanilla materals)
 - Ore generation
 
 ## Planned Features
-- More metals (zinc?, uranium?, platinum, titanium, nickel)
+- More metals (titanium, nickel, zinc?, uranium?)
 - Gems (ruby, amethyst, sapphire, topaz)
 - Dusts
 - Alloys
