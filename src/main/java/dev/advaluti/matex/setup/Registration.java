@@ -33,5 +33,9 @@ public class Registration {
     public static final RegistryObject<OreBase> ORESILVER = BLOCKS.register("oresilver", OreBase::new);
     public static final RegistryObject<Item> ORESILVER_ITEM = ITEMS.register("oresilver", () -> new BlockItem(ORESILVER.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
     public static final RegistryObject<IngotBase> INGOTSILVER = ITEMS.register("ingotsilver", IngotBase::new);
+    //ALUMINIUM
+    public static final RegistryObject<OreBase> OREALUMINIUM = BLOCKS.register("orealuminium", OreBase::new);
+    public static final RegistryObject<Item> OREALUMINIUM_ITEM = ITEMS.register("orealuminium", () -> new BlockItem(OREALUMINIUM.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<IngotBase> INGOTALUMINIUM = ITEMS.register("ingotaluminium", IngotBase::new);
 
 }
