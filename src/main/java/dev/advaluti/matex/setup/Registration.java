@@ -2,7 +2,7 @@ package dev.advaluti.matex.setup;
 
 import dev.advaluti.matex.blocks.*;
 import dev.advaluti.matex.items.DustBase;
-import dev.advaluti.matex.items.GearBase;
+//import dev.advaluti.matex.items.GearBase;
 import dev.advaluti.matex.items.IngotBase;
 import dev.advaluti.matex.world.OreGen;
 import net.minecraft.block.Block;
@@ -50,6 +50,12 @@ public class Registration {
     public static final RegistryObject<OrePlatinum> OREPLATINUM = BLOCKS.register("oreplatinum", OrePlatinum::new);
     public static final RegistryObject<Item> OREPLATINUM_ITEM = ITEMS.register("oreplatinum", () -> new BlockItem(OREPLATINUM.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
 
+    public static final RegistryObject<OreNickel> ORENICKEL = BLOCKS.register("orenickel", OreNickel::new);
+    public static final RegistryObject<Item> ORENICKEL_ITEM = ITEMS.register("orenickel", () -> new BlockItem(ORENICKEL.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+
+    public static final RegistryObject<OreTitanium> ORETITANIUM = BLOCKS.register("oretitanium", OreTitanium::new);
+    public static final RegistryObject<Item> ORETITANIUM_ITEM = ITEMS.register("oretitanium", () -> new BlockItem(ORETITANIUM.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+
     //INGOTS
     public static final RegistryObject<IngotBase> INGOTCOPPER = ITEMS.register("ingotcopper", IngotBase::new);
     public static final RegistryObject<IngotBase> INGOTTIN = ITEMS.register("ingottin", IngotBase::new);
@@ -58,6 +64,8 @@ public class Registration {
     public static final RegistryObject<IngotBase> INGOTSILVER = ITEMS.register("ingotsilver", IngotBase::new);
     public static final RegistryObject<IngotBase> INGOTTUNGSTEN = ITEMS.register("ingottungsten", IngotBase::new);
     public static final RegistryObject<IngotBase> INGOTPLATINUM = ITEMS.register("ingotplatinum", IngotBase::new);
+    public static final RegistryObject<IngotBase> INGOTNICKEL = ITEMS.register("ingotnickel", IngotBase::new);
+    public static final RegistryObject<IngotBase> INGOTTITANIUM = ITEMS.register("ingottitanium", IngotBase::new);
 
     //DUSTS
     public static final RegistryObject<DustBase> DUSTCOPPER = ITEMS.register("dustcopper", DustBase::new);
@@ -67,6 +75,8 @@ public class Registration {
     public static final RegistryObject<DustBase> DUSTSILVER = ITEMS.register("dustsilver", DustBase::new);
     public static final RegistryObject<DustBase> DUSTTUNGSTEN = ITEMS.register("dusttungsten", DustBase::new);
     public static final RegistryObject<DustBase> DUSTPLATINUM = ITEMS.register("dustplatinum", DustBase::new);
+    public static final RegistryObject<DustBase> DUSTNICKEL = ITEMS.register("dustnickel", DustBase::new);
+    public static final RegistryObject<DustBase> DUSTTITANIUM = ITEMS.register("dusttitanium", DustBase::new);
 
     //BLOCKS
     public static final RegistryObject<BlockBase> BLOCKCOPPER = BLOCKS.register("blockcopper", BlockBase::new);
@@ -90,6 +100,12 @@ public class Registration {
     public static final RegistryObject<BlockBase> BLOCKPLATINUM = BLOCKS.register("blockplatinum", BlockBase::new);
     public static final RegistryObject<Item> BLOCKPLATINUM_ITEM = ITEMS.register("blockplatinum", () -> new BlockItem(BLOCKPLATINUM.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
 
+    public static final RegistryObject<BlockBase> BLOCKNICKEL = BLOCKS.register("blocknickel", BlockBase::new);
+    public static final RegistryObject<Item> BLOCKNICKEL_ITEM = ITEMS.register("blocknickel", () -> new BlockItem(BLOCKNICKEL.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+
+    public static final RegistryObject<BlockBase> BLOCKTITANIUM = BLOCKS.register("blocktitanium", BlockBase::new);
+    public static final RegistryObject<Item> BLOCKTITANIUM_ITEM = ITEMS.register("blocktitanium", () -> new BlockItem(BLOCKTITANIUM.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+
     //GEARS
     //public static final RegistryObject<GearBase> GEARWOOD = ITEMS.register("gearwood", GearBase::new);
     //public static final RegistryObject<GearBase> GEARSTONE = ITEMS.register("gearstone", GearBase::new);
@@ -102,6 +118,8 @@ public class Registration {
     //public static final RegistryObject<GearBase> GEARSILVER = ITEMS.register("gearsilver", GearBase::new);
     //public static final RegistryObject<GearBase> GEARTUNGSTEN = ITEMS.register("geartungsten", GearBase::new);
     //public static final RegistryObject<GearBase> GEARPLATINUM = ITEMS.register("gearplatinum", GearBase::new);
+    //public static final RegistryObject<GearBase> GEARNICKEL = ITEMS.register("gearnickel", GearBase::new);
+    //public static final RegistryObject<GearBase> GEARTITANIUM = ITEMS.register("geartitanium", GearBase::new);
 
     //ORE GEN
     public static void modSetup(final FMLCommonSetupEvent event) {

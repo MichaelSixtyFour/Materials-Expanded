@@ -7,6 +7,8 @@
   "block.matex.oresilver": "Silver Ore",
   "block.matex.oretungsten": "Tungsten Ore",
   "block.matex.oreplatinum": "Platinum Ore",
+  "block.matex.orenickel": "Nickel Ore",
+  "block.matex.oretitanium": "Titanium Ore",
 
   "_Blocks_": "Blocks",
   "block.matex.blockcopper": "Block of Copper",
@@ -16,6 +18,8 @@
   "block.matex.blocksilver": "Block of Silver",
   "block.matex.blocktungsten": "Block of Tungsten",
   "block.matex.blockplatinum": "Block of Platinum",
+  "block.matex.blocknickel": "Block of Nickel",
+  "block.matex.blocktitanium": "Block of Titanium",
 
   "_comment_": "Ingots",
   "item.matex.ingotcopper": "Copper Ingot",
@@ -25,6 +29,8 @@
   "item.matex.ingotsilver": "Silver Ingot",
   "item.matex.ingottungsten": "Tungsten Ingot",
   "item.matex.ingotplatinum": "Platinum Ingot",
+  "item.matex.ingotnickel": "Nickel Ingot",
+  "item.matex.ingottitanium": "Titanium Ingot",
 
   "_comment_": "Dusts",
   "item.matex.dustcopper": "Copper Dust",
@@ -34,6 +40,8 @@
   "item.matex.dustsilver": "Silver Dust",
   "item.matex.dusttungsten": "Tungsten Dust",
   "item.matex.dustplatinum": "Platinum Dust",
+  "item.matex.dustnickel": "Nickel Dust",
+  "item.matex.dusttitanium": "Titanium Dust",
 
   "_comment_": "Gears",
   "item.matex.gearwood": "Wooden Gear",

@@ -20,6 +20,8 @@ public class OreGen {
             ConfiguredPlacement silverGen = Placement.COUNT_RANGE.configure(new CountRangeConfig(4, 4,5,32));
             ConfiguredPlacement tungstenGen = Placement.COUNT_RANGE.configure(new CountRangeConfig(8, 8,5,48));
             ConfiguredPlacement platinumGen = Placement.COUNT_RANGE.configure(new CountRangeConfig(3, 4,5,24));
+            ConfiguredPlacement nickelGen = Placement.COUNT_RANGE.configure(new CountRangeConfig(6, 4,3,64));
+            ConfiguredPlacement titaniumGen = Placement.COUNT_RANGE.configure(new CountRangeConfig(8, 4,5,48));
 
             biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
                     new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.ORECOPPER.get().getDefaultState(), 10)).withPlacement(copperGen));
@@ -41,6 +43,12 @@ public class OreGen {
 
             biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
                     new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.OREPLATINUM.get().getDefaultState(), 10)).withPlacement(platinumGen));
+
+            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
+                    new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.ORENICKEL.get().getDefaultState(), 10)).withPlacement(nickelGen));
+
+            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
+                    new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.ORETITANIUM.get().getDefaultState(), 10)).withPlacement(titaniumGen));
         }
     }
 }
