@@ -11,7 +11,8 @@ A material base for 1.16, ideal for modpack makers
 - Gems (ruby, amethyst, sapphire, topaz)
 - Dusts
 - Alloys
+- Tools/Armour?
 - Ore generation
-- Config for ore enabling/disabling
+- Config for item/block enabling/disabling
 - Config for ore generation
 - Mod support (tconstruct/crafttweaker)
