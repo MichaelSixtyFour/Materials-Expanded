@@ -196,6 +196,7 @@ public class MatExConfig {
             VPCCopper = BUILDER.comment("Veins per chunk").defineInRange("VPCCopper",16, 0, 50);
             MinHeightCopper = BUILDER.comment("Minimum height").defineInRange("MinHeightCopper",30, 0, 255);
             MaxHeightCopper = BUILDER.comment("Maximum height").defineInRange("MaxHeightCopper",90, 0, 255);
+            HarvestCopper = BUILDER.comment("Harvest level").defineInRange("HarvestCopper",1, 0, 4);
             BUILDER.pop();
 
             BUILDER.comment("Lead settings").push(CATEGORY_LEAD);
@@ -204,6 +205,7 @@ public class MatExConfig {
             VPCLead = BUILDER.comment("Veins per chunk").defineInRange("VPCLead",10, 0, 50);
             MinHeightLead = BUILDER.comment("Minimum height").defineInRange("MinHeightLead",8, 0, 255);
             MaxHeightLead = BUILDER.comment("Maximum height").defineInRange("MaxHeightLead",64, 0, 255);
+            HarvestLead = BUILDER.comment("Harvest level").defineInRange("HarvestLead",1, 0, 4);
             BUILDER.pop();
 
             BUILDER.comment("Nickel settings").push(CATEGORY_NICKEL);
@@ -212,6 +214,7 @@ public class MatExConfig {
             VPCNickel = BUILDER.comment("Veins per chunk").defineInRange("VPCNickel",6, 0, 50);
             MinHeightNickel = BUILDER.comment("Minimum height").defineInRange("MinHeightNickel",4, 0, 255);
             MaxHeightNickel = BUILDER.comment("Maximum height").defineInRange("MaxHeightNickel",64, 0, 255);
+            HarvestNickel = BUILDER.comment("Harvest level").defineInRange("HarvestNickel",2, 0, 4);
             BUILDER.pop();
 
             BUILDER.comment("Osmium settings").push(CATEGORY_OSMIUM);
@@ -220,6 +223,7 @@ public class MatExConfig {
             VPCOsmium = BUILDER.comment("Veins per chunk").defineInRange("VPCOsmium",6, 0, 50);
             MinHeightOsmium = BUILDER.comment("Minimum height").defineInRange("MinHeightOsmium",8, 0, 255);
             MaxHeightOsmium = BUILDER.comment("Maximum height").defineInRange("MaxHeightOsmium",64, 0, 255);
+            HarvestOsmium = BUILDER.comment("Harvest level").defineInRange("HarvestOsmium",2, 0, 4);
             BUILDER.pop();
 
             BUILDER.comment("Platinum settings").push(CATEGORY_PLATINUM);
@@ -228,6 +232,7 @@ public class MatExConfig {
             VPCPlatinum = BUILDER.comment("Veins per chunk").defineInRange("VPCPlatinum",2, 0, 50);
             MinHeightPlatinum = BUILDER.comment("Minimum height").defineInRange("MinHeightPlatinum",4, 0, 255);
             MaxHeightPlatinum = BUILDER.comment("Maximum height").defineInRange("MaxHeightPlatinum",24, 0, 255);
+            HarvestPlatinum = BUILDER.comment("Harvest level").defineInRange("HarvestPlatinum",2, 0, 4);
             BUILDER.pop();
 
             BUILDER.comment("Saltpeter settings").push(CATEGORY_SALTPETER);
@@ -236,6 +241,7 @@ public class MatExConfig {
             VPCSaltpeter = BUILDER.comment("Veins per chunk").defineInRange("VPCSaltpeter",8, 0, 50);
             MinHeightSaltpeter = BUILDER.comment("Minimum height").defineInRange("MinHeightSaltpeter",24, 0, 255);
             MaxHeightSaltpeter = BUILDER.comment("Maximum height").defineInRange("MaxHeightSaltpeter",72, 0, 255);
+            HarvestSaltpeter = BUILDER.comment("Harvest level").defineInRange("HarvestSaltpeter",0, 0, 4);
             BUILDER.pop();
 
             BUILDER.comment("Silver settings").push(CATEGORY_SILVER);
@@ -244,6 +250,7 @@ public class MatExConfig {
             VPCSilver = BUILDER.comment("Veins per chunk").defineInRange("VPCSilver",4, 0, 50);
             MinHeightSilver = BUILDER.comment("Minimum height").defineInRange("MinHeightSilver",4, 0, 255);
             MaxHeightSilver = BUILDER.comment("Maximum height").defineInRange("MaxHeightSilver",32, 0, 255);
+            HarvestSilver = BUILDER.comment("Harvest level").defineInRange("HarvestSilver",2, 0, 4);
             BUILDER.pop();
 
             BUILDER.comment("Sulfur settings").push(CATEGORY_SULFUR);
@@ -252,6 +259,7 @@ public class MatExConfig {
             VPCSulfur = BUILDER.comment("Veins per chunk").defineInRange("VPCSulfur",8, 0, 50);
             MinHeightSulfur = BUILDER.comment("Minimum height").defineInRange("MinHeightSulfur",24, 0, 255);
             MaxHeightSulfur = BUILDER.comment("Maximum height").defineInRange("MaxHeightSulfur",72, 0, 255);
+            HarvestSulfur = BUILDER.comment("Harvest level").defineInRange("HarvestSulfur",0, 0, 4);
             BUILDER.pop();
 
             BUILDER.comment("Tin settings").push(CATEGORY_TIN);
@@ -260,6 +268,7 @@ public class MatExConfig {
             VPCTin = BUILDER.comment("Veins per chunk").defineInRange("VPCTin",12, 0, 50);
             MinHeightTin = BUILDER.comment("Minimum height").defineInRange("MinHeightTin",8, 0, 255);
             MaxHeightTin = BUILDER.comment("Maximum height").defineInRange("MaxHeightTin",72, 0, 255);
+            HarvestTin = BUILDER.comment("Harvest level").defineInRange("HarvestTin",1, 0, 4);
             BUILDER.pop();
 
             BUILDER.comment("Titanium settings").push(CATEGORY_TITANIUM);
@@ -268,6 +277,7 @@ public class MatExConfig {
             VPCTitanium = BUILDER.comment("Veins per chunk").defineInRange("VPCTitanium",6, 0, 50);
             MinHeightTitanium = BUILDER.comment("Minimum height").defineInRange("MinHeightTitanium",4, 0, 255);
             MaxHeightTitanium = BUILDER.comment("Maximum height").defineInRange("MaxHeightTitanium",48, 0, 255);
+            HarvestTitanium = BUILDER.comment("Harvest level").defineInRange("HarvestTitanium",2, 0, 4);
             BUILDER.pop();
 
             BUILDER.comment("Tungsten settings").push(CATEGORY_TUNGSTEN);
@@ -276,6 +286,7 @@ public class MatExConfig {
             VPCTungsten = BUILDER.comment("Veins per chunk").defineInRange("VPCTungsten",8, 0, 50);
             MinHeightTungsten = BUILDER.comment("Minimum height").defineInRange("MinHeightTungsten",8, 0, 255);
             MaxHeightTungsten = BUILDER.comment("Maximum height").defineInRange("MaxHeightTungsten",48, 0, 255);
+            HarvestTungsten = BUILDER.comment("Harvest level").defineInRange("HarvestTungsten",2, 0, 4);
             BUILDER.pop();
 
             BUILDER.comment("Zinc settings").push(CATEGORY_ZINC);
@@ -284,6 +295,7 @@ public class MatExConfig {
             VPCZinc = BUILDER.comment("Veins per chunk").defineInRange("VPCZinc",6, 0, 50);
             MinHeightZinc = BUILDER.comment("Minimum height").defineInRange("MinHeightZinc",8, 0, 255);
             MaxHeightZinc = BUILDER.comment("Maximum height").defineInRange("MaxHeightZinc",64, 0, 255);
+            HarvestZinc = BUILDER.comment("Harvest level").defineInRange("HarvestZinc",2, 0, 4);
             BUILDER.pop();
 
         BUILDER.pop();
@@ -296,6 +308,7 @@ public class MatExConfig {
             VPCAmethyst = BUILDER.comment("Veins per chunk").defineInRange("VPCAmethyst",2, 0, 50);
             MinHeightAmethyst = BUILDER.comment("Minimum height").defineInRange("MinHeightAmethyst",2, 0, 255);
             MaxHeightAmethyst = BUILDER.comment("Maximum height").defineInRange("MaxHeightAmethyst",16, 0, 255);
+            HarvestAmethyst = BUILDER.comment("Harvest level").defineInRange("HarvestAmethyst",2, 0, 4);
             BUILDER.pop();
 
             BUILDER.comment("Onyx settings").push(CATEGORY_ONYX);
@@ -304,6 +317,7 @@ public class MatExConfig {
             VPCOnyx = BUILDER.comment("Veins per chunk").defineInRange("VPCOnyx",2, 0, 50);
             MinHeightOnyx = BUILDER.comment("Minimum height").defineInRange("MinHeightOnyx",2, 0, 255);
             MaxHeightOnyx = BUILDER.comment("Maximum height").defineInRange("MaxHeightOnyx",16, 0, 255);
+            HarvestOnyx = BUILDER.comment("Harvest level").defineInRange("HarvestOnyx",2, 0, 4);
             BUILDER.pop();
 
             BUILDER.comment("Peridot settings").push(CATEGORY_PERIDOT);
@@ -312,6 +326,7 @@ public class MatExConfig {
             VPCPeridot = BUILDER.comment("Veins per chunk").defineInRange("VPCPeridot",2, 0, 50);
             MinHeightPeridot = BUILDER.comment("Minimum height").defineInRange("MinHeightPeridot",2, 0, 255);
             MaxHeightPeridot = BUILDER.comment("Maximum height").defineInRange("MaxHeightPeridot",16, 0, 255);
+            HarvestPeridot = BUILDER.comment("Harvest level").defineInRange("HarvestPeridot",2, 0, 4);
             BUILDER.pop();
 
             BUILDER.comment("Ruby settings").push(CATEGORY_RUBY);
@@ -320,6 +335,7 @@ public class MatExConfig {
             VPCRuby = BUILDER.comment("Veins per chunk").defineInRange("VPCRuby",2, 0, 50);
             MinHeightRuby = BUILDER.comment("Minimum height").defineInRange("MinHeightRuby",2, 0, 255);
             MaxHeightRuby = BUILDER.comment("Maximum height").defineInRange("MaxHeightRuby",16, 0, 255);
+            HarvestRuby = BUILDER.comment("Harvest level").defineInRange("HarvestRuby",2, 0, 4);
             BUILDER.pop();
 
             BUILDER.comment("Sapphire settings").push(CATEGORY_SAPPHIRE);
@@ -328,6 +344,7 @@ public class MatExConfig {
             VPCSapphire = BUILDER.comment("Veins per chunk").defineInRange("VPCSapphire",2, 0, 50);
             MinHeightSapphire = BUILDER.comment("Minimum height").defineInRange("MinHeightSapphire",2, 0, 255);
             MaxHeightSapphire = BUILDER.comment("Maximum height").defineInRange("MaxHeightSapphire",16, 0, 255);
+            HarvestSapphire = BUILDER.comment("Harvest level").defineInRange("HarvestSapphire",2, 0, 4);
             BUILDER.pop();
 
             BUILDER.comment("Topaz settings").push(CATEGORY_TOPAZ);
@@ -336,6 +353,7 @@ public class MatExConfig {
             VPCTopaz = BUILDER.comment("Veins per chunk").defineInRange("VPCTopaz",2, 0, 50);
             MinHeightTopaz = BUILDER.comment("Minimum height").defineInRange("MinHeightTopaz",2, 0, 255);
             MaxHeightTopaz = BUILDER.comment("Maximum height").defineInRange("MaxHeightTopaz",16, 0, 255);
+            HarvestTopaz = BUILDER.comment("Harvest level").defineInRange("HarvestTopaz",2, 0, 4);
             BUILDER.pop();
 
         BUILDER.pop();

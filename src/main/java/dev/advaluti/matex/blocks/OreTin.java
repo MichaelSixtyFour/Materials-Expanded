@@ -1,5 +1,6 @@
 package dev.advaluti.matex.blocks;
 
+import dev.advaluti.matex.setup.MatExConfig;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -12,7 +13,7 @@ public class OreTin extends Block {
                 .sound(SoundType.STONE)
                 .hardnessAndResistance(1.5f)
                 .harvestTool(ToolType.PICKAXE)
-                .harvestLevel(2)
+                .harvestLevel(MatExConfig.HarvestTin.get())
         );
     }
 }
