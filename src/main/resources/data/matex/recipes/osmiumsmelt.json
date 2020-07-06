@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+
+  "ingredient": {
+      "item": "matex:oreosmium"
+  },
+
+  "result": "matex:ingotosmium",
+  "experience": 2.5,
+  "cookingtime": 200
+}

@@ -1,5 +1,6 @@
 package dev.advaluti.matex.world;
 
+import dev.advaluti.matex.blocks.OreOsmium;
 import dev.advaluti.matex.setup.MatExConfig;
 import dev.advaluti.matex.setup.Registration;
 import net.minecraft.world.biome.Biome;
@@ -45,6 +46,13 @@ public class OreGen {
                         new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.ORENICKEL.get().getDefaultState(), MatExConfig.VSNickel.get())).withPlacement(NickelGen));
             }
 
+            if(MatExConfig.enableOsmium.get()) {
+                ConfiguredPlacement OsmiumGen = Placement.COUNT_RANGE.configure(
+                        new CountRangeConfig(MatExConfig.VPCOsmium.get(), MatExConfig.MinHeightOsmium.get(), 0, MatExConfig.MaxHeightOsmium.get()));
+                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
+                        new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.OREOSMIUM.get().getDefaultState(), MatExConfig.VSOsmium.get())).withPlacement(OsmiumGen));
+            }
+
             if(MatExConfig.enablePlatinum.get()) {
                 ConfiguredPlacement PlatinumGen = Placement.COUNT_RANGE.configure(
                         new CountRangeConfig(MatExConfig.VPCPlatinum.get(), MatExConfig.MinHeightPlatinum.get(), 0, MatExConfig.MaxHeightPlatinum.get()));
@@ -78,6 +86,13 @@ public class OreGen {
                         new CountRangeConfig(MatExConfig.VPCTungsten.get(), MatExConfig.MinHeightTungsten.get(), 0, MatExConfig.MaxHeightTungsten.get()));
                 biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
                         new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.ORETUNGSTEN.get().getDefaultState(), MatExConfig.VSTungsten.get())).withPlacement(TungstenGen));
+            }
+
+            if(MatExConfig.enableZinc.get()) {
+                ConfiguredPlacement ZincGen = Placement.COUNT_RANGE.configure(
+                        new CountRangeConfig(MatExConfig.VPCZinc.get(), MatExConfig.MinHeightZinc.get(), 0, MatExConfig.MaxHeightZinc.get()));
+                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
+                        new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.OREZINC.get().getDefaultState(), MatExConfig.VSZinc.get())).withPlacement(ZincGen));
             }
 
             //MISC ORES

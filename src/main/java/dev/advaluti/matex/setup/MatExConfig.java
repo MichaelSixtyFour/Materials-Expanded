@@ -12,6 +12,7 @@ public class MatExConfig {
     public static final String CATEGORY_COPPER = "copper";
     public static final String CATEGORY_LEAD = "lead";
     public static final String CATEGORY_NICKEL = "nickel";
+    public static final String CATEGORY_OSMIUM = "osmium";
     public static final String CATEGORY_PLATINUM = "platinum";
     public static final String CATEGORY_SALTPETER = "saltpeter";
     public static final String CATEGORY_SILVER = "silver";
@@ -19,6 +20,7 @@ public class MatExConfig {
     public static final String CATEGORY_TIN = "tin";
     public static final String CATEGORY_TITANIUM = "titanium";
     public static final String CATEGORY_TUNGSTEN = "tungsten";
+    public static final String CATEGORY_ZINC = "zinc";
 
     public static ForgeConfigSpec spec;
 
@@ -47,6 +49,12 @@ public class MatExConfig {
     public static ForgeConfigSpec.IntValue VPCNickel;
     public static ForgeConfigSpec.IntValue MinHeightNickel;
     public static ForgeConfigSpec.IntValue MaxHeightNickel;
+
+    public static ForgeConfigSpec.BooleanValue enableOsmium;
+    public static ForgeConfigSpec.IntValue VSOsmium;
+    public static ForgeConfigSpec.IntValue VPCOsmium;
+    public static ForgeConfigSpec.IntValue MinHeightOsmium;
+    public static ForgeConfigSpec.IntValue MaxHeightOsmium;
 
     public static ForgeConfigSpec.BooleanValue enablePlatinum;
     public static ForgeConfigSpec.IntValue VSPlatinum;
@@ -90,6 +98,12 @@ public class MatExConfig {
     public static ForgeConfigSpec.IntValue MinHeightTungsten;
     public static ForgeConfigSpec.IntValue MaxHeightTungsten;
 
+    public static ForgeConfigSpec.BooleanValue enableZinc;
+    public static ForgeConfigSpec.IntValue VSZinc;
+    public static ForgeConfigSpec.IntValue VPCZinc;
+    public static ForgeConfigSpec.IntValue MinHeightZinc;
+    public static ForgeConfigSpec.IntValue MaxHeightZinc;
+
     static {
 
         ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
@@ -128,6 +142,14 @@ public class MatExConfig {
         VPCNickel = BUILDER.comment("Veins per chunk").defineInRange("VPCNickel",6, 0, 50);
         MinHeightNickel = BUILDER.comment("Minimum height").defineInRange("MinHeightNickel",4, 0, 255);
         MaxHeightNickel = BUILDER.comment("Maximum height").defineInRange("MaxHeightNickel",64, 0, 255);
+        BUILDER.pop();
+
+        BUILDER.comment("Osmium settings").push(CATEGORY_NICKEL);
+        enableOsmium = BUILDER.comment("Enable Osmium ore generation (default: true)").define("enableOsmium", true);
+        VSOsmium = BUILDER.comment("Vein size").defineInRange("VSOsmium",8, 0, 50);
+        VPCOsmium = BUILDER.comment("Veins per chunk").defineInRange("VPCOsmium",6, 0, 50);
+        MinHeightOsmium = BUILDER.comment("Minimum height").defineInRange("MinHeightOsmium",8, 0, 255);
+        MaxHeightOsmium = BUILDER.comment("Maximum height").defineInRange("MaxHeightOsmium",64, 0, 255);
         BUILDER.pop();
 
         BUILDER.comment("Platinum settings").push(CATEGORY_PLATINUM);
@@ -184,6 +206,14 @@ public class MatExConfig {
         VPCTungsten = BUILDER.comment("Veins per chunk").defineInRange("VPCTungsten",8, 0, 50);
         MinHeightTungsten = BUILDER.comment("Minimum height").defineInRange("MinHeightTungsten",8, 0, 255);
         MaxHeightTungsten = BUILDER.comment("Maximum height").defineInRange("MaxHeightTungsten",48, 0, 255);
+        BUILDER.pop();
+
+        BUILDER.comment("Zinc settings").push(CATEGORY_TUNGSTEN);
+        enableZinc = BUILDER.comment("Enable Zinc ore generation (default: true)").define("enableZinc", true);
+        VSZinc = BUILDER.comment("Vein size").defineInRange("VSZinc",8, 0, 50);
+        VPCZinc = BUILDER.comment("Veins per chunk").defineInRange("VPCZinc",6, 0, 50);
+        MinHeightZinc = BUILDER.comment("Minimum height").defineInRange("MinHeightZinc",8, 0, 255);
+        MaxHeightZinc = BUILDER.comment("Maximum height").defineInRange("MaxHeightZinc",64, 0, 255);
         BUILDER.pop();
 
         spec = BUILDER.build();
