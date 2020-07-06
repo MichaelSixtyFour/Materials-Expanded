@@ -7,7 +7,7 @@ A material base for 1.16, ideal for modpack makers (modid: matex)
 - New resources (saltpeter, sulfur)
   - Ores and dusts for each
  - New gems (ruby, amethyst, sapphire, topaz, peridot, onyx)
-  - Ores, blocks and gems for each
+    - Ores, blocks and gems for each
 - Ore generation
 - Config for ore generation
 - Recipes, smelting and blasting
