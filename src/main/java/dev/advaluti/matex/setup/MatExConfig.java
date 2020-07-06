@@ -13,7 +13,9 @@ public class MatExConfig {
     public static final String CATEGORY_LEAD = "lead";
     public static final String CATEGORY_NICKEL = "nickel";
     public static final String CATEGORY_PLATINUM = "platinum";
+    public static final String CATEGORY_SALTPETER = "saltpeter";
     public static final String CATEGORY_SILVER = "silver";
+    public static final String CATEGORY_SULFUR = "sulfur";
     public static final String CATEGORY_TIN = "tin";
     public static final String CATEGORY_TITANIUM = "titanium";
     public static final String CATEGORY_TUNGSTEN = "tungsten";
@@ -52,11 +54,23 @@ public class MatExConfig {
     public static ForgeConfigSpec.IntValue MinHeightPlatinum;
     public static ForgeConfigSpec.IntValue MaxHeightPlatinum;
 
+    public static ForgeConfigSpec.BooleanValue enableSaltpeter;
+    public static ForgeConfigSpec.IntValue VSSaltpeter;
+    public static ForgeConfigSpec.IntValue VPCSaltpeter;
+    public static ForgeConfigSpec.IntValue MinHeightSaltpeter;
+    public static ForgeConfigSpec.IntValue MaxHeightSaltpeter;
+
     public static ForgeConfigSpec.BooleanValue enableSilver;
     public static ForgeConfigSpec.IntValue VSSilver;
     public static ForgeConfigSpec.IntValue VPCSilver;
     public static ForgeConfigSpec.IntValue MinHeightSilver;
     public static ForgeConfigSpec.IntValue MaxHeightSilver;
+
+    public static ForgeConfigSpec.BooleanValue enableSulfur;
+    public static ForgeConfigSpec.IntValue VSSulfur;
+    public static ForgeConfigSpec.IntValue VPCSulfur;
+    public static ForgeConfigSpec.IntValue MinHeightSulfur;
+    public static ForgeConfigSpec.IntValue MaxHeightSulfur;
 
     public static ForgeConfigSpec.BooleanValue enableTin;
     public static ForgeConfigSpec.IntValue VSTin;
@@ -124,12 +138,28 @@ public class MatExConfig {
         MaxHeightPlatinum = BUILDER.comment("Maximum height").defineInRange("MaxHeightPlatinum",24, 0, 255);
         BUILDER.pop();
 
+        BUILDER.comment("Saltpeter settings").push(CATEGORY_SALTPETER);
+        enableSaltpeter = BUILDER.comment("Enable Saltpeter ore generation (default: true)").define("enableSaltpeter", true);
+        VSSaltpeter = BUILDER.comment("Vein size").defineInRange("VSSaltpeter",12, 0, 50);
+        VPCSaltpeter = BUILDER.comment("Veins per chunk").defineInRange("VPCSaltpeter",8, 0, 50);
+        MinHeightSaltpeter = BUILDER.comment("Minimum height").defineInRange("MinHeightSaltpeter",24, 0, 255);
+        MaxHeightSaltpeter = BUILDER.comment("Maximum height").defineInRange("MaxHeightSaltpeter",72, 0, 255);
+        BUILDER.pop();
+
         BUILDER.comment("Silver settings").push(CATEGORY_SILVER);
         enableSilver = BUILDER.comment("Enable Silver ore generation (default: true)").define("enableSilver", true);
         VSSilver = BUILDER.comment("Vein size").defineInRange("VSSilver",8, 0, 50);
         VPCSilver = BUILDER.comment("Veins per chunk").defineInRange("VPCSilver",4, 0, 50);
         MinHeightSilver = BUILDER.comment("Minimum height").defineInRange("MinHeightSilver",4, 0, 255);
         MaxHeightSilver = BUILDER.comment("Maximum height").defineInRange("MaxHeightSilver",32, 0, 255);
+        BUILDER.pop();
+
+        BUILDER.comment("Sulfur settings").push(CATEGORY_SULFUR);
+        enableSulfur = BUILDER.comment("Enable Sulfur ore generation (default: true)").define("enableSulfur", true);
+        VSSulfur = BUILDER.comment("Vein size").defineInRange("VSSulfur",12, 0, 50);
+        VPCSulfur = BUILDER.comment("Veins per chunk").defineInRange("VPCSulfur",8, 0, 50);
+        MinHeightSulfur = BUILDER.comment("Minimum height").defineInRange("MinHeightSulfur",24, 0, 255);
+        MaxHeightSulfur = BUILDER.comment("Maximum height").defineInRange("MaxHeightSulfur",72, 0, 255);
         BUILDER.pop();
 
         BUILDER.comment("Tin settings").push(CATEGORY_TIN);

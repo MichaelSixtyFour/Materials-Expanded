@@ -1,4 +1,8 @@
 {
+  "_comment_": "Misc. Ores",
+  "block.matex.oresaltpeter": "Saltpeter Ore",
+  "block.matex.oresulfur": "Sulfur Ore",
+
   "_comment_": "Ores",
   "block.matex.orecopper": "Copper Ore",
   "block.matex.oretin": "Tin Ore",
@@ -12,7 +16,7 @@
 
   "_Blocks_": "Blocks",
   "block.matex.blockcopper": "Block of Copper",
-  "block.matex.blocktin": "Block of Tin Block",
+  "block.matex.blocktin": "Block of Tin",
   "block.matex.blockaluminium": "Block of Aluminium",
   "block.matex.blocklead": "Block of Lead",
   "block.matex.blocksilver": "Block of Silver",
@@ -42,6 +46,10 @@
   "item.matex.dustplatinum": "Platinum Dust",
   "item.matex.dustnickel": "Nickel Dust",
   "item.matex.dusttitanium": "Titanium Dust",
+
+  "item.matex.dustsaltpeter": "Saltpeter",
+  "item.matex.dustsulfur": "Sulfur",
+
 
   "_comment_": "Gears",
   "item.matex.gearwood": "Wooden Gear",

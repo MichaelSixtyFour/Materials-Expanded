@@ -6,9 +6,9 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.common.ToolType;
 
-public class BlockBase extends Block {
+public class MetalBlockBase extends Block {
 
-    public BlockBase() {
+    public MetalBlockBase() {
             super(AbstractBlock.Properties.create(Material.ROCK)
             .sound(SoundType.METAL)
                 .hardnessAndResistance(2.5f)

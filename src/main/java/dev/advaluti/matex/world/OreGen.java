@@ -15,6 +15,8 @@ public class OreGen {
     public static void OreGenerate() {
         for(Biome biome : ForgeRegistries.BIOMES) {
 
+            //ORES
+
             if(MatExConfig.enableAluminium.get()) {
                 ConfiguredPlacement AluminiumGen = Placement.COUNT_RANGE.configure(
                         new CountRangeConfig(MatExConfig.VPCAluminium.get(), MatExConfig.MinHeightAluminium.get(), 0, MatExConfig.MaxHeightAluminium.get()));
@@ -76,6 +78,22 @@ public class OreGen {
                         new CountRangeConfig(MatExConfig.VPCTungsten.get(), MatExConfig.MinHeightTungsten.get(), 0, MatExConfig.MaxHeightTungsten.get()));
                 biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
                         new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.ORETUNGSTEN.get().getDefaultState(), MatExConfig.VSTungsten.get())).withPlacement(TungstenGen));
+            }
+
+            //MISC ORES
+
+            if(MatExConfig.enableSaltpeter.get()) {
+                ConfiguredPlacement SaltpeterGen = Placement.COUNT_RANGE.configure(
+                        new CountRangeConfig(MatExConfig.VPCSaltpeter.get(), MatExConfig.MinHeightSaltpeter.get(), 0, MatExConfig.MaxHeightSaltpeter.get()));
+                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
+                        new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.ORESALTPETER.get().getDefaultState(), MatExConfig.VSSaltpeter.get())).withPlacement(SaltpeterGen));
+            }
+
+            if(MatExConfig.enableSulfur.get()) {
+                ConfiguredPlacement SulfurGen = Placement.COUNT_RANGE.configure(
+                        new CountRangeConfig(MatExConfig.VPCSulfur.get(), MatExConfig.MinHeightSulfur.get(), 0, MatExConfig.MaxHeightSulfur.get()));
+                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
+                        new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.ORESULFUR.get().getDefaultState(), MatExConfig.VSSulfur.get())).withPlacement(SulfurGen));
             }
         }
     }
