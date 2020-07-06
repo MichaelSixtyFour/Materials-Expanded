@@ -7,7 +7,7 @@ public class DustBase extends Item {
     public DustBase() {
         super(new Item.Properties()
                 .maxStackSize(64)
-                .group(ModSetup.ITEM_GROUP)
+                .group(ModSetup.MATEX_GROUP)
         );
     }
 }

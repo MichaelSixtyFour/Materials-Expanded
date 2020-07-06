@@ -8,7 +8,7 @@ import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 
 public class ModSetup {
 
-    public static final ItemGroup ITEM_GROUP = new ItemGroup("matex") {
+    public static final ItemGroup MATEX_GROUP = new ItemGroup("matex") {
         @Override
         public ItemStack createIcon() {
             return new ItemStack(Registration.ORECOPPER.get());

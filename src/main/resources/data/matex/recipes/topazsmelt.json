@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+
+  "ingredient": {
+      "item": "matex:oretopaz"
+  },
+
+  "result": "matex:gemtopaz",
+  "experience": 2.5,
+  "cookingtime": 200
+}

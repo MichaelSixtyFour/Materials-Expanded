@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+
+  "ingredient": {
+      "item": "matex:oreamethyst"
+  },
+
+  "result": "matex:gemamethyst",
+  "experience": 2.5,
+  "cookingtime": 200
+}

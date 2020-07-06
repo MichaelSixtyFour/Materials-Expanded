@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+
+  "ingredient": {
+      "item": "matex:oreruby"
+  },
+
+  "result": "matex:gemruby",
+  "experience": 2.5,
+  "cookingtime": 200
+}

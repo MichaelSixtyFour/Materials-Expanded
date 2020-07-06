@@ -7,7 +7,7 @@ public class GearBase extends Item {
     public GearBase() {
         super(new Properties()
                 .maxStackSize(64)
-                .group(ModSetup.ITEM_GROUP)
+                .group(ModSetup.MATEX_GROUP)
         );
     }
 }

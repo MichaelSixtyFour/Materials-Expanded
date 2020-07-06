@@ -95,6 +95,49 @@ public class OreGen {
                         new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.OREZINC.get().getDefaultState(), MatExConfig.VSZinc.get())).withPlacement(ZincGen));
             }
 
+            //Gems
+            if(MatExConfig.enableAmethyst.get()) {
+                ConfiguredPlacement AmethystGen = Placement.COUNT_RANGE.configure(
+                        new CountRangeConfig(MatExConfig.VPCAmethyst.get(), MatExConfig.MinHeightAmethyst.get(), 0, MatExConfig.MaxHeightAmethyst.get()));
+                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
+                        new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.OREAMETHYST.get().getDefaultState(), MatExConfig.VSAmethyst.get())).withPlacement(AmethystGen));
+            }
+
+            if(MatExConfig.enableOnyx.get()) {
+                ConfiguredPlacement OnyxGen = Placement.COUNT_RANGE.configure(
+                        new CountRangeConfig(MatExConfig.VPCOnyx.get(), MatExConfig.MinHeightOnyx.get(), 0, MatExConfig.MaxHeightOnyx.get()));
+                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
+                        new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.OREONYX.get().getDefaultState(), MatExConfig.VSOnyx.get())).withPlacement(OnyxGen));
+            }
+
+            if(MatExConfig.enablePeridot.get()) {
+                ConfiguredPlacement PeridotGen = Placement.COUNT_RANGE.configure(
+                        new CountRangeConfig(MatExConfig.VPCPeridot.get(), MatExConfig.MinHeightPeridot.get(), 0, MatExConfig.MaxHeightPeridot.get()));
+                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
+                        new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.OREPERIDOT.get().getDefaultState(), MatExConfig.VSPeridot.get())).withPlacement(PeridotGen));
+            }
+
+            if(MatExConfig.enableRuby.get()) {
+                ConfiguredPlacement RubyGen = Placement.COUNT_RANGE.configure(
+                        new CountRangeConfig(MatExConfig.VPCRuby.get(), MatExConfig.MinHeightRuby.get(), 0, MatExConfig.MaxHeightRuby.get()));
+                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
+                        new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.ORERUBY.get().getDefaultState(), MatExConfig.VSRuby.get())).withPlacement(RubyGen));
+            }
+
+            if(MatExConfig.enableSapphire.get()) {
+                ConfiguredPlacement SapphireGen = Placement.COUNT_RANGE.configure(
+                        new CountRangeConfig(MatExConfig.VPCSapphire.get(), MatExConfig.MinHeightSapphire.get(), 0, MatExConfig.MaxHeightSapphire.get()));
+                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
+                        new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.ORESAPPHIRE.get().getDefaultState(), MatExConfig.VSSapphire.get())).withPlacement(SapphireGen));
+            }
+
+            if(MatExConfig.enableTopaz.get()) {
+                ConfiguredPlacement TopazGen = Placement.COUNT_RANGE.configure(
+                        new CountRangeConfig(MatExConfig.VPCTopaz.get(), MatExConfig.MinHeightTopaz.get(), 0, MatExConfig.MaxHeightTopaz.get()));
+                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
+                        new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.ORETOPAZ.get().getDefaultState(), MatExConfig.VSTopaz.get())).withPlacement(TopazGen));
+            }
+
             //MISC ORES
 
             if(MatExConfig.enableSaltpeter.get()) {

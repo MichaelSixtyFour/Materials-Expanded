@@ -2,12 +2,13 @@ package dev.advaluti.matex.setup;
 
 import dev.advaluti.matex.blocks.*;
 import dev.advaluti.matex.items.DustBase;
-//import dev.advaluti.matex.items.GearBase;
+import dev.advaluti.matex.items.GemBase;
 import dev.advaluti.matex.items.IngotBase;
 import dev.advaluti.matex.world.OreGen;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -30,46 +31,46 @@ public class Registration {
     }
     //MISC ORES
     public static final RegistryObject<OreSaltpeter> ORESALTPETER = BLOCKS.register("oresaltpeter", OreSaltpeter::new);
-    public static final RegistryObject<Item> ORESALTPETER_ITEM = ITEMS.register("oresaltpeter", () -> new BlockItem(ORESALTPETER.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Item> ORESALTPETER_ITEM = ITEMS.register("oresaltpeter", () -> new BlockItem(ORESALTPETER.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
     public static final RegistryObject<DustBase> DUSTSALTPETER = ITEMS.register("dustsaltpeter", DustBase::new);
 
     public static final RegistryObject<OreSulfur> ORESULFUR = BLOCKS.register("oresulfur", OreSulfur::new);
-    public static final RegistryObject<Item> ORESULFUR_ITEM = ITEMS.register("oresulfur", () -> new BlockItem(ORESULFUR.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Item> ORESULFUR_ITEM = ITEMS.register("oresulfur", () -> new BlockItem(ORESULFUR.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
     public static final RegistryObject<DustBase> DUSTSULFUR = ITEMS.register("dustsulfur", DustBase::new);
 
     //ORES
     public static final RegistryObject<OreCopper> ORECOPPER = BLOCKS.register("orecopper", OreCopper::new);
-    public static final RegistryObject<Item> ORECOPPER_ITEM = ITEMS.register("orecopper", () -> new BlockItem(ORECOPPER.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Item> ORECOPPER_ITEM = ITEMS.register("orecopper", () -> new BlockItem(ORECOPPER.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
 
     public static final RegistryObject<OreTin> ORETIN = BLOCKS.register("oretin", OreTin::new);
-    public static final RegistryObject<Item> ORETIN_ITEM = ITEMS.register("oretin", () -> new BlockItem(ORETIN.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Item> ORETIN_ITEM = ITEMS.register("oretin", () -> new BlockItem(ORETIN.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
 
     public static final RegistryObject<OreLead> ORELEAD = BLOCKS.register("orelead", OreLead::new);
-    public static final RegistryObject<Item> ORELEAD_ITEM = ITEMS.register("orelead", () -> new BlockItem(ORELEAD.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Item> ORELEAD_ITEM = ITEMS.register("orelead", () -> new BlockItem(ORELEAD.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
 
     public static final RegistryObject<OreAluminium> OREALUMINIUM = BLOCKS.register("orealuminium", OreAluminium::new);
-    public static final RegistryObject<Item> OREALUMINIUM_ITEM = ITEMS.register("orealuminium", () -> new BlockItem(OREALUMINIUM.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Item> OREALUMINIUM_ITEM = ITEMS.register("orealuminium", () -> new BlockItem(OREALUMINIUM.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
 
     public static final RegistryObject<OreZinc> OREZINC = BLOCKS.register("orezinc", OreZinc::new);
-    public static final RegistryObject<Item> OREZINC_ITEM = ITEMS.register("orezinc", () -> new BlockItem(OREZINC.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Item> OREZINC_ITEM = ITEMS.register("orezinc", () -> new BlockItem(OREZINC.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
 
     public static final RegistryObject<OreOsmium> OREOSMIUM = BLOCKS.register("oreosmium", OreOsmium::new);
-    public static final RegistryObject<Item> OREOSMIUM_ITEM = ITEMS.register("oreosmium", () -> new BlockItem(OREOSMIUM.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Item> OREOSMIUM_ITEM = ITEMS.register("oreosmium", () -> new BlockItem(OREOSMIUM.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
 
     public static final RegistryObject<OreSilver> ORESILVER = BLOCKS.register("oresilver", OreSilver::new);
-    public static final RegistryObject<Item> ORESILVER_ITEM = ITEMS.register("oresilver", () -> new BlockItem(ORESILVER.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Item> ORESILVER_ITEM = ITEMS.register("oresilver", () -> new BlockItem(ORESILVER.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
 
     public static final RegistryObject<OreTungsten> ORETUNGSTEN = BLOCKS.register("oretungsten", OreTungsten::new);
-    public static final RegistryObject<Item> ORETUNGSTEN_ITEM = ITEMS.register("oretungsten", () -> new BlockItem(ORETUNGSTEN.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Item> ORETUNGSTEN_ITEM = ITEMS.register("oretungsten", () -> new BlockItem(ORETUNGSTEN.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
 
     public static final RegistryObject<OrePlatinum> OREPLATINUM = BLOCKS.register("oreplatinum", OrePlatinum::new);
-    public static final RegistryObject<Item> OREPLATINUM_ITEM = ITEMS.register("oreplatinum", () -> new BlockItem(OREPLATINUM.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Item> OREPLATINUM_ITEM = ITEMS.register("oreplatinum", () -> new BlockItem(OREPLATINUM.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
 
     public static final RegistryObject<OreNickel> ORENICKEL = BLOCKS.register("orenickel", OreNickel::new);
-    public static final RegistryObject<Item> ORENICKEL_ITEM = ITEMS.register("orenickel", () -> new BlockItem(ORENICKEL.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Item> ORENICKEL_ITEM = ITEMS.register("orenickel", () -> new BlockItem(ORENICKEL.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
 
     public static final RegistryObject<OreTitanium> ORETITANIUM = BLOCKS.register("oretitanium", OreTitanium::new);
-    public static final RegistryObject<Item> ORETITANIUM_ITEM = ITEMS.register("oretitanium", () -> new BlockItem(ORETITANIUM.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Item> ORETITANIUM_ITEM = ITEMS.register("oretitanium", () -> new BlockItem(ORETITANIUM.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
 
     //INGOTS
     public static final RegistryObject<IngotBase> INGOTCOPPER = ITEMS.register("ingotcopper", IngotBase::new);
@@ -99,37 +100,85 @@ public class Registration {
 
     //BLOCKS
     public static final RegistryObject<MetalBlockBase> BLOCKCOPPER = BLOCKS.register("blockcopper", MetalBlockBase::new);
-    public static final RegistryObject<Item> BLOCKCOPPER_ITEM = ITEMS.register("blockcopper", () -> new BlockItem(BLOCKCOPPER.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Item> BLOCKCOPPER_ITEM = ITEMS.register("blockcopper", () -> new BlockItem(BLOCKCOPPER.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
 
     public static final RegistryObject<MetalBlockBase> BLOCKTIN = BLOCKS.register("blocktin", MetalBlockBase::new);
-    public static final RegistryObject<Item> BLOCKTIN_ITEM = ITEMS.register("blocktin", () -> new BlockItem(BLOCKTIN.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Item> BLOCKTIN_ITEM = ITEMS.register("blocktin", () -> new BlockItem(BLOCKTIN.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
 
     public static final RegistryObject<MetalBlockBase> BLOCKLEAD = BLOCKS.register("blocklead", MetalBlockBase::new);
-    public static final RegistryObject<Item> BLOCKLEAD_ITEM = ITEMS.register("blocklead", () -> new BlockItem(BLOCKLEAD.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Item> BLOCKLEAD_ITEM = ITEMS.register("blocklead", () -> new BlockItem(BLOCKLEAD.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
 
     public static final RegistryObject<MetalBlockBase> BLOCKALUMINIUM = BLOCKS.register("blockaluminium", MetalBlockBase::new);
-    public static final RegistryObject<Item> BLOCKALUMINIUM_ITEM = ITEMS.register("blockaluminium", () -> new BlockItem(BLOCKALUMINIUM.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Item> BLOCKALUMINIUM_ITEM = ITEMS.register("blockaluminium", () -> new BlockItem(BLOCKALUMINIUM.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
 
     public static final RegistryObject<MetalBlockBase> BLOCKSILVER = BLOCKS.register("blocksilver", MetalBlockBase::new);
-    public static final RegistryObject<Item> BLOCKSILVER_ITEM = ITEMS.register("blocksilver", () -> new BlockItem(BLOCKSILVER.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Item> BLOCKSILVER_ITEM = ITEMS.register("blocksilver", () -> new BlockItem(BLOCKSILVER.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
 
     public static final RegistryObject<MetalBlockBase> BLOCKOSMIUM = BLOCKS.register("blockosmium", MetalBlockBase::new);
-    public static final RegistryObject<Item> BLOCKOSMIUM_ITEM = ITEMS.register("blockosmium", () -> new BlockItem(BLOCKOSMIUM.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Item> BLOCKOSMIUM_ITEM = ITEMS.register("blockosmium", () -> new BlockItem(BLOCKOSMIUM.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
 
     public static final RegistryObject<MetalBlockBase> BLOCKZINC = BLOCKS.register("blockzinc", MetalBlockBase::new);
-    public static final RegistryObject<Item> BLOCKZINC_ITEM = ITEMS.register("blockzinc", () -> new BlockItem(BLOCKZINC.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Item> BLOCKZINC_ITEM = ITEMS.register("blockzinc", () -> new BlockItem(BLOCKZINC.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
 
     public static final RegistryObject<MetalBlockBase> BLOCKTUNGSTEN = BLOCKS.register("blocktungsten", MetalBlockBase::new);
-    public static final RegistryObject<Item> BLOCKTUNGSTEN_ITEM = ITEMS.register("blocktungsten", () -> new BlockItem(BLOCKTUNGSTEN.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Item> BLOCKTUNGSTEN_ITEM = ITEMS.register("blocktungsten", () -> new BlockItem(BLOCKTUNGSTEN.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
 
     public static final RegistryObject<MetalBlockBase> BLOCKPLATINUM = BLOCKS.register("blockplatinum", MetalBlockBase::new);
-    public static final RegistryObject<Item> BLOCKPLATINUM_ITEM = ITEMS.register("blockplatinum", () -> new BlockItem(BLOCKPLATINUM.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Item> BLOCKPLATINUM_ITEM = ITEMS.register("blockplatinum", () -> new BlockItem(BLOCKPLATINUM.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
 
     public static final RegistryObject<MetalBlockBase> BLOCKNICKEL = BLOCKS.register("blocknickel", MetalBlockBase::new);
-    public static final RegistryObject<Item> BLOCKNICKEL_ITEM = ITEMS.register("blocknickel", () -> new BlockItem(BLOCKNICKEL.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Item> BLOCKNICKEL_ITEM = ITEMS.register("blocknickel", () -> new BlockItem(BLOCKNICKEL.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
 
     public static final RegistryObject<MetalBlockBase> BLOCKTITANIUM = BLOCKS.register("blocktitanium", MetalBlockBase::new);
-    public static final RegistryObject<Item> BLOCKTITANIUM_ITEM = ITEMS.register("blocktitanium", () -> new BlockItem(BLOCKTITANIUM.get(), new Item.Properties().group(ModSetup.ITEM_GROUP)));
+    public static final RegistryObject<Item> BLOCKTITANIUM_ITEM = ITEMS.register("blocktitanium", () -> new BlockItem(BLOCKTITANIUM.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+    //GEMS
+    public static final RegistryObject<GemBase> GEMAMETHYST = ITEMS.register("gemamethyst", GemBase::new);
+    public static final RegistryObject<GemBase> GEMONYX = ITEMS.register("gemonyx", GemBase::new);
+    public static final RegistryObject<GemBase> GEMPERIDOT = ITEMS.register("gemperidot", GemBase::new);
+    public static final RegistryObject<GemBase> GEMSAPPHIRE = ITEMS.register("gemsapphire", GemBase::new);
+    public static final RegistryObject<GemBase> GEMTOPAZ = ITEMS.register("gemtopaz", GemBase::new);
+    public static final RegistryObject<GemBase> GEMRUBY = ITEMS.register("gemruby", GemBase::new);
+
+    //GEM ORES
+    public static final RegistryObject<OreAmethyst> OREAMETHYST = BLOCKS.register("oreamethyst", OreAmethyst::new);
+    public static final RegistryObject<Item> OREAMETHYST_ITEM = ITEMS.register("oreamethyst", () -> new BlockItem(OREAMETHYST.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+    public static final RegistryObject<OreOnyx> OREONYX = BLOCKS.register("oreonyx", OreOnyx::new);
+    public static final RegistryObject<Item> OREONYX_ITEM = ITEMS.register("oreonyx", () -> new BlockItem(OREONYX.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+    public static final RegistryObject<OrePeridot> OREPERIDOT = BLOCKS.register("oreperidot", OrePeridot::new);
+    public static final RegistryObject<Item> OREPERIDOT_ITEM = ITEMS.register("oreperidot", () -> new BlockItem(OREPERIDOT.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+    public static final RegistryObject<OreSapphire> ORESAPPHIRE = BLOCKS.register("oresapphire", OreSapphire::new);
+    public static final RegistryObject<Item> ORESAPPHIRE_ITEM = ITEMS.register("oresapphire", () -> new BlockItem(ORESAPPHIRE.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+    public static final RegistryObject<OreTopaz> ORETOPAZ = BLOCKS.register("oretopaz", OreTopaz::new);
+    public static final RegistryObject<Item> ORETOPAZ_ITEM = ITEMS.register("oretopaz", () -> new BlockItem(ORETOPAZ.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+    public static final RegistryObject<OreRuby> ORERUBY = BLOCKS.register("oreruby", OreRuby::new);
+    public static final RegistryObject<Item> ORERUBY_ITEM = ITEMS.register("oreruby", () -> new BlockItem(ORERUBY.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+    //GEM BLOCKS
+
+    public static final RegistryObject<GemBlockBase> BLOCKAMETHYST = BLOCKS.register("blockamethyst", GemBlockBase::new);
+    public static final RegistryObject<Item> BLOCKAMETHYST_ITEM = ITEMS.register("blockamethyst", () -> new BlockItem(BLOCKAMETHYST.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+    public static final RegistryObject<GemBlockBase> BLOCKONYX = BLOCKS.register("blockonyx", GemBlockBase::new);
+    public static final RegistryObject<Item> BLOCKONYX_ITEM = ITEMS.register("blockonyx", () -> new BlockItem(BLOCKONYX.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+    public static final RegistryObject<GemBlockBase> BLOCKPERIDOT = BLOCKS.register("blockperidot", GemBlockBase::new);
+    public static final RegistryObject<Item> BLOCKPERIDOT_ITEM = ITEMS.register("blockperidot", () -> new BlockItem(BLOCKPERIDOT.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+    public static final RegistryObject<GemBlockBase> BLOCKSAPPHIRE = BLOCKS.register("blocksapphire", GemBlockBase::new);
+    public static final RegistryObject<Item> BLOCKSAPPHIRE_ITEM = ITEMS.register("blocksapphire", () -> new BlockItem(BLOCKSAPPHIRE.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+    public static final RegistryObject<GemBlockBase> BLOCKTOPAZ = BLOCKS.register("blocktopaz", GemBlockBase::new);
+    public static final RegistryObject<Item> BLOCKTOPAZ_ITEM = ITEMS.register("blocktopaz", () -> new BlockItem(BLOCKTOPAZ.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+    public static final RegistryObject<GemBlockBase> BLOCKRUBY = BLOCKS.register("blockruby", GemBlockBase::new);
+    public static final RegistryObject<Item> BLOCKRUBY_ITEM = ITEMS.register("blockruby", () -> new BlockItem(BLOCKRUBY.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
 
     //GEARS
     //public static final RegistryObject<GearBase> GEARWOOD = ITEMS.register("gearwood", GearBase::new);
