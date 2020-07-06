@@ -9,7 +9,7 @@ A material base for 1.16, ideal for modpack makers (modid: matex)
 - Recipes, smelting and blasting
 
 ## Planned Features
-- Gems (ruby, amethyst, sapphire, topaz)
+- Gems (ruby, amethyst, sapphire, topaz, peridot, onyx)
 - Alloys
 - Tools/Armor?
 - Gears (disabled currently)
