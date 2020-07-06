@@ -3,7 +3,7 @@ A material base for 1.16, ideal for modpack makers (modid: matex)
 
 ## Features
 - New metals (copper, tin, lead, aluminium, osmium, zinc, silver, tungsten, platinum, titanium, nickel)
-- Ingots, ores, blocks and dusts for each
+  - Ingots, ores, blocks and dusts for each
 - New resources (saltpeter, sulfur)
 - Ore generation
 - Config for ore generation
