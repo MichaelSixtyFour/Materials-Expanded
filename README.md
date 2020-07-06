@@ -15,5 +15,6 @@ A material base for 1.16, ideal for modpack makers (modid: matex)
 - Alloys
 - Tools/Armor?
 - Gears (disabled currently)
+- Config for harvest level
 - Config for item/block enabling/disabling
 - Mod support (tconstruct/crafttweaker)
