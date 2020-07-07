@@ -6,7 +6,7 @@ A material base for 1.16, ideal for modpack makers (modid: matex)
   - Ingots, ores, blocks and dusts for each
 - New resources (saltpeter, sulfur)
   - Ores and dusts for each
- - Mortar (used from grinding into dusts: 1 ore/ingot > 1 dust)
+ - Mortar (used to grind ores/ingots into dusts: 1 ore/ingot > 1 dust)
 - Ore generation
 - Config for ore generation
 - Config for harvest level
