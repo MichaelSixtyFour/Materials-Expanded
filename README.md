@@ -10,12 +10,12 @@ A material base for 1.16, ideal for modpack makers (modid: matex)
     - Ores, blocks and gems for each
 - Ore generation
 - Config for ore generation
+- Config for harvest level
 - Recipes, smelting and blasting
 
 ## Planned Features
-- Alloys
-- Tools/Armor?
-- Gears/rods (disabled currently)
-- Config for harvest level
 - Config for item/block enabling/disabling
 - Mod support (tconstruct/crafttweaker)
+- Gears/rods (disabled currently)
+- Alloys
+- Tools/Armor?
