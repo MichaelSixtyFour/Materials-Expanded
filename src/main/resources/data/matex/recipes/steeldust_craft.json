@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "matex:dustiron"
+    },
+    {
+      "item": "matex:dustcoal"
+    },
+    {
+      "item": "matex:dustcoal"
+    },
+    {
+      "item": "matex:dustcoal"
+    }
+  ],
+  "result":
+  {
+    "item": "matex:duststeel",
+    "count": 2
+  }
+}

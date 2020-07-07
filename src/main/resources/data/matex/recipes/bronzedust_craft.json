@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "matex:dusttin"
+    },
+    {
+      "item": "matex:dustcopper"
+    },
+    {
+      "item": "matex:dustcopper"
+    },
+    {
+      "item": "matex:dustcopper"
+    }
+  ],
+  "result":
+  {
+    "item": "matex:dustbronze",
+    "count": 2
+  }
+}
