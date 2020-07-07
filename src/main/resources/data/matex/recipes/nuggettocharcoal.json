@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "matex:nuggetcharcoal"
+    },
+    {
+      "item": "matex:nuggetcharcoal"
+    },
+    {
+      "item": "matex:nuggetcharcoal"
+    },
+    {
+      "item": "matex:nuggetcharcoal"
+    },
+    {
+      "item": "matex:nuggetcharcoal"
+    },
+    {
+      "item": "matex:nuggetcharcoal"
+    },
+    {
+      "item": "matex:nuggetcharcoal"
+    },
+    {
+      "item": "matex:nuggetcharcoal"
+    }
+  ],
+  "result":
+  {
+    "item": "minecraft:charcoal",
+    "count": 1
+  }
+}

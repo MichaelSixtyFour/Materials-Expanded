@@ -73,6 +73,10 @@
   "item.matex.dustsaltpeter": "Saltpeter",
   "item.matex.dustsulfur": "Sulfur",
 
+  "_comment_": "Nuggets",
+  "item.matex.nuggetcoal": "Coal Nugget",
+  "item.matex.nuggetcharcoal": "Charcoal Nugget",
+
   "_comment_": "Creative Tabs",
   "itemGroup.matex": "Materials Expanded"
 }

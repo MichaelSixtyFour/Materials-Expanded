@@ -9,6 +9,9 @@ public class MatExConfig {
     public static final String CATEGORY_GENERAL = "general";
     public static final String CATEGORY_METALS = "metals";
 
+    public static final String CATEGORY_CLAY = "clay";
+    public static final String CATEGORY_TERRACOTTA = "terracotta";
+
     public static final String CATEGORY_ALUMINIUM = "aluminium";
     public static final String CATEGORY_COPPER = "copper";
     public static final String CATEGORY_LEAD = "lead";
@@ -26,6 +29,18 @@ public class MatExConfig {
     public static ForgeConfigSpec spec;
 
     public static ForgeConfigSpec.BooleanValue enableOreGen;
+
+    public static ForgeConfigSpec.BooleanValue enableClay;
+    public static ForgeConfigSpec.IntValue VSClay;
+    public static ForgeConfigSpec.IntValue VPCClay;
+    public static ForgeConfigSpec.IntValue MinHeightClay;
+    public static ForgeConfigSpec.IntValue MaxHeightClay;
+
+    public static ForgeConfigSpec.BooleanValue enableTerracotta;
+    public static ForgeConfigSpec.IntValue VSTerracotta;
+    public static ForgeConfigSpec.IntValue VPCTerracotta;
+    public static ForgeConfigSpec.IntValue MinHeightTerracotta;
+    public static ForgeConfigSpec.IntValue MaxHeightTerracotta;
 
     public static ForgeConfigSpec.BooleanValue enableAluminium;
     public static ForgeConfigSpec.IntValue VSAluminium;
@@ -126,6 +141,23 @@ public class MatExConfig {
 
         BUILDER.comment("General settings").push(CATEGORY_GENERAL);
         enableOreGen = BUILDER.comment("Enable all ore generation (default: true)").define("enableOreGen", true);
+
+            BUILDER.comment("Clay settings").push(CATEGORY_CLAY);
+            enableClay = BUILDER.comment("Enable underground Clay generation (default: true)").define("enableClay", true);
+            VSClay = BUILDER.comment("Vein size").defineInRange("VSClay",12, 0, 50);
+            VPCClay = BUILDER.comment("Veins per chunk").defineInRange("VPCClay",12, 0, 50);
+            MinHeightClay = BUILDER.comment("Minimum height").defineInRange("MinHeightClay",8, 0, 255);
+            MaxHeightClay = BUILDER.comment("Maximum height").defineInRange("MaxHeightClay",96, 0, 255);
+            BUILDER.pop();
+
+            BUILDER.comment("Terracotta settings").push(CATEGORY_CLAY);
+            enableTerracotta = BUILDER.comment("Enable underground Terracotta generation (default: true)").define("enableTerracotta", true);
+            VSTerracotta = BUILDER.comment("Vein size").defineInRange("VSTerracotta",6, 0, 50);
+            VPCTerracotta = BUILDER.comment("Veins per chunk").defineInRange("VPCTerracotta",4, 0, 50);
+            MinHeightTerracotta = BUILDER.comment("Minimum height").defineInRange("MinHeightTerracotta",8, 0, 255);
+            MaxHeightTerracotta = BUILDER.comment("Maximum height").defineInRange("MaxHeightTerracotta",64, 0, 255);
+            BUILDER.pop();
+
         BUILDER.pop();
 
         BUILDER.comment("Metals settings").push(CATEGORY_METALS);
