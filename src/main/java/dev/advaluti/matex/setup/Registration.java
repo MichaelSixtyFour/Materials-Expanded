@@ -2,6 +2,7 @@ package dev.advaluti.matex.setup;
 
 import dev.advaluti.matex.blocks.*;
 import dev.advaluti.matex.items.DustBase;
+import dev.advaluti.matex.items.FuelNuggetBase;
 import dev.advaluti.matex.items.IngotBase;
 import dev.advaluti.matex.tools.ToolMortar;
 import dev.advaluti.matex.world.OreGen;
@@ -153,8 +154,8 @@ public class Registration {
     public static final RegistryObject<DustBase> DUSTBRONZE = ITEMS.register("dustbronze", DustBase::new);
 
     //NUGGETS
-    public static final RegistryObject<DustBase> NUGGETCOAL = ITEMS.register("nuggetcoal", DustBase::new);
-    public static final RegistryObject<DustBase> NUGGETCHARCOAL = ITEMS.register("nuggetcharcoal", DustBase::new);
+    public static final RegistryObject<FuelNuggetBase> NUGGETCOAL = ITEMS.register("nuggetcoal", FuelNuggetBase::new);
+    public static final RegistryObject<FuelNuggetBase> NUGGETCHARCOAL = ITEMS.register("nuggetcharcoal", FuelNuggetBase::new);
 
     //ORE GEN
     public static void modSetup(final FMLCommonSetupEvent event) {
