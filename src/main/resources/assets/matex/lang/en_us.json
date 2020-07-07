@@ -1,4 +1,7 @@
 {
+  "_comment_": "Tools",
+  "item.matex.toolmortar": "Mortar",
+
   "_comment_": "Misc. Ores",
   "block.matex.oresaltpeter": "Saltpeter Ore",
   "block.matex.oresulfur": "Sulfur Ore",

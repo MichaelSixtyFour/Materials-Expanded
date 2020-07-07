@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "matex:toolmortar"
+    },
+    {
+      "item": "matex:ingotcopper"
+    }
+  ],
+  "result":
+  {
+    "item": "matex:dustcopper",
+    "count": 1
+  }
+}

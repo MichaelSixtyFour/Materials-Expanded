@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "matex:toolmortar"
+    },
+    {
+      "item": "matex:ingottungsten"
+    }
+  ],
+  "result":
+  {
+    "item": "matex:dusttungsten",
+    "count": 1
+  }
+}

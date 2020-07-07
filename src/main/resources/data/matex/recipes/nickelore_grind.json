@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "matex:toolmortar"
+    },
+    {
+      "item": "matex:orenickel"
+    }
+  ],
+  "result":
+  {
+    "item": "matex:dustnickel",
+    "count": 1
+  }
+}

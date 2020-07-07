@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "matex:toolmortar"
+    },
+    {
+      "item": "matex:ingotlead"
+    }
+  ],
+  "result":
+  {
+    "item": "matex:dustlead",
+    "count": 1
+  }
+}

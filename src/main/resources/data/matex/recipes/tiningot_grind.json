@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "matex:toolmortar"
+    },
+    {
+      "item": "matex:ingottin"
+    }
+  ],
+  "result":
+  {
+    "item": "matex:dusttin",
+    "count": 1
+  }
+}

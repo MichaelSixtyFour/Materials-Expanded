@@ -8,7 +8,6 @@ public class MatExConfig {
 
     public static final String CATEGORY_GENERAL = "general";
     public static final String CATEGORY_METALS = "metals";
-    public static final String CATEGORY_GEMS = "gems";
 
     public static final String CATEGORY_ALUMINIUM = "aluminium";
     public static final String CATEGORY_COPPER = "copper";

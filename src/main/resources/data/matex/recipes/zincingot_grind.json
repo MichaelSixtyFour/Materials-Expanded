@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "matex:toolmortar"
+    },
+    {
+      "item": "matex:ingotzinc"
+    }
+  ],
+  "result":
+  {
+    "item": "matex:dustzinc",
+    "count": 1
+  }
+}

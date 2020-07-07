@@ -3,6 +3,7 @@ package dev.advaluti.matex.setup;
 import dev.advaluti.matex.blocks.*;
 import dev.advaluti.matex.items.DustBase;
 import dev.advaluti.matex.items.IngotBase;
+import dev.advaluti.matex.tools.ToolMortar;
 import dev.advaluti.matex.world.OreGen;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
@@ -27,6 +28,9 @@ public class Registration {
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
 
     }
+    //TOOLS
+    public static final RegistryObject<ToolMortar> TOOLMORTAR = ITEMS.register("toolmortar", ToolMortar::new);
+
     //MISC ORES
     public static final RegistryObject<OreSaltpeter> ORESALTPETER = BLOCKS.register("oresaltpeter", OreSaltpeter::new);
     public static final RegistryObject<Item> ORESALTPETER_ITEM = ITEMS.register("oresaltpeter", () -> new BlockItem(ORESALTPETER.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
