@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+
+  "ingredient": {
+      "item": "matex:dustosmium"
+  },
+
+  "result": "matex:ingotosmium",
+  "experience": 2.5,
+  "cookingtime": 200
+}

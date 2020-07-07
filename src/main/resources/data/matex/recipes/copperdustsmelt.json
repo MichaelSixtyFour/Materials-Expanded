@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+
+  "ingredient": {
+      "item": "matex:dustcopper"
+  },
+
+  "result": "matex:ingotcopper",
+  "experience": 2.5,
+  "cookingtime": 200
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+
+  "ingredient": {
+      "item": "matex:dusttitanium"
+  },
+
+  "result": "matex:ingottitanium",
+  "experience": 2.5,
+  "cookingtime": 200
+}

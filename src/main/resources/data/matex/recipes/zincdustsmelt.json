@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+
+  "ingredient": {
+      "item": "matex:dustzinc"
+  },
+
+  "result": "matex:ingotzinc",
+  "experience": 2.5,
+  "cookingtime": 200
+}
