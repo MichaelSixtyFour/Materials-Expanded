@@ -24,13 +24,6 @@ public class MatExConfig {
     public static final String CATEGORY_TUNGSTEN = "tungsten";
     public static final String CATEGORY_ZINC = "zinc";
 
-    public static final String CATEGORY_AMETHYST = "amethyst";
-    public static final String CATEGORY_ONYX = "onyx";
-    public static final String CATEGORY_PERIDOT = "peridot";
-    public static final String CATEGORY_RUBY = "ruby";
-    public static final String CATEGORY_SAPPHIRE = "sapphire";
-    public static final String CATEGORY_TOPAZ = "topaz";
-
     public static ForgeConfigSpec spec;
 
     public static ForgeConfigSpec.BooleanValue enableOreGen;
@@ -113,42 +106,6 @@ public class MatExConfig {
     public static ForgeConfigSpec.IntValue MinHeightZinc;
     public static ForgeConfigSpec.IntValue MaxHeightZinc;
 
-    public static ForgeConfigSpec.BooleanValue enableAmethyst;
-    public static ForgeConfigSpec.IntValue VSAmethyst;
-    public static ForgeConfigSpec.IntValue VPCAmethyst;
-    public static ForgeConfigSpec.IntValue MinHeightAmethyst;
-    public static ForgeConfigSpec.IntValue MaxHeightAmethyst;
-
-    public static ForgeConfigSpec.BooleanValue enableOnyx;
-    public static ForgeConfigSpec.IntValue VSOnyx;
-    public static ForgeConfigSpec.IntValue VPCOnyx;
-    public static ForgeConfigSpec.IntValue MinHeightOnyx;
-    public static ForgeConfigSpec.IntValue MaxHeightOnyx;
-
-    public static ForgeConfigSpec.BooleanValue enablePeridot;
-    public static ForgeConfigSpec.IntValue VSPeridot;
-    public static ForgeConfigSpec.IntValue VPCPeridot;
-    public static ForgeConfigSpec.IntValue MinHeightPeridot;
-    public static ForgeConfigSpec.IntValue MaxHeightPeridot;
-
-    public static ForgeConfigSpec.BooleanValue enableRuby;
-    public static ForgeConfigSpec.IntValue VSRuby;
-    public static ForgeConfigSpec.IntValue VPCRuby;
-    public static ForgeConfigSpec.IntValue MinHeightRuby;
-    public static ForgeConfigSpec.IntValue MaxHeightRuby;
-
-    public static ForgeConfigSpec.BooleanValue enableSapphire;
-    public static ForgeConfigSpec.IntValue VSSapphire;
-    public static ForgeConfigSpec.IntValue VPCSapphire;
-    public static ForgeConfigSpec.IntValue MinHeightSapphire;
-    public static ForgeConfigSpec.IntValue MaxHeightSapphire;
-
-    public static ForgeConfigSpec.BooleanValue enableTopaz;
-    public static ForgeConfigSpec.IntValue VSTopaz;
-    public static ForgeConfigSpec.IntValue VPCTopaz;
-    public static ForgeConfigSpec.IntValue MinHeightTopaz;
-    public static ForgeConfigSpec.IntValue MaxHeightTopaz;
-
     public static ForgeConfigSpec.IntValue HarvestAluminium;
     public static ForgeConfigSpec.IntValue HarvestCopper;
     public static ForgeConfigSpec.IntValue HarvestTin;
@@ -163,13 +120,6 @@ public class MatExConfig {
 
     public static ForgeConfigSpec.IntValue HarvestSaltpeter;
     public static ForgeConfigSpec.IntValue HarvestSulfur;
-
-    public static ForgeConfigSpec.IntValue HarvestAmethyst;
-    public static ForgeConfigSpec.IntValue HarvestOnyx;
-    public static ForgeConfigSpec.IntValue HarvestPeridot;
-    public static ForgeConfigSpec.IntValue HarvestSapphire;
-    public static ForgeConfigSpec.IntValue HarvestTopaz;
-    public static ForgeConfigSpec.IntValue HarvestRuby;
 
     static {
 
@@ -296,64 +246,6 @@ public class MatExConfig {
             MinHeightZinc = BUILDER.comment("Minimum height").defineInRange("MinHeightZinc",8, 0, 255);
             MaxHeightZinc = BUILDER.comment("Maximum height").defineInRange("MaxHeightZinc",64, 0, 255);
             HarvestZinc = BUILDER.comment("Harvest level").defineInRange("HarvestZinc",2, 0, 4);
-            BUILDER.pop();
-
-        BUILDER.pop();
-
-        BUILDER.comment("Gems").push(CATEGORY_GEMS);
-
-            BUILDER.comment("Amethyst settings").push(CATEGORY_AMETHYST);
-            enableAmethyst = BUILDER.comment("Enable Amethyst ore generation (default: true)").define("enableAmethyst", true);
-            VSAmethyst = BUILDER.comment("Vein size").defineInRange("VSAmethyst",4, 0, 50);
-            VPCAmethyst = BUILDER.comment("Veins per chunk").defineInRange("VPCAmethyst",2, 0, 50);
-            MinHeightAmethyst = BUILDER.comment("Minimum height").defineInRange("MinHeightAmethyst",2, 0, 255);
-            MaxHeightAmethyst = BUILDER.comment("Maximum height").defineInRange("MaxHeightAmethyst",16, 0, 255);
-            HarvestAmethyst = BUILDER.comment("Harvest level").defineInRange("HarvestAmethyst",2, 0, 4);
-            BUILDER.pop();
-
-            BUILDER.comment("Onyx settings").push(CATEGORY_ONYX);
-            enableOnyx = BUILDER.comment("Enable Onyx ore generation (default: true)").define("enableOnyx", true);
-            VSOnyx = BUILDER.comment("Vein size").defineInRange("VSOnyx",4, 0, 50);
-            VPCOnyx = BUILDER.comment("Veins per chunk").defineInRange("VPCOnyx",2, 0, 50);
-            MinHeightOnyx = BUILDER.comment("Minimum height").defineInRange("MinHeightOnyx",2, 0, 255);
-            MaxHeightOnyx = BUILDER.comment("Maximum height").defineInRange("MaxHeightOnyx",16, 0, 255);
-            HarvestOnyx = BUILDER.comment("Harvest level").defineInRange("HarvestOnyx",2, 0, 4);
-            BUILDER.pop();
-
-            BUILDER.comment("Peridot settings").push(CATEGORY_PERIDOT);
-            enablePeridot = BUILDER.comment("Enable Peridot ore generation (default: true)").define("enablePeridot", true);
-            VSPeridot = BUILDER.comment("Vein size").defineInRange("VSPeridot",4, 0, 50);
-            VPCPeridot = BUILDER.comment("Veins per chunk").defineInRange("VPCPeridot",2, 0, 50);
-            MinHeightPeridot = BUILDER.comment("Minimum height").defineInRange("MinHeightPeridot",2, 0, 255);
-            MaxHeightPeridot = BUILDER.comment("Maximum height").defineInRange("MaxHeightPeridot",16, 0, 255);
-            HarvestPeridot = BUILDER.comment("Harvest level").defineInRange("HarvestPeridot",2, 0, 4);
-            BUILDER.pop();
-
-            BUILDER.comment("Ruby settings").push(CATEGORY_RUBY);
-            enableRuby = BUILDER.comment("Enable Ruby ore generation (default: true)").define("enableRuby", true);
-            VSRuby = BUILDER.comment("Vein size").defineInRange("VSRuby",4, 0, 50);
-            VPCRuby = BUILDER.comment("Veins per chunk").defineInRange("VPCRuby",2, 0, 50);
-            MinHeightRuby = BUILDER.comment("Minimum height").defineInRange("MinHeightRuby",2, 0, 255);
-            MaxHeightRuby = BUILDER.comment("Maximum height").defineInRange("MaxHeightRuby",16, 0, 255);
-            HarvestRuby = BUILDER.comment("Harvest level").defineInRange("HarvestRuby",2, 0, 4);
-            BUILDER.pop();
-
-            BUILDER.comment("Sapphire settings").push(CATEGORY_SAPPHIRE);
-            enableSapphire = BUILDER.comment("Enable Sapphire ore generation (default: true)").define("enableSapphire", true);
-            VSSapphire = BUILDER.comment("Vein size").defineInRange("VSSapphire",4, 0, 50);
-            VPCSapphire = BUILDER.comment("Veins per chunk").defineInRange("VPCSapphire",2, 0, 50);
-            MinHeightSapphire = BUILDER.comment("Minimum height").defineInRange("MinHeightSapphire",2, 0, 255);
-            MaxHeightSapphire = BUILDER.comment("Maximum height").defineInRange("MaxHeightSapphire",16, 0, 255);
-            HarvestSapphire = BUILDER.comment("Harvest level").defineInRange("HarvestSapphire",2, 0, 4);
-            BUILDER.pop();
-
-            BUILDER.comment("Topaz settings").push(CATEGORY_TOPAZ);
-            enableTopaz = BUILDER.comment("Enable Topaz ore generation (default: true)").define("enableTopaz", true);
-            VSTopaz = BUILDER.comment("Vein size").defineInRange("VSTopaz",4, 0, 50);
-            VPCTopaz = BUILDER.comment("Veins per chunk").defineInRange("VPCTopaz",2, 0, 50);
-            MinHeightTopaz = BUILDER.comment("Minimum height").defineInRange("MinHeightTopaz",2, 0, 255);
-            MaxHeightTopaz = BUILDER.comment("Maximum height").defineInRange("MaxHeightTopaz",16, 0, 255);
-            HarvestTopaz = BUILDER.comment("Harvest level").defineInRange("HarvestTopaz",2, 0, 4);
             BUILDER.pop();
 
         BUILDER.pop();

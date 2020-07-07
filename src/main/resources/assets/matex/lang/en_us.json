@@ -16,13 +16,6 @@
   "block.matex.orenickel": "Nickel Ore",
   "block.matex.oretitanium": "Titanium Ore",
 
-  "block.matex.oreamethyst": "Amethyst Ore",
-  "block.matex.oreonyx": "Onyx Ore",
-  "block.matex.oreperidot": "Peridot Ore",
-  "block.matex.oreruby": "Ruby Ore",
-  "block.matex.oresapphire": "Sapphire Ore",
-  "block.matex.oretopaz": "Topaz Ore",
-
   "_comment_": "Blocks",
   "block.matex.blockcopper": "Block of Copper",
   "block.matex.blocktin": "Block of Tin",
@@ -35,13 +28,6 @@
   "block.matex.blockplatinum": "Block of Platinum",
   "block.matex.blocknickel": "Block of Nickel",
   "block.matex.blocktitanium": "Block of Titanium",
-
-  "block.matex.blockamethyst": "Block of Amethyst",
-  "block.matex.blockonyx": "Block of Onyx",
-  "block.matex.blockperidot": "Block of Peridot",
-  "block.matex.blockruby": "Block of Ruby",
-  "block.matex.blocksapphire": "Block of Sapphire",
-  "block.matex.blocktopaz": "Block of Topaz",
 
   "_comment_": "Ingots",
   "item.matex.ingotcopper": "Copper Ingot",
@@ -71,23 +57,6 @@
 
   "item.matex.dustsaltpeter": "Saltpeter",
   "item.matex.dustsulfur": "Sulfur",
-
-
-  "_comment_": "Gems",
-  "item.matex.gemamethyst": "Amethyst",
-  "item.matex.gemonyx": "Onyx",
-  "item.matex.gemperidot": "Peridot",
-  "item.matex.gemruby": "Ruby",
-  "item.matex.gemsapphire": "Sapphire",
-  "item.matex.gemtopaz": "Topaz",
-
-
-  "_comment_": "Gears",
-  "item.matex.gearwood": "Wooden Gear",
-  "item.matex.gearstone": "Stone Gear",
-  "item.matex.geariron": "Iron Gear",
-  "item.matex.geargold": "Gold Gear",
-  "item.matex.geardiamond": "Diamond Gear",
 
   "_comment_": "Creative Tabs",
   "itemGroup.matex": "Materials Expanded"

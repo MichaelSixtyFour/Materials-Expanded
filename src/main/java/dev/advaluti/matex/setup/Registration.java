@@ -2,13 +2,11 @@ package dev.advaluti.matex.setup;
 
 import dev.advaluti.matex.blocks.*;
 import dev.advaluti.matex.items.DustBase;
-import dev.advaluti.matex.items.GemBase;
 import dev.advaluti.matex.items.IngotBase;
 import dev.advaluti.matex.world.OreGen;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -131,69 +129,6 @@ public class Registration {
 
     public static final RegistryObject<MetalBlockBase> BLOCKTITANIUM = BLOCKS.register("blocktitanium", MetalBlockBase::new);
     public static final RegistryObject<Item> BLOCKTITANIUM_ITEM = ITEMS.register("blocktitanium", () -> new BlockItem(BLOCKTITANIUM.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
-    //GEMS
-    public static final RegistryObject<GemBase> GEMAMETHYST = ITEMS.register("gemamethyst", GemBase::new);
-    public static final RegistryObject<GemBase> GEMONYX = ITEMS.register("gemonyx", GemBase::new);
-    public static final RegistryObject<GemBase> GEMPERIDOT = ITEMS.register("gemperidot", GemBase::new);
-    public static final RegistryObject<GemBase> GEMSAPPHIRE = ITEMS.register("gemsapphire", GemBase::new);
-    public static final RegistryObject<GemBase> GEMTOPAZ = ITEMS.register("gemtopaz", GemBase::new);
-    public static final RegistryObject<GemBase> GEMRUBY = ITEMS.register("gemruby", GemBase::new);
-
-    //GEM ORES
-    public static final RegistryObject<OreAmethyst> OREAMETHYST = BLOCKS.register("oreamethyst", OreAmethyst::new);
-    public static final RegistryObject<Item> OREAMETHYST_ITEM = ITEMS.register("oreamethyst", () -> new BlockItem(OREAMETHYST.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
-    public static final RegistryObject<OreOnyx> OREONYX = BLOCKS.register("oreonyx", OreOnyx::new);
-    public static final RegistryObject<Item> OREONYX_ITEM = ITEMS.register("oreonyx", () -> new BlockItem(OREONYX.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
-    public static final RegistryObject<OrePeridot> OREPERIDOT = BLOCKS.register("oreperidot", OrePeridot::new);
-    public static final RegistryObject<Item> OREPERIDOT_ITEM = ITEMS.register("oreperidot", () -> new BlockItem(OREPERIDOT.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
-    public static final RegistryObject<OreSapphire> ORESAPPHIRE = BLOCKS.register("oresapphire", OreSapphire::new);
-    public static final RegistryObject<Item> ORESAPPHIRE_ITEM = ITEMS.register("oresapphire", () -> new BlockItem(ORESAPPHIRE.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
-    public static final RegistryObject<OreTopaz> ORETOPAZ = BLOCKS.register("oretopaz", OreTopaz::new);
-    public static final RegistryObject<Item> ORETOPAZ_ITEM = ITEMS.register("oretopaz", () -> new BlockItem(ORETOPAZ.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
-    public static final RegistryObject<OreRuby> ORERUBY = BLOCKS.register("oreruby", OreRuby::new);
-    public static final RegistryObject<Item> ORERUBY_ITEM = ITEMS.register("oreruby", () -> new BlockItem(ORERUBY.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
-    //GEM BLOCKS
-
-    public static final RegistryObject<GemBlockBase> BLOCKAMETHYST = BLOCKS.register("blockamethyst", GemBlockBase::new);
-    public static final RegistryObject<Item> BLOCKAMETHYST_ITEM = ITEMS.register("blockamethyst", () -> new BlockItem(BLOCKAMETHYST.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
-    public static final RegistryObject<GemBlockBase> BLOCKONYX = BLOCKS.register("blockonyx", GemBlockBase::new);
-    public static final RegistryObject<Item> BLOCKONYX_ITEM = ITEMS.register("blockonyx", () -> new BlockItem(BLOCKONYX.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
-    public static final RegistryObject<GemBlockBase> BLOCKPERIDOT = BLOCKS.register("blockperidot", GemBlockBase::new);
-    public static final RegistryObject<Item> BLOCKPERIDOT_ITEM = ITEMS.register("blockperidot", () -> new BlockItem(BLOCKPERIDOT.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
-    public static final RegistryObject<GemBlockBase> BLOCKSAPPHIRE = BLOCKS.register("blocksapphire", GemBlockBase::new);
-    public static final RegistryObject<Item> BLOCKSAPPHIRE_ITEM = ITEMS.register("blocksapphire", () -> new BlockItem(BLOCKSAPPHIRE.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
-    public static final RegistryObject<GemBlockBase> BLOCKTOPAZ = BLOCKS.register("blocktopaz", GemBlockBase::new);
-    public static final RegistryObject<Item> BLOCKTOPAZ_ITEM = ITEMS.register("blocktopaz", () -> new BlockItem(BLOCKTOPAZ.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
-    public static final RegistryObject<GemBlockBase> BLOCKRUBY = BLOCKS.register("blockruby", GemBlockBase::new);
-    public static final RegistryObject<Item> BLOCKRUBY_ITEM = ITEMS.register("blockruby", () -> new BlockItem(BLOCKRUBY.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
-
-    //GEARS
-    //public static final RegistryObject<GearBase> GEARWOOD = ITEMS.register("gearwood", GearBase::new);
-    //public static final RegistryObject<GearBase> GEARSTONE = ITEMS.register("gearstone", GearBase::new);
-    //public static final RegistryObject<GearBase> GEARIRON = ITEMS.register("geariron", GearBase::new);
-    //public static final RegistryObject<GearBase> GEARGOLD = ITEMS.register("geargold", GearBase::new);
-    //public static final RegistryObject<GearBase> GEARDIAMOND = ITEMS.register("geardiamond", GearBase::new);
-    //public static final RegistryObject<GearBase> GEARCOPPER = ITEMS.register("gearcopper", GearBase::new);
-    //public static final RegistryObject<GearBase> GEARLEAD = ITEMS.register("gearlead", GearBase::new);
-    //public static final RegistryObject<GearBase> GEARALUMINIUM = ITEMS.register("gearaluminium", GearBase::new);
-    //public static final RegistryObject<GearBase> GEARSILVER = ITEMS.register("gearsilver", GearBase::new);
-    //public static final RegistryObject<GearBase> GEARTUNGSTEN = ITEMS.register("geartungsten", GearBase::new);
-    //public static final RegistryObject<GearBase> GEARPLATINUM = ITEMS.register("gearplatinum", GearBase::new);
-    //public static final RegistryObject<GearBase> GEARNICKEL = ITEMS.register("gearnickel", GearBase::new);
-    //public static final RegistryObject<GearBase> GEARTITANIUM = ITEMS.register("geartitanium", GearBase::new);
 
     //ORE GEN
     public static void modSetup(final FMLCommonSetupEvent event) {
