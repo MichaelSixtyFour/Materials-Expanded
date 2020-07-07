@@ -32,6 +32,9 @@
   "block.matex.blocknickel": "Block of Nickel",
   "block.matex.blocktitanium": "Block of Titanium",
 
+  "block.matex.blocksteel": "Block of Steel",
+  "block.matex.blockbronze": "Block of Bronze",
+
   "_comment_": "Ingots",
   "item.matex.ingotcopper": "Copper Ingot",
   "item.matex.ingottin": "Tin Ingot",
@@ -44,6 +47,9 @@
   "item.matex.ingotplatinum": "Platinum Ingot",
   "item.matex.ingotnickel": "Nickel Ingot",
   "item.matex.ingottitanium": "Titanium Ingot",
+
+  "item.matex.ingotsteel": "Steel Ingot",
+  "item.matex.ingotbronze": "Bronze Ingot",
 
   "_comment_": "Dusts",
   "item.matex.dustcopper": "Copper Dust",
@@ -58,6 +64,10 @@
   "item.matex.dustnickel": "Nickel Dust",
   "item.matex.dusttitanium": "Titanium Dust",
 
+  "item.matex.duststeel": "Steel Dust",
+  "item.matex.dustbronze": "Bronze Dust",
+
+  "item.matex.dustcoal": "Coal Dust",
   "item.matex.dustsaltpeter": "Saltpeter",
   "item.matex.dustsulfur": "Sulfur",
 

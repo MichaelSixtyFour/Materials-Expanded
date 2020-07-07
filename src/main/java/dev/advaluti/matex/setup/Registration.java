@@ -134,6 +134,22 @@ public class Registration {
     public static final RegistryObject<MetalBlockBase> BLOCKTITANIUM = BLOCKS.register("blocktitanium", MetalBlockBase::new);
     public static final RegistryObject<Item> BLOCKTITANIUM_ITEM = ITEMS.register("blocktitanium", () -> new BlockItem(BLOCKTITANIUM.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
 
+
+    //ALLOYS
+    public static final RegistryObject<DustBase> DUSTCOAL = ITEMS.register("dustcoal", DustBase::new);
+
+    public static final RegistryObject<DustBase> DUSTSTEEL = ITEMS.register("duststeel", DustBase::new);
+    public static final RegistryObject<DustBase> DUSTBRONZE = ITEMS.register("dustbronze", DustBase::new);
+
+    public static final RegistryObject<IngotBase> INGOTSTEEL = ITEMS.register("ingotsteel", IngotBase::new);
+    public static final RegistryObject<IngotBase> INGOTBRONZE = ITEMS.register("ingotbronze", IngotBase::new);
+
+    public static final RegistryObject<MetalBlockBase> BLOCKSTEEL = BLOCKS.register("blocksteel", MetalBlockBase::new);
+    public static final RegistryObject<Item> BLOCKSTEEL_ITEM = ITEMS.register("blocksteel", () -> new BlockItem(BLOCKSTEEL.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+    public static final RegistryObject<MetalBlockBase> BLOCKBRONZE = BLOCKS.register("blockbronze", MetalBlockBase::new);
+    public static final RegistryObject<Item> BLOCKBRONZE_ITEM = ITEMS.register("blockbronze", () -> new BlockItem(BLOCKBRONZE.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
     //ORE GEN
     public static void modSetup(final FMLCommonSetupEvent event) {
         OreGen.OreGenerate();
