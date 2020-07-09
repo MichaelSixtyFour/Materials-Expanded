@@ -6,6 +6,7 @@ import net.minecraftforge.fml.config.ModConfig;
 
 public class MatExConfig {
 
+    public static final String CATEGORY_MATEX = "matex";
     public static final String CATEGORY_GENERAL = "general";
     public static final String CATEGORY_METALS = "metals";
 
@@ -29,6 +30,12 @@ public class MatExConfig {
     public static ForgeConfigSpec spec;
 
     public static ForgeConfigSpec.BooleanValue enableOreGen;
+    public static ForgeConfigSpec.BooleanValue enableOres;
+    public static ForgeConfigSpec.BooleanValue enableMetalBlocks;
+    public static ForgeConfigSpec.BooleanValue enableIngots;
+    public static ForgeConfigSpec.BooleanValue enableDusts;
+    public static ForgeConfigSpec.BooleanValue enableCoalNuggets;
+    public static ForgeConfigSpec.BooleanValue enableMortar;
 
     public static ForgeConfigSpec.BooleanValue enableClay;
     public static ForgeConfigSpec.IntValue VSClay;
@@ -139,8 +146,10 @@ public class MatExConfig {
 
         ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
 
-        BUILDER.comment("General settings").push(CATEGORY_GENERAL);
-        enableOreGen = BUILDER.comment("Enable all ore generation (default: true)").define("enableOreGen", true);
+        BUILDER.comment("Materials Expanded config").push(CATEGORY_MATEX);
+            BUILDER.comment("General settings").push(CATEGORY_GENERAL);
+            enableOreGen = BUILDER.comment("Enable all ore generation (default: true)").define("enableOreGen", true);
+            BUILDER.pop();
 
             BUILDER.comment("Clay settings").push(CATEGORY_CLAY);
             enableClay = BUILDER.comment("Enable underground Clay generation (default: true)").define("enableClay", true);
