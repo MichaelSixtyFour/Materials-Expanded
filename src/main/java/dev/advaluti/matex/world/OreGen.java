@@ -1,9 +1,7 @@
 package dev.advaluti.matex.world;
 
-import dev.advaluti.matex.blocks.OreOsmium;
-import dev.advaluti.matex.setup.MatExConfig;
+import dev.advaluti.matex.MatExConfig;
 import dev.advaluti.matex.setup.Registration;
-import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStage;
@@ -12,7 +10,6 @@ import net.minecraft.world.gen.feature.OreFeatureConfig;
 import net.minecraft.world.gen.placement.ConfiguredPlacement;
 import net.minecraft.world.gen.placement.CountRangeConfig;
 import net.minecraft.world.gen.placement.Placement;
-import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class OreGen {

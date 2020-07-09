@@ -1,6 +1,6 @@
 package dev.advaluti.matex.blocks;
 
-import dev.advaluti.matex.setup.MatExConfig;
+import dev.advaluti.matex.MatExConfig;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;

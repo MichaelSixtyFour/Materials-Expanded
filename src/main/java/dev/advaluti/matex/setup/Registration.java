@@ -4,7 +4,7 @@ import dev.advaluti.matex.blocks.*;
 import dev.advaluti.matex.items.DustBase;
 import dev.advaluti.matex.items.FuelNuggetBase;
 import dev.advaluti.matex.items.IngotBase;
-import dev.advaluti.matex.tools.ToolMortar;
+import dev.advaluti.matex.items.ToolMortar;
 import dev.advaluti.matex.world.OreGen;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;

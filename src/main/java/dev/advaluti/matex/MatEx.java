@@ -1,7 +1,6 @@
 package dev.advaluti.matex;
 
 import dev.advaluti.matex.setup.ClientSetup;
-import dev.advaluti.matex.setup.MatExConfig;
 import dev.advaluti.matex.setup.ModSetup;
 import dev.advaluti.matex.setup.Registration;
 import net.minecraftforge.fml.ModLoadingContext;
