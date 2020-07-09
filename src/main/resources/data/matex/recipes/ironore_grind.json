@@ -5,12 +5,12 @@
       "item": "matex:toolmortar"
     },
     {
-      "item": "matex:oretitanium"
+      "item": "minecraft:iron_ore"
     }
   ],
   "result":
   {
-    "item": "matex:dusttitanium",
+    "item": "matex:dustgold",
     "count": 2
   }
 }

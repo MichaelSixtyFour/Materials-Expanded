@@ -5,12 +5,12 @@
       "item": "matex:toolmortar"
     },
     {
-      "item": "matex:oretungsten"
+      "item": "matex:oresulfur"
     }
   ],
   "result":
   {
-    "item": "matex:dusttungsten",
-    "count": 1
+    "item": "matex:dustsulfur",
+    "count": 2
   }
 }

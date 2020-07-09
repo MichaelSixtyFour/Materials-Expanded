@@ -17,8 +17,7 @@ public class ToolMortar extends Item implements IForgeItem, IToolMortar {
     public ToolMortar() {
         super(new Item.Properties()
                 .group(ModSetup.MATEX_GROUP)
-                .maxDamage(64)
-                .defaultMaxDamage(64)
+                .defaultMaxDamage(16)
         );
     }
 

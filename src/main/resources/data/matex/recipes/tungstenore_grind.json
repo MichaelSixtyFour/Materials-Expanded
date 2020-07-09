@@ -5,12 +5,12 @@
       "item": "matex:toolmortar"
     },
     {
-      "item": "matex:oretitanium"
+      "item": "matex:oretungsten"
     }
   ],
   "result":
   {
-    "item": "matex:dusttitanium",
+    "item": "matex:dusttungsten",
     "count": 2
   }
 }
