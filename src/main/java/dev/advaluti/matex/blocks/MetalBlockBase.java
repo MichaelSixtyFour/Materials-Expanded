@@ -9,8 +9,8 @@ import net.minecraftforge.common.ToolType;
 public class MetalBlockBase extends Block {
 
     public MetalBlockBase() {
-            super(AbstractBlock.Properties.create(Material.ROCK)
-            .sound(SoundType.METAL)
+        super(Properties.create(Material.ROCK)
+                .sound(SoundType.METAL)
                 .hardnessAndResistance(2.5f)
                 .harvestTool(ToolType.PICKAXE)
                 .harvestLevel(2)
