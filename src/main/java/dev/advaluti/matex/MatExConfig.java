@@ -150,7 +150,7 @@ public class MatExConfig {
             MaxHeightClay = BUILDER.comment("Maximum height").defineInRange("MaxHeightClay",96, 0, 255);
             BUILDER.pop();
 
-            BUILDER.comment("Terracotta settings").push(CATEGORY_CLAY);
+            BUILDER.comment("Terracotta settings").push(CATEGORY_TERRACOTTA);
             enableTerracotta = BUILDER.comment("Enable underground Terracotta generation (default: true)").define("enableTerracotta", true);
             VSTerracotta = BUILDER.comment("Vein size").defineInRange("VSTerracotta",6, 0, 50);
             VPCTerracotta = BUILDER.comment("Veins per chunk").defineInRange("VPCTerracotta",4, 0, 50);
