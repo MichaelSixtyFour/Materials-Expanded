@@ -1,12 +1,13 @@
 package dev.advaluti.matex.blocks;
 
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
+import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IWorldReader;
 import net.minecraftforge.common.ToolType;
+import net.minecraftforge.common.extensions.IForgeBlock;
 
-public class MetalBlockBase extends Block {
+public class MetalBlockBase extends Block implements IForgeBlock {
 
     public MetalBlockBase() {
         super(Properties.create(Material.ROCK)
@@ -15,5 +16,11 @@ public class MetalBlockBase extends Block {
                 .harvestTool(ToolType.PICKAXE)
                 .harvestLevel(2)
         );
-}
+    }
+
+    public boolean isBeaconBase(BlockState state, IWorldReader world, BlockPos pos, BlockPos beacon)
+    {
+        return  state.getBlock() == this;
+    }
+
 }
