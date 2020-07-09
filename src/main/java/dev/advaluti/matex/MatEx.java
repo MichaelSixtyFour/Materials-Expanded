@@ -15,7 +15,7 @@ public class MatEx {
 
     public static final String MOD_ID = "matex";
 
-    private static final Logger LOGGER = LogManager.getLogger();
+    //private static final Logger LOGGER = LogManager.getLogger();
 
     public MatEx() {
         ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, MatExConfig.spec);

@@ -22,9 +22,11 @@ public class MatExConfig {
     public static final String CATEGORY_SALTPETER = "saltpeter";
     public static final String CATEGORY_SILVER = "silver";
     public static final String CATEGORY_SULFUR = "sulfur";
+    public static final String CATEGORY_THORIUM = "thorium";
     public static final String CATEGORY_TIN = "tin";
     public static final String CATEGORY_TITANIUM = "titanium";
     public static final String CATEGORY_TUNGSTEN = "tungsten";
+    public static final String CATEGORY_URANIUM = "uranium";
     public static final String CATEGORY_ZINC = "zinc";
 
     public static ForgeConfigSpec spec;
@@ -103,6 +105,12 @@ public class MatExConfig {
     public static ForgeConfigSpec.IntValue MinHeightSulfur;
     public static ForgeConfigSpec.IntValue MaxHeightSulfur;
 
+    public static ForgeConfigSpec.BooleanValue enableThorium;
+    public static ForgeConfigSpec.IntValue VSThorium;
+    public static ForgeConfigSpec.IntValue VPCThorium;
+    public static ForgeConfigSpec.IntValue MinHeightThorium;
+    public static ForgeConfigSpec.IntValue MaxHeightThorium;
+
     public static ForgeConfigSpec.BooleanValue enableTin;
     public static ForgeConfigSpec.IntValue VSTin;
     public static ForgeConfigSpec.IntValue VPCTin;
@@ -121,6 +129,12 @@ public class MatExConfig {
     public static ForgeConfigSpec.IntValue MinHeightTungsten;
     public static ForgeConfigSpec.IntValue MaxHeightTungsten;
 
+    public static ForgeConfigSpec.BooleanValue enableUranium;
+    public static ForgeConfigSpec.IntValue VSUranium;
+    public static ForgeConfigSpec.IntValue VPCUranium;
+    public static ForgeConfigSpec.IntValue MinHeightUranium;
+    public static ForgeConfigSpec.IntValue MaxHeightUranium;
+
     public static ForgeConfigSpec.BooleanValue enableZinc;
     public static ForgeConfigSpec.IntValue VSZinc;
     public static ForgeConfigSpec.IntValue VPCZinc;
@@ -135,8 +149,10 @@ public class MatExConfig {
     public static ForgeConfigSpec.IntValue HarvestOsmium;
     public static ForgeConfigSpec.IntValue HarvestPlatinum;
     public static ForgeConfigSpec.IntValue HarvestSilver;
+    public static ForgeConfigSpec.IntValue HarvestThorium;
     public static ForgeConfigSpec.IntValue HarvestTitanium;
     public static ForgeConfigSpec.IntValue HarvestTungsten;
+    public static ForgeConfigSpec.IntValue HarvestUranium;
     public static ForgeConfigSpec.IntValue HarvestZinc;
 
     public static ForgeConfigSpec.IntValue HarvestSaltpeter;
@@ -252,6 +268,16 @@ public class MatExConfig {
             HarvestSulfur = BUILDER.comment("Harvest level").defineInRange("HarvestSulfur",0, 0, 4);
             BUILDER.pop();
 
+            BUILDER.comment("Thorium settings").push(CATEGORY_THORIUM);
+            enableThorium = BUILDER.comment("Enable Thorium ore generation (default: true)").define("enableThorium", true);
+            VSThorium = BUILDER.comment("Vein size").defineInRange("VSThorium",3, 0, 50);
+            VPCThorium = BUILDER.comment("Veins per chunk").defineInRange("VPCThorium",6, 0, 50);
+            MinHeightThorium = BUILDER.comment("Minimum height").defineInRange("MinHeightThorium",2, 0, 255);
+            MaxHeightThorium = BUILDER.comment("Maximum height").defineInRange("MaxHeightThorium",24, 0, 255);
+            HarvestThorium = BUILDER.comment("Harvest level").defineInRange("HarvestThorium",3, 0, 4);
+            BUILDER.pop();
+
+
             BUILDER.comment("Tin settings").push(CATEGORY_TIN);
             enableTin = BUILDER.comment("Enable Tin ore generation (default: true)").define("enableTin", true);
             VSTin = BUILDER.comment("Vein size").defineInRange("VSTin",12, 0, 50);
@@ -277,6 +303,15 @@ public class MatExConfig {
             MinHeightTungsten = BUILDER.comment("Minimum height").defineInRange("MinHeightTungsten",8, 0, 255);
             MaxHeightTungsten = BUILDER.comment("Maximum height").defineInRange("MaxHeightTungsten",48, 0, 255);
             HarvestTungsten = BUILDER.comment("Harvest level").defineInRange("HarvestTungsten",2, 0, 4);
+            BUILDER.pop();
+
+            BUILDER.comment("Uranium settings").push(CATEGORY_URANIUM);
+            enableUranium = BUILDER.comment("Enable Uranium ore generation (default: true)").define("enableUranium", true);
+            VSUranium = BUILDER.comment("Vein size").defineInRange("VSUranium",1, 0, 50);
+            VPCUranium = BUILDER.comment("Veins per chunk").defineInRange("VPCUranium",2, 0, 50);
+            MinHeightUranium = BUILDER.comment("Minimum height").defineInRange("MinHeightUranium",2, 0, 255);
+            MaxHeightUranium = BUILDER.comment("Maximum height").defineInRange("MaxHeightUranium",24, 0, 255);
+            HarvestUranium = BUILDER.comment("Harvest level").defineInRange("HarvestUranium",3, 0, 4);
             BUILDER.pop();
 
             BUILDER.comment("Zinc settings").push(CATEGORY_ZINC);

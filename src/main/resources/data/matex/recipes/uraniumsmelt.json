@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+
+  "ingredient": {
+      "item": "matex:oreuranium"
+  },
+
+  "result": "matex:ingoturanium",
+  "experience": 2.5,
+  "cookingtime": 200
+}

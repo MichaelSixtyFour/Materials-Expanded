@@ -18,6 +18,8 @@
   "block.matex.oreplatinum": "Platinum Ore",
   "block.matex.orenickel": "Nickel Ore",
   "block.matex.oretitanium": "Titanium Ore",
+  "block.matex.oreuranium": "Uranium Ore",
+  "block.matex.orethorium": "Thorium Ore",
 
   "_comment_": "Blocks",
   "block.matex.blockcopper": "Block of Copper",
@@ -31,6 +33,8 @@
   "block.matex.blockplatinum": "Block of Platinum",
   "block.matex.blocknickel": "Block of Nickel",
   "block.matex.blocktitanium": "Block of Titanium",
+  "block.matex.blockuranium": "Block of Uranium",
+  "block.matex.blockthorium": "Block of Thorium",
 
   "block.matex.blocksteel": "Block of Steel",
   "block.matex.blockbronze": "Block of Bronze",
@@ -47,6 +51,8 @@
   "item.matex.ingotplatinum": "Platinum Ingot",
   "item.matex.ingotnickel": "Nickel Ingot",
   "item.matex.ingottitanium": "Titanium Ingot",
+  "item.matex.ingoturanium": "Uranium Ingot",
+  "item.matex.ingotthorium": "Thorium Ingot",
 
   "item.matex.ingotsteel": "Steel Ingot",
   "item.matex.ingotbronze": "Bronze Ingot",
@@ -63,6 +69,8 @@
   "item.matex.dustplatinum": "Platinum Dust",
   "item.matex.dustnickel": "Nickel Dust",
   "item.matex.dusttitanium": "Titanium Dust",
+  "item.matex.dusturanium": "Uranium Dust",
+  "item.matex.dustthorium": "Thorium Dust",
 
   "item.matex.duststeel": "Steel Dust",
   "item.matex.dustbronze": "Bronze Dust",

@@ -74,6 +74,12 @@ public class Registration {
     public static final RegistryObject<OreTitanium> ORETITANIUM = BLOCKS.register("oretitanium", OreTitanium::new);
     public static final RegistryObject<Item> ORETITANIUM_ITEM = ITEMS.register("oretitanium", () -> new BlockItem(ORETITANIUM.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
 
+    public static final RegistryObject<OreUranium> OREURANIUM = BLOCKS.register("oreuranium", OreUranium::new);
+    public static final RegistryObject<Item> OREURANIUM_ITEM = ITEMS.register("oreuranium", () -> new BlockItem(OREURANIUM.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+    public static final RegistryObject<OreThorium> ORETHORIUM = BLOCKS.register("orethorium", OreThorium::new);
+    public static final RegistryObject<Item> ORETHORIUM_ITEM = ITEMS.register("orethorium", () -> new BlockItem(ORETHORIUM.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
     //BLOCKS
     public static final RegistryObject<MetalBlockBase> BLOCKCOPPER = BLOCKS.register("blockcopper", MetalBlockBase::new);
     public static final RegistryObject<Item> BLOCKCOPPER_ITEM = ITEMS.register("blockcopper", () -> new BlockItem(BLOCKCOPPER.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
@@ -108,6 +114,12 @@ public class Registration {
     public static final RegistryObject<MetalBlockBase> BLOCKTITANIUM = BLOCKS.register("blocktitanium", MetalBlockBase::new);
     public static final RegistryObject<Item> BLOCKTITANIUM_ITEM = ITEMS.register("blocktitanium", () -> new BlockItem(BLOCKTITANIUM.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
 
+    public static final RegistryObject<MetalBlockBase> BLOCKURANIUM = BLOCKS.register("blockuranium", MetalBlockBase::new);
+    public static final RegistryObject<Item> BLOCKURANIUM_ITEM = ITEMS.register("blockuranium", () -> new BlockItem(BLOCKURANIUM.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+    public static final RegistryObject<MetalBlockBase> BLOCKTHORIUM = BLOCKS.register("blockthorium", MetalBlockBase::new);
+    public static final RegistryObject<Item> BLOCKTHORIUM_ITEM = ITEMS.register("blockthorium", () -> new BlockItem(BLOCKTHORIUM.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
 
     public static final RegistryObject<MetalBlockBase> BLOCKSTEEL = BLOCKS.register("blocksteel", MetalBlockBase::new);
     public static final RegistryObject<Item> BLOCKSTEEL_ITEM = ITEMS.register("blocksteel", () -> new BlockItem(BLOCKSTEEL.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
@@ -127,6 +139,8 @@ public class Registration {
     public static final RegistryObject<IngotBase> INGOTPLATINUM = ITEMS.register("ingotplatinum", IngotBase::new);
     public static final RegistryObject<IngotBase> INGOTNICKEL = ITEMS.register("ingotnickel", IngotBase::new);
     public static final RegistryObject<IngotBase> INGOTTITANIUM = ITEMS.register("ingottitanium", IngotBase::new);
+    public static final RegistryObject<IngotBase> INGOTURANIUM = ITEMS.register("ingoturanium", IngotBase::new);
+    public static final RegistryObject<IngotBase> INGOTTHORIUM = ITEMS.register("ingotthorium", IngotBase::new);
 
     public static final RegistryObject<IngotBase> INGOTSTEEL = ITEMS.register("ingotsteel", IngotBase::new);
     public static final RegistryObject<IngotBase> INGOTBRONZE = ITEMS.register("ingotbronze", IngotBase::new);
@@ -143,6 +157,8 @@ public class Registration {
     public static final RegistryObject<DustBase> DUSTPLATINUM = ITEMS.register("dustplatinum", DustBase::new);
     public static final RegistryObject<DustBase> DUSTNICKEL = ITEMS.register("dustnickel", DustBase::new);
     public static final RegistryObject<DustBase> DUSTTITANIUM = ITEMS.register("dusttitanium", DustBase::new);
+    public static final RegistryObject<DustBase> DUSTURANIUM = ITEMS.register("dusturanium", DustBase::new);
+    public static final RegistryObject<DustBase> DUSTTHORIUM = ITEMS.register("dustthorium", DustBase::new);
 
     public static final RegistryObject<DustBase> DUSTSALTPETER = ITEMS.register("dustsaltpeter", DustBase::new);
     public static final RegistryObject<DustBase> DUSTSULFUR = ITEMS.register("dustsulfur", DustBase::new);

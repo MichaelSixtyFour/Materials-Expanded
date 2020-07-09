@@ -69,6 +69,13 @@ public class OreGen {
                             new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.ORESILVER.get().getDefaultState(), MatExConfig.VSSilver.get())).withPlacement(SilverGen));
                 }
 
+                if(MatExConfig.enableThorium.get()) {
+                    ConfiguredPlacement ThoriumGen = Placement.COUNT_RANGE.configure(
+                            new CountRangeConfig(MatExConfig.VPCThorium.get(), MatExConfig.MinHeightThorium.get(), 0, MatExConfig.MaxHeightThorium.get()));
+                    biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
+                            new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.ORETHORIUM.get().getDefaultState(), MatExConfig.VSThorium.get())).withPlacement(ThoriumGen));
+                }
+
                 if(MatExConfig.enableTin.get()) {
                     ConfiguredPlacement TinGen = Placement.COUNT_RANGE.configure(
                             new CountRangeConfig(MatExConfig.VPCTin.get(), MatExConfig.MinHeightTin.get(), 0, MatExConfig.MaxHeightTin.get()));
@@ -90,12 +97,22 @@ public class OreGen {
                             new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.ORETUNGSTEN.get().getDefaultState(), MatExConfig.VSTungsten.get())).withPlacement(TungstenGen));
                 }
 
+                if(MatExConfig.enableUranium.get()) {
+                    ConfiguredPlacement UraniumGen = Placement.COUNT_RANGE.configure(
+                            new CountRangeConfig(MatExConfig.VPCUranium.get(), MatExConfig.MinHeightUranium.get(), 0, MatExConfig.MaxHeightUranium.get()));
+                    biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
+                            new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.OREURANIUM.get().getDefaultState(), MatExConfig.VSUranium.get())).withPlacement(UraniumGen));
+                }
+
                 if(MatExConfig.enableZinc.get()) {
                     ConfiguredPlacement ZincGen = Placement.COUNT_RANGE.configure(
                             new CountRangeConfig(MatExConfig.VPCZinc.get(), MatExConfig.MinHeightZinc.get(), 0, MatExConfig.MaxHeightZinc.get()));
                     biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
                             new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.OREZINC.get().getDefaultState(), MatExConfig.VSZinc.get())).withPlacement(ZincGen));
                 }
+
+
+
                 if(MatExConfig.enableSaltpeter.get()) {
                     ConfiguredPlacement SaltpeterGen = Placement.COUNT_RANGE.configure(
                             new CountRangeConfig(MatExConfig.VPCSaltpeter.get(), MatExConfig.MinHeightSaltpeter.get(), 0, MatExConfig.MaxHeightSaltpeter.get()));

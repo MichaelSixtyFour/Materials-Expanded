@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "matex:toolmortar"
+    },
+    {
+      "item": "matex:ingotthorium"
+    }
+  ],
+  "result":
+  {
+    "item": "matex:dustthorium",
+    "count": 1
+  }
+}
