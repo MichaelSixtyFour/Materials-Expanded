@@ -5,7 +5,7 @@
       "item": "matex:toolmortar"
     },
     {
-      "item": "matex:orezinc"
+      "tag": "forge:ores/zinc"
     }
   ],
   "result":

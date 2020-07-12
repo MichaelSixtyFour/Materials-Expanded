@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "matex:dusttin"
+      "tag": "forge:dusts/tin"
     },
     {
-      "item": "matex:dustcopper"
+      "tag": "forge:dusts/copper"
     },
     {
-      "item": "matex:dustcopper"
+      "tag": "forge:dusts/copper"
     },
     {
-      "item": "matex:dustcopper"
+      "tag": "forge:dusts/copper"
     }
   ],
   "result":

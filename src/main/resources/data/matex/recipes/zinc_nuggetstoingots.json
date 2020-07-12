@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "tag": "forge:nuggets/zinc"
+    }
+  },
+  "result":
+  {
+    "item": "matex:ingotzinc",
+    "count": 1
+  }
+}

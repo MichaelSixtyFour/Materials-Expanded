@@ -4,6 +4,7 @@ import dev.advaluti.matex.MatExConfig;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.tags.ItemTags;
 import net.minecraftforge.common.ToolType;
 
 public class OreCopper extends Block {

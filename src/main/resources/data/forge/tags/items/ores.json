@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "matex:orealuminium",
+    "matex:orecopper",
+    "matex:orelead",
+    "matex:orenickel",
+    "matex:oreosmium",
+    "matex:oreplatinum",
+    "matex:oresaltpeter",
+    "matex:oresilver",
+    "matex:oresulfur",
+    "matex:orethorium",
+    "matex:oretin",
+    "matex:oretitanium",
+    "matex:oretungsten",
+    "matex:oreuranium",
+    "matex:orezinc"
+  ]
+}

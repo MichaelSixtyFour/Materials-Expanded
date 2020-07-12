@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "matex:nuggetaluminium",
+    "matex:nuggetbronze",
+    "matex:nuggetcopper",
+    "matex:nuggetlead",
+    "matex:nuggetnickel",
+    "matex:nuggetosmium",
+    "matex:nuggetplatinum",
+    "matex:nuggetsilver",
+    "matex:nuggetsteel",
+    "matex:nuggetthorium",
+    "matex:nuggettin",
+    "matex:nuggettitanium",
+    "matex:nuggettungsten",
+    "matex:nuggeturanium",
+    "matex:nuggetzinc"
+  ]
+}

@@ -5,7 +5,7 @@
       "item": "matex:toolmortar"
     },
     {
-      "item": "matex:orealuminium"
+      "tag": "forge:ores/aluminium"
     }
   ],
   "result":

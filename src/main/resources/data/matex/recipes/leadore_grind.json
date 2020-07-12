@@ -5,7 +5,7 @@
       "item": "matex:toolmortar"
     },
     {
-      "item": "matex:orelead"
+      "tag": "forge:ores/lead"
     }
   ],
   "result":

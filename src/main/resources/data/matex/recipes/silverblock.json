@@ -10,7 +10,7 @@
   {
     "x":
     {
-      "item": "matex:ingotsilver"
+      "tag": "forge:ingots/silver"
     }
   },
   "result":

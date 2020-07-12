@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "matex:dustiron"
+      "tag": "forge:dusts/iron"
     },
     {
-      "item": "matex:dustcoal"
+      "tag": "forge:dusts/coal"
     },
     {
-      "item": "matex:dustcoal"
+      "tag": "forge:dusts/coal"
     },
     {
-      "item": "matex:dustcoal"
+      "tag": "forge:dusts/coal"
     }
   ],
   "result":

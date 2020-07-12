@@ -72,16 +72,34 @@
   "item.matex.dusturanium": "Uranium Dust",
   "item.matex.dustthorium": "Thorium Dust",
 
+  "item.matex.dustsaltpeter": "Saltpeter",
+  "item.matex.dustsulfur": "Sulfur",
+
   "item.matex.duststeel": "Steel Dust",
   "item.matex.dustbronze": "Bronze Dust",
 
   "item.matex.dustcoal": "Coal Dust",
   "item.matex.dustiron": "Iron Dust",
   "item.matex.dustgold": "Gold Dust",
-  "item.matex.dustsaltpeter": "Saltpeter",
-  "item.matex.dustsulfur": "Sulfur",
 
   "_comment_": "Nuggets",
+  "item.matex.nuggetcopper": "Copper Nugget",
+  "item.matex.nuggettin": "Tin Nugget",
+  "item.matex.nuggetlead": "Lead Nugget",
+  "item.matex.nuggetaluminium": "Aluminium Nugget",
+  "item.matex.nuggetosmium": "Osmium Nugget",
+  "item.matex.nuggetzinc": "Zinc Nugget",
+  "item.matex.nuggetsilver": "Silver Nugget",
+  "item.matex.nuggettungsten": "Tungsten Nugget",
+  "item.matex.nuggetplatinum": "Platinum Nugget",
+  "item.matex.nuggetnickel": "Nickel Nugget",
+  "item.matex.nuggettitanium": "Titanium Nugget",
+  "item.matex.nuggeturanium": "Uranium Nugget",
+  "item.matex.nuggetthorium": "Thorium Nugget",
+
+  "item.matex.nuggetsteel": "Steel Nugget",
+  "item.matex.nuggetbronze": "Bronze Nugget",
+
   "item.matex.nuggetcoal": "Coal Nugget",
   "item.matex.nuggetcharcoal": "Charcoal Nugget",
 

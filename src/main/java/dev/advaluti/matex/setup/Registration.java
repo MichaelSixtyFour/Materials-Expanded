@@ -1,10 +1,7 @@
 package dev.advaluti.matex.setup;
 
 import dev.advaluti.matex.blocks.*;
-import dev.advaluti.matex.items.DustBase;
-import dev.advaluti.matex.items.FuelNuggetBase;
-import dev.advaluti.matex.items.IngotBase;
-import dev.advaluti.matex.items.ToolMortar;
+import dev.advaluti.matex.items.*;
 import dev.advaluti.matex.world.OreGen;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
@@ -171,6 +168,23 @@ public class Registration {
     public static final RegistryObject<DustBase> DUSTBRONZE = ITEMS.register("dustbronze", DustBase::new);
 
     //NUGGETS
+    public static final RegistryObject<NuggetBase> NUGGETCOPPER = ITEMS.register("nuggetcopper", NuggetBase::new);
+    public static final RegistryObject<NuggetBase> NUGGETTIN = ITEMS.register("nuggettin", NuggetBase::new);
+    public static final RegistryObject<NuggetBase> NUGGETLEAD = ITEMS.register("nuggetlead", NuggetBase::new);
+    public static final RegistryObject<NuggetBase> NUGGETALUMINIUM = ITEMS.register("nuggetaluminium", NuggetBase::new);
+    public static final RegistryObject<NuggetBase> NUGGETZINC = ITEMS.register("nuggetzinc", NuggetBase::new);
+    public static final RegistryObject<NuggetBase> NUGGETOSMIUM = ITEMS.register("nuggetosmium", NuggetBase::new);
+    public static final RegistryObject<NuggetBase> NUGGETSILVER = ITEMS.register("nuggetsilver", NuggetBase::new);
+    public static final RegistryObject<NuggetBase> NUGGETTUNGSTEN = ITEMS.register("nuggettungsten", NuggetBase::new);
+    public static final RegistryObject<NuggetBase> NUGGETPLATINUM = ITEMS.register("nuggetplatinum", NuggetBase::new);
+    public static final RegistryObject<NuggetBase> NUGGETNICKEL = ITEMS.register("nuggetnickel", NuggetBase::new);
+    public static final RegistryObject<NuggetBase> NUGGETTITANIUM = ITEMS.register("nuggettitanium", NuggetBase::new);
+    public static final RegistryObject<NuggetBase> NUGGETURANIUM = ITEMS.register("nuggeturanium", NuggetBase::new);
+    public static final RegistryObject<NuggetBase> NUGGETTHORIUM = ITEMS.register("nuggetthorium", NuggetBase::new);
+
+    public static final RegistryObject<NuggetBase> NUGGETSTEEL = ITEMS.register("nuggetsteel", NuggetBase::new);
+    public static final RegistryObject<NuggetBase> NUGGETBRONZE = ITEMS.register("nuggetbronze", NuggetBase::new);
+
     public static final RegistryObject<FuelNuggetBase> NUGGETCOAL = ITEMS.register("nuggetcoal", FuelNuggetBase::new);
     public static final RegistryObject<FuelNuggetBase> NUGGETCHARCOAL = ITEMS.register("nuggetcharcoal", FuelNuggetBase::new);
 

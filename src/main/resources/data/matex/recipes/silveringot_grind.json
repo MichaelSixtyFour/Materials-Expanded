@@ -5,7 +5,7 @@
       "item": "matex:toolmortar"
     },
     {
-      "item": "matex:ingotsilver"
+      "tag": "forge:ingots/silver"
     }
   ],
   "result":

@@ -32,6 +32,8 @@ public class MatExConfig {
     public static ForgeConfigSpec spec;
 
     public static ForgeConfigSpec.BooleanValue enableOreGen;
+    public static ForgeConfigSpec.BooleanValue disableMortarOreGrind;
+    public static ForgeConfigSpec.BooleanValue disableMortarIngotGrind;
     public static ForgeConfigSpec.BooleanValue enableOres;
     public static ForgeConfigSpec.BooleanValue enableMetalBlocks;
     public static ForgeConfigSpec.BooleanValue enableIngots;
@@ -165,6 +167,8 @@ public class MatExConfig {
         BUILDER.comment("Materials Expanded config").push(CATEGORY_MATEX);
             BUILDER.comment("General settings").push(CATEGORY_GENERAL);
             enableOreGen = BUILDER.comment("Enable all ore generation (default: true)").define("enableOreGen", true);
+            disableMortarOreGrind = BUILDER.comment("Set to true to stop ore grinding being possible through the mortar").define("disableMortarOreGrind", false);
+            disableMortarIngotGrind = BUILDER.comment("Set to true to stop ingot grinding being possible through the mortar").define("disableMortarIngotGrind", false);
             BUILDER.pop();
 
             BUILDER.comment("Clay settings").push(CATEGORY_CLAY);

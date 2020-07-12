@@ -5,7 +5,7 @@
       "item": "matex:toolmortar"
     },
     {
-      "item": "matex:ingotaluminium"
+      "tag": "forge:ingots/aluminium"
     }
   ],
   "result":

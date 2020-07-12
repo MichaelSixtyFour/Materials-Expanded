@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "matex:dustaluminium",
+    "matex:dustbronze",
+    "matex:dustcopper",
+    "matex:dustlead",
+    "matex:dustnickel",
+    "matex:dustosmium",
+    "matex:dustplatinum",
+    "matex:dustsaltpeter",
+    "matex:dustsilver",
+    "matex:duststeel",
+    "matex:dustsulfur",
+    "matex:dustthorium",
+    "matex:dusttin",
+    "matex:dusttitanium",
+    "matex:dusttungsten",
+    "matex:dusturanium",
+    "matex:dustzinc",
+    "matex:dustcoal",
+    "matex:dustiron",
+    "matex:dustgold"
+  ]
+}

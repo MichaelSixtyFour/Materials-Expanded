@@ -5,7 +5,7 @@
       "item": "matex:toolmortar"
     },
     {
-      "item": "matex:ingoturanium"
+      "tag": "forge:ingots/uranium"
     }
   ],
   "result":
