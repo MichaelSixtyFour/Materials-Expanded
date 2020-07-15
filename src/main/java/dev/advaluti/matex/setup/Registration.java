@@ -37,6 +37,9 @@ public class Registration {
     public static final RegistryObject<OreSulfur> ORESULFUR = BLOCKS.register("oresulfur", OreSulfur::new);
     public static final RegistryObject<Item> ORESULFUR_ITEM = ITEMS.register("oresulfur", () -> new BlockItem(ORESULFUR.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
 
+    public static final RegistryObject<OreRawSilicon> ORERAWSILICON = BLOCKS.register("orerawsilicon", OreRawSilicon::new);
+    public static final RegistryObject<Item> ORERAWSILICON_ITEM = ITEMS.register("orerawsilicon", () -> new BlockItem(ORERAWSILICON.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
     //ORES
     public static final RegistryObject<OreCopper> ORECOPPER = BLOCKS.register("orecopper", OreCopper::new);
     public static final RegistryObject<Item> ORECOPPER_ITEM = ITEMS.register("orecopper", () -> new BlockItem(ORECOPPER.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
@@ -187,6 +190,15 @@ public class Registration {
 
     public static final RegistryObject<FuelNuggetBase> NUGGETCOAL = ITEMS.register("nuggetcoal", FuelNuggetBase::new);
     public static final RegistryObject<FuelNuggetBase> NUGGETCHARCOAL = ITEMS.register("nuggetcharcoal", FuelNuggetBase::new);
+
+    //MISC
+    public static final RegistryObject<MiscItemBase> ITEMRAWSILICON = ITEMS.register("itemrawsilicon", MiscItemBase::new);
+    public static final RegistryObject<MiscItemBase> ITEMSILICON = ITEMS.register("itemsilicon", MiscItemBase::new);
+
+    public static final RegistryObject<MiscItemBase> ITEMFAKESLIME = ITEMS.register("itemfakeslime", MiscItemBase::new);
+
+    //public static final RegistryObject<MiscItemBase> ITEMRAWRUBBER = ITEMS.register("itemrawrubber", MiscItemBase::new);
+    //public static final RegistryObject<MiscItemBase> ITEMRUBBER = ITEMS.register("itemrubber", MiscItemBase::new);
 
     //ORE GEN
     public static void modSetup(final FMLCommonSetupEvent event) {

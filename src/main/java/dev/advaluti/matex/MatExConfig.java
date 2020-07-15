@@ -18,7 +18,8 @@ public class MatExConfig {
     public static final String CATEGORY_LEAD = "lead";
     public static final String CATEGORY_NICKEL = "nickel";
     public static final String CATEGORY_OSMIUM = "osmium";
-    public static final String CATEGORY_PLATINUM = "platinum";
+    public static final String CATEGORY_PLATINUM = "platinum";;
+    public static final String CATEGORY_RAWSILICON = "rawsilicon";
     public static final String CATEGORY_SALTPETER = "saltpeter";
     public static final String CATEGORY_SILVER = "silver";
     public static final String CATEGORY_SULFUR = "sulfur";
@@ -88,6 +89,12 @@ public class MatExConfig {
     public static ForgeConfigSpec.IntValue VPCPlatinum;
     public static ForgeConfigSpec.IntValue MinHeightPlatinum;
     public static ForgeConfigSpec.IntValue MaxHeightPlatinum;
+
+    public static ForgeConfigSpec.BooleanValue enableRawSilicon;
+    public static ForgeConfigSpec.IntValue VSRawSilicon;
+    public static ForgeConfigSpec.IntValue VPCRawSilicon;
+    public static ForgeConfigSpec.IntValue MinHeightRawSilicon;
+    public static ForgeConfigSpec.IntValue MaxHeightRawSilicon;
 
     public static ForgeConfigSpec.BooleanValue enableSaltpeter;
     public static ForgeConfigSpec.IntValue VSSaltpeter;
@@ -159,6 +166,7 @@ public class MatExConfig {
 
     public static ForgeConfigSpec.IntValue HarvestSaltpeter;
     public static ForgeConfigSpec.IntValue HarvestSulfur;
+    public static ForgeConfigSpec.IntValue HarvestRawSilicon;
 
     static {
 
@@ -244,6 +252,15 @@ public class MatExConfig {
             MinHeightPlatinum = BUILDER.comment("Minimum height").defineInRange("MinHeightPlatinum", 4, 0, 255);
             MaxHeightPlatinum = BUILDER.comment("Maximum height").defineInRange("MaxHeightPlatinum", 24, 0, 255);
             HarvestPlatinum = BUILDER.comment("Harvest level").defineInRange("HarvestPlatinum", 2, 0, 4);
+            BUILDER.pop();
+
+            BUILDER.comment("Raw silicon settings").push("rawsilicon");
+            enableRawSilicon = BUILDER.comment("Enable Raw Silicon ore generation (default: true)").define("enableRawSilicon", true);
+            VSRawSilicon = BUILDER.comment("Vein size").defineInRange("VSRawSilicon", 8, 0, 50);
+            VPCRawSilicon = BUILDER.comment("Veins per chunk").defineInRange("VPCRawSilicon", 5, 0, 50);
+            MinHeightRawSilicon = BUILDER.comment("Minimum height").defineInRange("MinHeightRawSilicon", 8, 0, 255);
+            MaxHeightRawSilicon = BUILDER.comment("Maximum height").defineInRange("MaxHeightRawSilicon", 64, 0, 255);
+            HarvestRawSilicon = BUILDER.comment("Harvest level").defineInRange("HarvestRawSilicon", 0, 0, 2);
             BUILDER.pop();
 
             BUILDER.comment("Saltpeter settings").push("saltpeter");

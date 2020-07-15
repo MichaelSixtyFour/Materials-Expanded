@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+
+  "ingredient": {
+      "item": "matex:itemrawsilicon"
+  },
+
+  "result": "matex:itemsilicon",
+  "experience": 2.5,
+  "cookingtime": 200
+}

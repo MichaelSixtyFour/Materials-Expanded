@@ -5,6 +5,7 @@
   "_comment_": "Misc. Ores",
   "block.matex.oresaltpeter": "Saltpeter Ore",
   "block.matex.oresulfur": "Sulfur Ore",
+  "block.matex.orerawsilicon": "Raw Silicon Ore",
 
   "_comment_": "Ores",
   "block.matex.orecopper": "Copper Ore",
@@ -38,6 +39,11 @@
 
   "block.matex.blocksteel": "Block of Steel",
   "block.matex.blockbronze": "Block of Bronze",
+
+  "_comment_": "Items",
+  "item.matex.itemrawsilicon": "Raw Silicon",
+  "item.matex.itemsilicon": "Silicon",
+  "item.matex.itemfakeslime": "Artificial Slime",
 
   "_comment_": "Ingots",
   "item.matex.ingotcopper": "Copper Ingot",
