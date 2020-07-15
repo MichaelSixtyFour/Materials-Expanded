@@ -238,7 +238,7 @@ public class MatExConfig {
             BUILDER.pop();
 
             BUILDER.comment("Platinum settings").push("platinum");
-            enablePlatinum = BUILDER.comment("Enable Platinum ore generation (default: true)").define("enableNickel", true);
+            enablePlatinum = BUILDER.comment("Enable Platinum ore generation (default: true)").define("enablePlatinum", true);
             VSPlatinum = BUILDER.comment("Vein size").defineInRange("VSPlatinum", 8, 0, 50);
             VPCPlatinum = BUILDER.comment("Veins per chunk").defineInRange("VPCPlatinum", 2, 0, 50);
             MinHeightPlatinum = BUILDER.comment("Minimum height").defineInRange("MinHeightPlatinum", 4, 0, 255);

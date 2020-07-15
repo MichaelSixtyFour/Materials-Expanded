@@ -18,7 +18,7 @@ public class MatEx {
     //private static final Logger LOGGER = LogManager.getLogger();
 
     public MatEx() {
-        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, MatExConfig.spec);
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, MatExConfig.spec);
 
         Registration.init();
 
