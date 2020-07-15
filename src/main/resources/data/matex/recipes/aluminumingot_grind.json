@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "matex:toolmortar"
+    },
+    {
+      "tag": "forge:ingots/aluminum"
+    }
+  ],
+  "result":
+  {
+    "item": "matex:dustaluminium",
+    "count": 1
+  }
+}
