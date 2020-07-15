@@ -18,9 +18,9 @@ public class MetalBlockBase extends Block implements IForgeBlock {
         );
     }
 
-    public boolean isBeaconBase(BlockState state, IWorldReader world, BlockPos pos, BlockPos beacon)
-    {
-        return  state.getBlock() == this;
-    }
+    //public boolean isBeaconBase(BlockState state, IWorldReader world, BlockPos pos, BlockPos beacon)
+    //{
+    //    return  state.getBlock() == this;
+    //}
 
 }

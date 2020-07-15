@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "matex:ingotaluminium",
+    "matex:ingotbronze",
+    "matex:ingotcopper",
+    "matex:ingotlead",
+    "matex:ingotnickel",
+    "matex:ingotosmium",
+    "matex:ingotplatinum",
+    "matex:ingotsilver",
+    "matex:ingotsteel",
+    "matex:ingotthorium",
+    "matex:ingottin",
+    "matex:ingottitanium",
+    "matex:ingottungsten",
+    "matex:ingoturanium",
+    "matex:ingotzinc"
+  ]
+}
