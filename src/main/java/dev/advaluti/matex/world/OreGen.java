@@ -62,6 +62,13 @@ public class OreGen {
                             new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.OREPLATINUM.get().getDefaultState(), MatExConfig.VSPlatinum.get())).withPlacement(PlatinumGen));
                 }
 
+                if(MatExConfig.enableRawSilicon.get()) {
+                    ConfiguredPlacement RawSiliconGen = Placement.COUNT_RANGE.configure(
+                            new CountRangeConfig(MatExConfig.VPCRawSilicon.get(), MatExConfig.MinHeightRawSilicon.get(), 0, MatExConfig.MaxHeightRawSilicon.get()));
+                    biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
+                            new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, Registration.ORERAWSILICON.get().getDefaultState(), MatExConfig.VSRawSilicon.get())).withPlacement(RawSiliconGen));
+                }
+
                 if(MatExConfig.enableSilver.get()) {
                     ConfiguredPlacement SilverGen = Placement.COUNT_RANGE.configure(
                             new CountRangeConfig(MatExConfig.VPCSilver.get(), MatExConfig.MinHeightSilver.get(), 0, MatExConfig.MaxHeightSilver.get()));
