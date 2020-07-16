@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xs",
+    "sx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "refinedstorage:silicon"
+    },
+    "s":
+    {
+      "item": "minecraft:string"
+    }
+  },
+  "result":
+  {
+    "item": "matex:itemfakeslime",
+    "count": 2
+  }
+}
