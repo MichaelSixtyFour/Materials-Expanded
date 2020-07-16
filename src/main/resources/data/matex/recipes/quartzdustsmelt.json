@@ -2,10 +2,10 @@
   "type": "minecraft:smelting",
 
   "ingredient": {
-      "item": "matex:dustaluminium"
+      "item": "matex:dustquartz"
   },
 
-  "result": "matex:ingotaluminium",
+  "result": "matex:itemsilicon",
   "experience": 0.5,
   "cookingtime": 200
 }
