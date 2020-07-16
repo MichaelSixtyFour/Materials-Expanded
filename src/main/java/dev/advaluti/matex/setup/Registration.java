@@ -37,9 +37,6 @@ public class Registration {
     public static final RegistryObject<OreSulfur> ORESULFUR = BLOCKS.register("oresulfur", OreSulfur::new);
     public static final RegistryObject<Item> ORESULFUR_ITEM = ITEMS.register("oresulfur", () -> new BlockItem(ORESULFUR.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
 
-    public static final RegistryObject<OreRawSilicon> ORERAWSILICON = BLOCKS.register("orerawsilicon", OreRawSilicon::new);
-    public static final RegistryObject<Item> ORERAWSILICON_ITEM = ITEMS.register("orerawsilicon", () -> new BlockItem(ORERAWSILICON.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
     //ORES
     public static final RegistryObject<OreCopper> ORECOPPER = BLOCKS.register("orecopper", OreCopper::new);
     public static final RegistryObject<Item> ORECOPPER_ITEM = ITEMS.register("orecopper", () -> new BlockItem(ORECOPPER.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
@@ -166,6 +163,8 @@ public class Registration {
     public static final RegistryObject<DustBase> DUSTCOAL = ITEMS.register("dustcoal", DustBase::new);
     public static final RegistryObject<DustBase> DUSTIRON = ITEMS.register("dustiron", DustBase::new);
     public static final RegistryObject<DustBase> DUSTGOLD = ITEMS.register("dustgold", DustBase::new);
+    public static final RegistryObject<DustBase> DUSTDIAMOND = ITEMS.register("dustdiamond", DustBase::new);
+    public static final RegistryObject<DustBase> DUSTQUARTZ = ITEMS.register("dustquartz", DustBase::new);
 
     public static final RegistryObject<DustBase> DUSTSTEEL = ITEMS.register("duststeel", DustBase::new);
     public static final RegistryObject<DustBase> DUSTBRONZE = ITEMS.register("dustbronze", DustBase::new);
@@ -192,7 +191,6 @@ public class Registration {
     public static final RegistryObject<FuelNuggetBase> NUGGETCHARCOAL = ITEMS.register("nuggetcharcoal", FuelNuggetBase::new);
 
     //MISC
-    public static final RegistryObject<MiscItemBase> ITEMRAWSILICON = ITEMS.register("itemrawsilicon", MiscItemBase::new);
     public static final RegistryObject<MiscItemBase> ITEMSILICON = ITEMS.register("itemsilicon", MiscItemBase::new);
 
     public static final RegistryObject<MiscItemBase> ITEMFAKESLIME = ITEMS.register("itemfakeslime", MiscItemBase::new);

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "matex:toolmortar"
+    },
+    {
+      "item": "minecraft:quartz"
+    }
+  ],
+  "result":
+  {
+    "item": "matex:dustquartz",
+    "count": 1
+  }
+}

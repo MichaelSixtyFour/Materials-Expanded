@@ -20,6 +20,8 @@
     "matex:dustzinc",
     "matex:dustcoal",
     "matex:dustiron",
-    "matex:dustgold"
+    "matex:dustgold",
+    "matex:dustdiamond",
+    "matex:dustquartz"
   ]
 }

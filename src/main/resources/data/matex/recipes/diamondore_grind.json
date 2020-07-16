@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "matex:toolmortar"
+    },
+    {
+      "item": "minecraft:diamond_ore"
+    }
+  ],
+  "result":
+  {
+    "item": "matex:dustdiamond",
+    "count": 2
+  }
+}
