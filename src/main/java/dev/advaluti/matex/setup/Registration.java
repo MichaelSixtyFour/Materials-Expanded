@@ -29,6 +29,7 @@ public class Registration {
 
     //TOOLS
     public static final RegistryObject<ToolMortar> TOOLMORTAR = ITEMS.register("toolmortar", ToolMortar::new);
+    public static final RegistryObject<ToolHammer> TOOLHAMMER = ITEMS.register("toolhammer", ToolHammer::new);
 
     //MISC ORES
     public static final RegistryObject<OreSaltpeter> ORESALTPETER = BLOCKS.register("oresaltpeter", OreSaltpeter::new);
@@ -190,13 +191,35 @@ public class Registration {
     public static final RegistryObject<FuelNuggetBase> NUGGETCOAL = ITEMS.register("nuggetcoal", FuelNuggetBase::new);
     public static final RegistryObject<FuelNuggetBase> NUGGETCHARCOAL = ITEMS.register("nuggetcharcoal", FuelNuggetBase::new);
 
+    //PLATES
+    public static final RegistryObject<PlateBase> PLATECOPPER = ITEMS.register("platecopper", PlateBase::new);
+    public static final RegistryObject<PlateBase> PLATETIN = ITEMS.register("platetin", PlateBase::new);
+    public static final RegistryObject<PlateBase> PLATELEAD = ITEMS.register("platelead", PlateBase::new);
+    public static final RegistryObject<PlateBase> PLATEALUMINIUM = ITEMS.register("platealuminium", PlateBase::new);
+    public static final RegistryObject<PlateBase> PLATEZINC = ITEMS.register("platezinc", PlateBase::new);
+    public static final RegistryObject<PlateBase> PLATEOSMIUM = ITEMS.register("plateosmium", PlateBase::new);
+    public static final RegistryObject<PlateBase> PLATESILVER = ITEMS.register("platesilver", PlateBase::new);
+    public static final RegistryObject<PlateBase> PLATETUNGSTEN = ITEMS.register("platetungsten", PlateBase::new);
+    public static final RegistryObject<PlateBase> PLATEPLATINUM = ITEMS.register("plateplatinum", PlateBase::new);
+    public static final RegistryObject<PlateBase> PLATENICKEL = ITEMS.register("platenickel", PlateBase::new);
+    public static final RegistryObject<PlateBase> PLATETITANIUM = ITEMS.register("platetitanium", PlateBase::new);
+
+    public static final RegistryObject<PlateBase> PLATESTEEL = ITEMS.register("platesteel", PlateBase::new);
+    public static final RegistryObject<PlateBase> PLATEBRONZE = ITEMS.register("platebronze", PlateBase::new);
+
+    public static final RegistryObject<PlateBase> PLATEIRON = ITEMS.register("plateiron", PlateBase::new);
+    public static final RegistryObject<PlateBase> PLATEGOLD = ITEMS.register("plategold", PlateBase::new);
+    public static final RegistryObject<PlateBase> PLATEDIAMOND = ITEMS.register("platediamond", PlateBase::new);
+
+    //RODS
+
+
+    //GEARS
+
+
     //MISC
     public static final RegistryObject<MiscItemBase> ITEMSILICON = ITEMS.register("itemsilicon", MiscItemBase::new);
-
     public static final RegistryObject<MiscItemBase> ITEMFAKESLIME = ITEMS.register("itemfakeslime", MiscItemBase::new);
-
-    //public static final RegistryObject<MiscItemBase> ITEMRAWRUBBER = ITEMS.register("itemrawrubber", MiscItemBase::new);
-    //public static final RegistryObject<MiscItemBase> ITEMRUBBER = ITEMS.register("itemrubber", MiscItemBase::new);
 
     //ORE GEN
     public static void modSetup(final FMLCommonSetupEvent event) {

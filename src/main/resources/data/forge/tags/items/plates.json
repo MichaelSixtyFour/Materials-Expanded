@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "matex:platealuminium",
+    "matex:platebronze",
+    "matex:platecopper",
+    "matex:platelead",
+    "matex:platenickel",
+    "matex:plateosmium",
+    "matex:plateplatinum",
+    "matex:platesilver",
+    "matex:platesteel",
+    "matex:platetin",
+    "matex:platetitanium",
+    "matex:platetungsten",
+    "matex:platezinc",
+    "matex:plateiron",
+    "matex:plategold",
+    "matex:platediamond"
+  ]
+}
