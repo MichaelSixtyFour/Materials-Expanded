@@ -12,7 +12,7 @@ public class MetalBlockBase extends Block implements IForgeBlock {
     public MetalBlockBase() {
         super(Properties.create(Material.ROCK)
                 .sound(SoundType.METAL)
-                .hardnessAndResistance(2.5f)
+                .hardnessAndResistance(5f)
                 .harvestTool(ToolType.PICKAXE)
                 .harvestLevel(2)
         );

@@ -11,7 +11,7 @@ public class OrePlatinum extends Block {
     public OrePlatinum() {
         super(Properties.create(Material.ROCK)
                 .sound(SoundType.STONE)
-                .hardnessAndResistance(3.0f)
+                .hardnessAndResistance(4.0f)
                 .harvestTool(ToolType.PICKAXE)
                 .harvestLevel(MatExConfig.HarvestPlatinum.get())
         );

@@ -11,7 +11,7 @@ public class OreSulfur extends Block {
     public OreSulfur() {
         super(Properties.create(Material.ROCK)
                 .sound(SoundType.STONE)
-                .hardnessAndResistance(2.0f)
+                .hardnessAndResistance(2.5f)
                 .harvestTool(ToolType.PICKAXE)
                 .harvestLevel(MatExConfig.HarvestSulfur.get())
         );

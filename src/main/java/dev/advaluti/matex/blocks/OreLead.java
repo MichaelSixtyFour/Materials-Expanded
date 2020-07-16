@@ -11,7 +11,7 @@ public class OreLead extends Block {
     public OreLead() {
         super(Properties.create(Material.ROCK)
                 .sound(SoundType.STONE)
-                .hardnessAndResistance(2.5f)
+                .hardnessAndResistance(3.5f)
                 .harvestTool(ToolType.PICKAXE)
                 .harvestLevel(MatExConfig.HarvestLead.get())
         );

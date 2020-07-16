@@ -13,7 +13,7 @@ public class OreSaltpeter extends Block {
     public OreSaltpeter() {
         super(Properties.create(Material.ROCK)
                 .sound(SoundType.STONE)
-                .hardnessAndResistance(2.0f)
+                .hardnessAndResistance(2.5f)
                 .harvestTool(ToolType.PICKAXE)
                 .harvestLevel(MatExConfig.HarvestSaltpeter.get())
         );

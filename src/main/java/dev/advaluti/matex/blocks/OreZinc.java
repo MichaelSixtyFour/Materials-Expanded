@@ -11,7 +11,7 @@ public class OreZinc extends Block {
     public OreZinc() {
         super(Properties.create(Material.ROCK)
                 .sound(SoundType.STONE)
-                .hardnessAndResistance(2.0f)
+                .hardnessAndResistance(3.5f)
                 .harvestTool(ToolType.PICKAXE)
                 .harvestLevel(MatExConfig.HarvestZinc.get())
         );

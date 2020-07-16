@@ -12,7 +12,7 @@ public class OreCopper extends Block {
     public OreCopper() {
         super(Properties.create(Material.ROCK)
                 .sound(SoundType.STONE)
-                .hardnessAndResistance(2.0f)
+                .hardnessAndResistance(3.5f)
                 .harvestTool(ToolType.PICKAXE)
                 .harvestLevel(MatExConfig.HarvestCopper.get())
         );

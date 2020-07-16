@@ -11,7 +11,7 @@ public class OreAluminium extends Block {
     public OreAluminium() {
         super(Properties.create(Material.ROCK)
                 .sound(SoundType.STONE)
-                .hardnessAndResistance(3.0f)
+                .hardnessAndResistance(3.5f)
                 .harvestTool(ToolType.PICKAXE)
                 .harvestLevel(MatExConfig.HarvestAluminium.get())
         );

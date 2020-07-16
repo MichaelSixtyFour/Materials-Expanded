@@ -11,7 +11,7 @@ public class OreTin extends Block {
     public OreTin() {
         super(Properties.create(Material.ROCK)
                 .sound(SoundType.STONE)
-                .hardnessAndResistance(1.5f)
+                .hardnessAndResistance(3.0f)
                 .harvestTool(ToolType.PICKAXE)
                 .harvestLevel(MatExConfig.HarvestTin.get())
         );
