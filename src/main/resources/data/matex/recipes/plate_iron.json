@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "h",
+    "x",
+    "x"
+  ],
+  "key":
+  {
+    "h":
+    {
+      "item": "matex:toolhammer"
+    },
+    "x":
+    {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "matex:plateiron",
+    "count": 1
+  }
+}

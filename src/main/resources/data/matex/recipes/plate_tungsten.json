@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "h",
+    "x",
+    "x"
+  ],
+  "key":
+  {
+    "h":
+    {
+      "item": "matex:toolhammer"
+    },
+    "x":
+    {
+      "tag": "forge:ingots/tungsten"
+    }
+  },
+  "result":
+  {
+    "item": "matex:platetungsten",
+    "count": 1
+  }
+}

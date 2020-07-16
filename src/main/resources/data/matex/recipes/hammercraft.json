@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " is",
+    " si",
+    "s  "
+  ],
+  "key":
+  {
+    "i":
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    "s":
+    {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "result":
+  {
+    "item": "matex:toolhammer",
+    "count": 1
+  }
+}

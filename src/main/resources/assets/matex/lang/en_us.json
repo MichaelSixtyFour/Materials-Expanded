@@ -1,6 +1,7 @@
 {
   "_comment_": "Tools",
   "item.matex.toolmortar": "Mortar",
+  "item.matex.toolhammer": "Hammer",
 
   "_comment_": "Misc. Ores",
   "block.matex.oresaltpeter": "Saltpeter Ore",
@@ -108,6 +109,26 @@
 
   "item.matex.nuggetcoal": "Coal Nugget",
   "item.matex.nuggetcharcoal": "Charcoal Nugget",
+
+  "_comment_": "Plates",
+  "item.matex.platecopper": "Copper Plate",
+  "item.matex.platetin": "Tin Plate",
+  "item.matex.platelead": "Lead Plate",
+  "item.matex.platealuminium": "Aluminium Plate",
+  "item.matex.plateosmium": "Osmium Plate",
+  "item.matex.platezinc": "Zinc Plate",
+  "item.matex.platesilver": "Silver Plate",
+  "item.matex.platetungsten": "Tungsten Plate",
+  "item.matex.plateplatinum": "Platinum Plate",
+  "item.matex.platenickel": "Nickel Plate",
+  "item.matex.platetitanium": "Titanium Plate",
+
+  "item.matex.platesteel": "Steel Plate",
+  "item.matex.platebronze": "Bronze Plate",
+
+  "item.matex.plateiron": "Iron Plate",
+  "item.matex.plategold": "Gold Plate",
+  "item.matex.platediamond": "Diamond Plate",
 
   "_comment_": "Creative Tabs",
   "itemGroup.matex": "Materials Expanded"
