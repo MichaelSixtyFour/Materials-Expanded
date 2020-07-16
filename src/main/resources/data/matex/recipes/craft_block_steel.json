@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "tag": "forge:ingots/steel"
+    }
+  },
+  "result":
+  {
+    "item": "matex:blocksteel",
+    "count": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+
+  "ingredient": {
+      "item": "matex:dustgold"
+  },
+
+  "result": "minecraft:gold_ingot",
+  "experience": 0.5,
+  "cookingtime": 200
+}
