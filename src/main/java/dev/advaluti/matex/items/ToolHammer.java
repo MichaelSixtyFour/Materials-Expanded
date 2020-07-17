@@ -1,6 +1,6 @@
 package dev.advaluti.matex.items;
 
-import dev.advaluti.matex.interfaces.IToolMortar;
+import dev.advaluti.matex.interfaces.IToolHammer;
 import dev.advaluti.matex.setup.ModSetup;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -10,7 +10,7 @@ import javax.annotation.Nonnull;
 import java.util.Random;
 
 
-public class ToolHammer extends Item implements IForgeItem, IToolMortar {
+public class ToolHammer extends Item implements IForgeItem, IToolHammer {
 
     public static final Random RAND = new Random();
 
