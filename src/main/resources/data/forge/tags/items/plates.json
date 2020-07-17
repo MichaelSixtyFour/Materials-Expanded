@@ -14,8 +14,12 @@
     "matex:platetitanium",
     "matex:platetungsten",
     "matex:platezinc",
+    "matex:plateuranium",
+    "matex:platethorium",
     "matex:plateiron",
     "matex:plategold",
-    "matex:platediamond"
+    "matex:platediamond",
+    "matex:plateemerald",
+    "matex:platenetherite"
   ]
 }

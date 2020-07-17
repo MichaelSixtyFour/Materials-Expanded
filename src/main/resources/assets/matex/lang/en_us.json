@@ -87,7 +87,9 @@
   "item.matex.dustiron": "Iron Dust",
   "item.matex.dustgold": "Gold Dust",
   "item.matex.dustdiamond": "Diamond Dust",
+  "item.matex.dustemerald": "Emerald Dust",
   "item.matex.dustquartz": "Quartz Dust",
+  "item.matex.dustnetherite": "Netherite Dust",
 
   "_comment_": "Nuggets",
   "item.matex.nuggetcopper": "Copper Nugget",
@@ -122,6 +124,8 @@
   "item.matex.plateplatinum": "Platinum Plate",
   "item.matex.platenickel": "Nickel Plate",
   "item.matex.platetitanium": "Titanium Plate",
+  "item.matex.plateuranium": "Uranium Plate",
+  "item.matex.platethorium": "Thorium Plate",
 
   "item.matex.platesteel": "Steel Plate",
   "item.matex.platebronze": "Bronze Plate",
@@ -129,6 +133,8 @@
   "item.matex.plateiron": "Iron Plate",
   "item.matex.plategold": "Gold Plate",
   "item.matex.platediamond": "Diamond Plate",
+  "item.matex.plateemerald": "Emerald Plate",
+  "item.matex.platenetherite": "Netherite Plate",
 
   "_comment_": "Rods",
   "item.matex.rodcopper": "Copper Rod",
@@ -142,6 +148,8 @@
   "item.matex.rodplatinum": "Platinum Rod",
   "item.matex.rodnickel": "Nickel Rod",
   "item.matex.rodtitanium": "Titanium Rod",
+  "item.matex.roduranium": "Uranium Rod",
+  "item.matex.rodthorium": "Thorium Rod",
 
   "item.matex.rodsteel": "Steel Rod",
   "item.matex.rodbronze": "Bronze Rod",
@@ -150,6 +158,8 @@
   "item.matex.rodiron": "Iron Rod",
   "item.matex.rodgold": "Gold Rod",
   "item.matex.roddiamond": "Diamond Rod",
+  "item.matex.rodemerald": "Emerald Rod",
+  "item.matex.rodnetherite": "Netherite Rod",
 
 
   "_comment_": "Creative Tabs",

@@ -2,15 +2,15 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "matex:toolmortarobsidian"
+      "item": "matex:toolmortar"
     },
     {
-      "tag": "forge:ingots/uranium"
+      "item": "minecraft:quartz"
     }
   ],
   "result":
   {
-    "item": "matex:dusturanium",
+    "item": "matex:dustquartz",
     "count": 1
   }
 }
