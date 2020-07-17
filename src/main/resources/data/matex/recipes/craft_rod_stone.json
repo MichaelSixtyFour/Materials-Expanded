@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " h",
+    "x "
+  ],
+  "key":
+  {
+    "h":
+    {
+      "item": "matex:toolhammer"
+    },
+    "x":
+    {
+      "tag": "forge:cobblestone"
+    }
+  },
+  "result":
+  {
+    "item": "matex:rodstone",
+    "count": 2
+  }
+}

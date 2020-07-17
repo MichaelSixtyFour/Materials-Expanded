@@ -130,9 +130,9 @@ public class Registration {
     public static final RegistryObject<IngotBase> INGOTTIN = ITEMS.register("ingottin", IngotBase::new);
     public static final RegistryObject<IngotBase> INGOTLEAD = ITEMS.register("ingotlead", IngotBase::new);
     public static final RegistryObject<IngotBase> INGOTALUMINIUM = ITEMS.register("ingotaluminium", IngotBase::new);
-    public static final RegistryObject<IngotBase> INGOTZINC = ITEMS.register("ingotzinc", IngotBase::new);
-    public static final RegistryObject<IngotBase> INGOTOSMIUM = ITEMS.register("ingotosmium", IngotBase::new);
     public static final RegistryObject<IngotBase> INGOTSILVER = ITEMS.register("ingotsilver", IngotBase::new);
+    public static final RegistryObject<IngotBase> INGOTOSMIUM = ITEMS.register("ingotosmium", IngotBase::new);
+    public static final RegistryObject<IngotBase> INGOTZINC = ITEMS.register("ingotzinc", IngotBase::new);
     public static final RegistryObject<IngotBase> INGOTTUNGSTEN = ITEMS.register("ingottungsten", IngotBase::new);
     public static final RegistryObject<IngotBase> INGOTPLATINUM = ITEMS.register("ingotplatinum", IngotBase::new);
     public static final RegistryObject<IngotBase> INGOTNICKEL = ITEMS.register("ingotnickel", IngotBase::new);
@@ -148,9 +148,9 @@ public class Registration {
     public static final RegistryObject<DustBase> DUSTTIN = ITEMS.register("dusttin", DustBase::new);
     public static final RegistryObject<DustBase> DUSTLEAD = ITEMS.register("dustlead", DustBase::new);
     public static final RegistryObject<DustBase> DUSTALUMINIUM = ITEMS.register("dustaluminium", DustBase::new);
-    public static final RegistryObject<DustBase> DUSTZINC = ITEMS.register("dustzinc", DustBase::new);
-    public static final RegistryObject<DustBase> DUSTOSMIUM = ITEMS.register("dustosmium", DustBase::new);
     public static final RegistryObject<DustBase> DUSTSILVER = ITEMS.register("dustsilver", DustBase::new);
+    public static final RegistryObject<DustBase> DUSTOSMIUM = ITEMS.register("dustosmium", DustBase::new);
+    public static final RegistryObject<DustBase> DUSTZINC = ITEMS.register("dustzinc", DustBase::new);
     public static final RegistryObject<DustBase> DUSTTUNGSTEN = ITEMS.register("dusttungsten", DustBase::new);
     public static final RegistryObject<DustBase> DUSTPLATINUM = ITEMS.register("dustplatinum", DustBase::new);
     public static final RegistryObject<DustBase> DUSTNICKEL = ITEMS.register("dustnickel", DustBase::new);
@@ -175,9 +175,9 @@ public class Registration {
     public static final RegistryObject<NuggetBase> NUGGETTIN = ITEMS.register("nuggettin", NuggetBase::new);
     public static final RegistryObject<NuggetBase> NUGGETLEAD = ITEMS.register("nuggetlead", NuggetBase::new);
     public static final RegistryObject<NuggetBase> NUGGETALUMINIUM = ITEMS.register("nuggetaluminium", NuggetBase::new);
-    public static final RegistryObject<NuggetBase> NUGGETZINC = ITEMS.register("nuggetzinc", NuggetBase::new);
-    public static final RegistryObject<NuggetBase> NUGGETOSMIUM = ITEMS.register("nuggetosmium", NuggetBase::new);
     public static final RegistryObject<NuggetBase> NUGGETSILVER = ITEMS.register("nuggetsilver", NuggetBase::new);
+    public static final RegistryObject<NuggetBase> NUGGETOSMIUM = ITEMS.register("nuggetosmium", NuggetBase::new);
+    public static final RegistryObject<NuggetBase> NUGGETZINC = ITEMS.register("nuggetzinc", NuggetBase::new);
     public static final RegistryObject<NuggetBase> NUGGETTUNGSTEN = ITEMS.register("nuggettungsten", NuggetBase::new);
     public static final RegistryObject<NuggetBase> NUGGETPLATINUM = ITEMS.register("nuggetplatinum", NuggetBase::new);
     public static final RegistryObject<NuggetBase> NUGGETNICKEL = ITEMS.register("nuggetnickel", NuggetBase::new);
@@ -196,9 +196,9 @@ public class Registration {
     public static final RegistryObject<PlateBase> PLATETIN = ITEMS.register("platetin", PlateBase::new);
     public static final RegistryObject<PlateBase> PLATELEAD = ITEMS.register("platelead", PlateBase::new);
     public static final RegistryObject<PlateBase> PLATEALUMINIUM = ITEMS.register("platealuminium", PlateBase::new);
-    public static final RegistryObject<PlateBase> PLATEZINC = ITEMS.register("platezinc", PlateBase::new);
-    public static final RegistryObject<PlateBase> PLATEOSMIUM = ITEMS.register("plateosmium", PlateBase::new);
     public static final RegistryObject<PlateBase> PLATESILVER = ITEMS.register("platesilver", PlateBase::new);
+    public static final RegistryObject<PlateBase> PLATEOSMIUM = ITEMS.register("plateosmium", PlateBase::new);
+    public static final RegistryObject<PlateBase> PLATEZINC = ITEMS.register("platezinc", PlateBase::new);
     public static final RegistryObject<PlateBase> PLATETUNGSTEN = ITEMS.register("platetungsten", PlateBase::new);
     public static final RegistryObject<PlateBase> PLATEPLATINUM = ITEMS.register("plateplatinum", PlateBase::new);
     public static final RegistryObject<PlateBase> PLATENICKEL = ITEMS.register("platenickel", PlateBase::new);
@@ -212,7 +212,25 @@ public class Registration {
     public static final RegistryObject<PlateBase> PLATEDIAMOND = ITEMS.register("platediamond", PlateBase::new);
 
     //RODS
+    public static final RegistryObject<RodBase> RODCOPPER = ITEMS.register("rodcopper", RodBase::new);
+    public static final RegistryObject<RodBase> RODTIN = ITEMS.register("rodtin", RodBase::new);
+    public static final RegistryObject<RodBase> RODLEAD = ITEMS.register("rodlead", RodBase::new);
+    public static final RegistryObject<RodBase> RODALUMINIUM = ITEMS.register("rodaluminium", RodBase::new);
+    public static final RegistryObject<RodBase> RODSILVER = ITEMS.register("rodsilver", RodBase::new);
+    public static final RegistryObject<RodBase> RODOSMIUM = ITEMS.register("rodosmium", RodBase::new);
+    public static final RegistryObject<RodBase> RODZINC = ITEMS.register("rodzinc", RodBase::new);
+    public static final RegistryObject<RodBase> RODTUNGSTEN = ITEMS.register("rodtungsten", RodBase::new);
+    public static final RegistryObject<RodBase> RODPLATINUM = ITEMS.register("rodplatinum", RodBase::new);
+    public static final RegistryObject<RodBase> RODNICKEL = ITEMS.register("rodnickel", RodBase::new);
+    public static final RegistryObject<RodBase> RODTITANIUM = ITEMS.register("rodtitanium", RodBase::new);
 
+    public static final RegistryObject<RodBase> RODSTEEL = ITEMS.register("rodsteel", RodBase::new);
+    public static final RegistryObject<RodBase> RODBRONZE = ITEMS.register("rodbronze", RodBase::new);
+
+    public static final RegistryObject<RodBase> RODSTONE = ITEMS.register("rodstone", RodBase::new);
+    public static final RegistryObject<RodBase> RODIRON = ITEMS.register("rodiron", RodBase::new);
+    public static final RegistryObject<RodBase> RODGOLD = ITEMS.register("rodgold", RodBase::new);
+    public static final RegistryObject<RodBase> RODDIAMOND = ITEMS.register("roddiamond", RodBase::new);
 
     //GEARS
 

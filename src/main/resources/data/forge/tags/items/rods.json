@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "matex:rodaluminium",
+    "matex:rodbronze",
+    "matex:rodcopper",
+    "matex:rodlead",
+    "matex:rodnickel",
+    "matex:rodosmium",
+    "matex:rodplatinum",
+    "matex:rodsilver",
+    "matex:rodsteel",
+    "matex:rodtin",
+    "matex:rodtitanium",
+    "matex:rodtungsten",
+    "matex:rodzinc",
+    "matex:rodstone",
+    "matex:rodiron",
+    "matex:rodgold",
+    "matex:roddiamond"
+  ]
+}

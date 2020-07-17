@@ -130,6 +130,28 @@
   "item.matex.plategold": "Gold Plate",
   "item.matex.platediamond": "Diamond Plate",
 
+  "_comment_": "Rods",
+  "item.matex.rodcopper": "Copper Rod",
+  "item.matex.rodtin": "Tin Rod",
+  "item.matex.rodlead": "Lead Rod",
+  "item.matex.rodaluminium": "Aluminium Rod",
+  "item.matex.rodosmium": "Osmium Rod",
+  "item.matex.rodzinc": "Zinc Rod",
+  "item.matex.rodsilver": "Silver Rod",
+  "item.matex.rodtungsten": "Tungsten Rod",
+  "item.matex.rodplatinum": "Platinum Rod",
+  "item.matex.rodnickel": "Nickel Rod",
+  "item.matex.rodtitanium": "Titanium Rod",
+
+  "item.matex.rodsteel": "Steel Rod",
+  "item.matex.rodbronze": "Bronze Rod",
+
+  "item.matex.rodstone": "Stone Rod",
+  "item.matex.rodiron": "Iron Rod",
+  "item.matex.rodgold": "Gold Rod",
+  "item.matex.roddiamond": "Diamond Rod",
+
+
   "_comment_": "Creative Tabs",
   "itemGroup.matex": "Materials Expanded"
 }

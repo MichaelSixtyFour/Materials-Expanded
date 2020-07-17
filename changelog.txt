@@ -1,0 +1,17 @@
+Added
+Hammer (used to make plates, see wiki for recipe)
+Plates (14: vanilla + matex metals)
+//Rods (15: vanilla + matex metals)
+//Gears (16: vanilla + matex metals)
+Diamond/quartz dusts
+Support for RefinedStorage silicon
+
+Updated
+Recipe file names (easier to understand what each does)
+All zinc textures (to distinguish more)
+Hardness level for all ores (approx. x2-x3)
+EXP recieved for smelting
+Silicon, gold dust, and tin ingot texture
+
+Removed
+Raw silicon ore (instead smelt quartz dust into silicon)
