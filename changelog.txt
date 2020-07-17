@@ -10,6 +10,7 @@ Support for RefinedStorage silicon
 Custom hammer/mortar tags
 
 Updated
+Creative tab icon (bronze plate)
 Recipe file names (easier to understand what each does)
 All zinc textures (to distinguish more)
 Hardness level for all ores (approx. x2-x3)

@@ -11,7 +11,7 @@ public class ModSetup {
     public static final ItemGroup MATEX_GROUP = new ItemGroup("matex") {
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(Registration.ORECOPPER.get());
+            return new ItemStack(Registration.PLATEBRONZE.get());
         }
     };
 
