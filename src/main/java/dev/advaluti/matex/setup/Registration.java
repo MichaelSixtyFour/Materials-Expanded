@@ -245,7 +245,30 @@ public class Registration {
     public static final RegistryObject<RodBase> RODNETHERITE = ITEMS.register("rodnetherite", RodBase::new);
 
     //GEARS
+    public static final RegistryObject<GearBase> GEARCOPPER = ITEMS.register("gearcopper", GearBase::new);
+    public static final RegistryObject<GearBase> GEARTIN = ITEMS.register("geartin", GearBase::new);
+    public static final RegistryObject<GearBase> GEARLEAD = ITEMS.register("gearlead", GearBase::new);
+    public static final RegistryObject<GearBase> GEARALUMINIUM = ITEMS.register("gearaluminium", GearBase::new);
+    public static final RegistryObject<GearBase> GEARSILVER = ITEMS.register("gearsilver", GearBase::new);
+    public static final RegistryObject<GearBase> GEAROSMIUM = ITEMS.register("gearosmium", GearBase::new);
+    public static final RegistryObject<GearBase> GEARZINC = ITEMS.register("gearzinc", GearBase::new);
+    public static final RegistryObject<GearBase> GEARTUNGSTEN = ITEMS.register("geartungsten", GearBase::new);
+    public static final RegistryObject<GearBase> GEARPLATINUM = ITEMS.register("gearplatinum", GearBase::new);
+    public static final RegistryObject<GearBase> GEARNICKEL = ITEMS.register("gearnickel", GearBase::new);
+    public static final RegistryObject<GearBase> GEARTITANIUM = ITEMS.register("geartitanium", GearBase::new);
+    public static final RegistryObject<GearBase> GEARURANIUM = ITEMS.register("gearuranium", GearBase::new);
+    public static final RegistryObject<GearBase> GEARTHORIUM = ITEMS.register("gearthorium", GearBase::new);
 
+    public static final RegistryObject<GearBase> GEARSTEEL = ITEMS.register("gearsteel", GearBase::new);
+    public static final RegistryObject<GearBase> GEARBRONZE = ITEMS.register("gearbronze", GearBase::new);
+
+    public static final RegistryObject<GearBase> GEARWOOD = ITEMS.register("gearwood", GearBase::new);
+    public static final RegistryObject<GearBase> GEARSTONE = ITEMS.register("gearstone", GearBase::new);
+    public static final RegistryObject<GearBase> GEARIRON = ITEMS.register("geariron", GearBase::new);
+    public static final RegistryObject<GearBase> GEARGOLD = ITEMS.register("geargold", GearBase::new);
+    public static final RegistryObject<GearBase> GEARDIAMOND = ITEMS.register("geardiamond", GearBase::new);
+    public static final RegistryObject<GearBase> GEAREMERALD = ITEMS.register("gearemerald", GearBase::new);
+    public static final RegistryObject<GearBase> GEARNETHERITE = ITEMS.register("gearnetherite", GearBase::new);
 
     //MISC
     public static final RegistryObject<MiscItemBase> ITEMSILICON = ITEMS.register("itemsilicon", MiscItemBase::new);

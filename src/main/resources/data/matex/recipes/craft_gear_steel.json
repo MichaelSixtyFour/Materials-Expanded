@@ -2,23 +2,24 @@
   "type": "minecraft:crafting_shaped",
   "pattern":
   [
-    "csc",
-    " c "
+    " x ",
+    "xox",
+    " x "
   ],
   "key":
   {
-    "c":
+    "o":
     {
-      "item": "minecraft:obsidian"
+      "tag": "forge:plates/steel"
     },
-    "s":
+    "x":
     {
       "tag": "forge:rods/steel"
     }
   },
   "result":
   {
-    "item": "matex:toolmortarobsidian",
+    "item": "matex:gearsteel",
     "count": 1
   }
 }

@@ -2,24 +2,24 @@
   "type": "minecraft:crafting_shaped",
   "pattern":
   [
-    " os",
-    " so",
-    "s  "
+    " x ",
+    "xox",
+    " x "
   ],
   "key":
   {
     "o":
     {
-      "item": "minecraft:obsidian"
+      "tag": "forge:plates/platinum"
     },
-    "s":
+    "x":
     {
-      "tag": "forge:rods/steel"
+      "tag": "forge:rods/platinum"
     }
   },
   "result":
   {
-    "item": "matex:toolhammerobsidian",
+    "item": "matex:gearplatinum",
     "count": 1
   }
 }

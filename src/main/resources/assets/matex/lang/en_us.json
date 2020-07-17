@@ -1,15 +1,12 @@
 {
-  "_comment_": "Tools",
   "item.matex.toolmortar": "Mortar",
   "item.matex.toolhammer": "Hammer",
   "item.matex.toolmortarobsidian": "Obsidian Mortar",
   "item.matex.toolhammerobsidian": "Obsidian Hammer",
 
-  "_comment_": "Misc. Ores",
   "block.matex.oresaltpeter": "Saltpeter Ore",
   "block.matex.oresulfur": "Sulfur Ore",
 
-  "_comment_": "Ores",
   "block.matex.orecopper": "Copper Ore",
   "block.matex.oretin": "Tin Ore",
   "block.matex.orelead": "Lead Ore",
@@ -24,7 +21,6 @@
   "block.matex.oreuranium": "Uranium Ore",
   "block.matex.orethorium": "Thorium Ore",
 
-  "_comment_": "Blocks",
   "block.matex.blockcopper": "Block of Copper",
   "block.matex.blocktin": "Block of Tin",
   "block.matex.blocklead": "Block of Lead",
@@ -42,11 +38,9 @@
   "block.matex.blocksteel": "Block of Steel",
   "block.matex.blockbronze": "Block of Bronze",
 
-  "_comment_": "Items",
   "item.matex.itemsilicon": "Silicon",
   "item.matex.itemfakeslime": "Artificial Slime",
 
-  "_comment_": "Ingots",
   "item.matex.ingotcopper": "Copper Ingot",
   "item.matex.ingottin": "Tin Ingot",
   "item.matex.ingotlead": "Lead Ingot",
@@ -64,7 +58,6 @@
   "item.matex.ingotsteel": "Steel Ingot",
   "item.matex.ingotbronze": "Bronze Ingot",
 
-  "_comment_": "Dusts",
   "item.matex.dustcopper": "Copper Dust",
   "item.matex.dusttin": "Tin Dust",
   "item.matex.dustlead": "Lead Dust",
@@ -93,7 +86,6 @@
   "item.matex.dustquartz": "Quartz Dust",
   "item.matex.dustnetherite": "Netherite Dust",
 
-  "_comment_": "Nuggets",
   "item.matex.nuggetcopper": "Copper Nugget",
   "item.matex.nuggettin": "Tin Nugget",
   "item.matex.nuggetlead": "Lead Nugget",
@@ -114,7 +106,6 @@
   "item.matex.nuggetcoal": "Coal Nugget",
   "item.matex.nuggetcharcoal": "Charcoal Nugget",
 
-  "_comment_": "Plates",
   "item.matex.platecopper": "Copper Plate",
   "item.matex.platetin": "Tin Plate",
   "item.matex.platelead": "Lead Plate",
@@ -138,7 +129,6 @@
   "item.matex.plateemerald": "Emerald Plate",
   "item.matex.platenetherite": "Netherite Plate",
 
-  "_comment_": "Rods",
   "item.matex.rodcopper": "Copper Rod",
   "item.matex.rodtin": "Tin Rod",
   "item.matex.rodlead": "Lead Rod",
@@ -163,7 +153,30 @@
   "item.matex.rodemerald": "Emerald Rod",
   "item.matex.rodnetherite": "Netherite Rod",
 
+  "item.matex.gearcopper": "Copper Gear",
+  "item.matex.geartin": "Tin Gear",
+  "item.matex.gearlead": "Lead Gear",
+  "item.matex.gearaluminium": "Aluminium Gear",
+  "item.matex.gearosmium": "Osmium Gear",
+  "item.matex.gearzinc": "Zinc Gear",
+  "item.matex.gearsilver": "Silver Gear",
+  "item.matex.geartungsten": "Tungsten Gear",
+  "item.matex.gearplatinum": "Platinum Gear",
+  "item.matex.gearnickel": "Nickel Gear",
+  "item.matex.geartitanium": "Titanium Gear",
+  "item.matex.gearuranium": "Uranium Gear",
+  "item.matex.gearthorium": "Thorium Gear",
 
-  "_comment_": "Creative Tabs",
+  "item.matex.gearsteel": "Steel Gear",
+  "item.matex.gearbronze": "Bronze Gear",
+
+  "item.matex.gearwood": "Wooden Gear",
+  "item.matex.gearstone": "Stone Gear",
+  "item.matex.geariron": "Iron Gear",
+  "item.matex.geargold": "Gold Gear",
+  "item.matex.geardiamond": "Diamond Gear",
+  "item.matex.gearemerald": "Emerald Gear",
+  "item.matex.gearnetherite": "Netherite Gear",
+
   "itemGroup.matex": "Materials Expanded"
 }

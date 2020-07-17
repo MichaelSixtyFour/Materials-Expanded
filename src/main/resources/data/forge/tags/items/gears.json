@@ -1,0 +1,27 @@
+{
+  "replace": false,
+  "values": [
+    "matex:gearaluminium",
+    "matex:gearbronze",
+    "matex:gearcopper",
+    "matex:gearlead",
+    "matex:gearnickel",
+    "matex:gearosmium",
+    "matex:gearplatinum",
+    "matex:gearsilver",
+    "matex:gearsteel",
+    "matex:geartin",
+    "matex:geartitanium",
+    "matex:geartungsten",
+    "matex:gearzinc",
+    "matex:gearuranium",
+    "matex:gearthorium",
+    "matex:gearwood",
+    "matex:gearstone",
+    "matex:geariron",
+    "matex:geargold",
+    "matex:geardiamond",
+    "matex:gearemerald",
+    "matex:gearnetherite"
+  ]
+}

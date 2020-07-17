@@ -2,24 +2,24 @@
   "type": "minecraft:crafting_shaped",
   "pattern":
   [
-    " os",
-    " so",
-    "s  "
+    " x ",
+    "xox",
+    " x "
   ],
   "key":
   {
     "o":
     {
-      "item": "minecraft:obsidian"
+      "tag": "forge:plates/aluminum"
     },
-    "s":
+    "x":
     {
-      "tag": "forge:rods/steel"
+      "tag": "forge:rods/aluminum"
     }
   },
   "result":
   {
-    "item": "matex:toolhammerobsidian",
+    "item": "matex:gearaluminium",
     "count": 1
   }
 }
