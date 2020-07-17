@@ -29,7 +29,7 @@ public class ToolHammer extends Item implements IForgeItem, IToolHammer {
 
     @Override
     public boolean showDurabilityBar(ItemStack stack) {
-        return false;
+        return true;
 
     }
 
