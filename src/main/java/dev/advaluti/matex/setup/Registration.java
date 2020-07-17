@@ -30,6 +30,8 @@ public class Registration {
     //TOOLS
     public static final RegistryObject<ToolMortar> TOOLMORTAR = ITEMS.register("toolmortar", ToolMortar::new);
     public static final RegistryObject<ToolHammer> TOOLHAMMER = ITEMS.register("toolhammer", ToolHammer::new);
+    public static final RegistryObject<ToolMortarObsidian> TOOLMORTAROBSIDIAN = ITEMS.register("toolmortarobsidian", ToolMortarObsidian::new);
+    public static final RegistryObject<ToolHammerObsidian> TOOLHAMMEROBSIDIAN = ITEMS.register("toolhammerobsidian", ToolHammerObsidian::new);
 
     //MISC ORES
     public static final RegistryObject<OreSaltpeter> ORESALTPETER = BLOCKS.register("oresaltpeter", OreSaltpeter::new);

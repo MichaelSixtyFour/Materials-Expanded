@@ -2,6 +2,8 @@
   "_comment_": "Tools",
   "item.matex.toolmortar": "Mortar",
   "item.matex.toolhammer": "Hammer",
+  "item.matex.toolmortarobsidian": "Obsidian Mortar",
+  "item.matex.toolhammerobsidian": "Obsidian Hammer",
 
   "_comment_": "Misc. Ores",
   "block.matex.oresaltpeter": "Saltpeter Ore",

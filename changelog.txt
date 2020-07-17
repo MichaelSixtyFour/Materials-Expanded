@@ -1,12 +1,13 @@
 Added
 Hammer (used to make plates/rods, see wiki for recipe)
-Obsidian Hammer (has x8 more durability, can craft netherite)
-Obsidian Mortar (has x8 more durability, can craft netherite)
-Plates (18: vanilla + matex metals)
-Rods (19: vanilla + matex metals)
-Gears (20: vanilla + matex metals)
+Obsidian Hammer (has x8 more durability, used for netherite/uranium/thorium)
+Obsidian Mortar (has x8 more durability, used for netherite/uranium/thorium)
+Plates (18: vanilla materials + matex materials)
+Rods (19: vanilla materials + matex materials)
+Gears (20: vanilla materials + matex materials)
 Diamond/quartz/lapis/emerald dusts
 Support for RefinedStorage silicon
+Custom hammer/mortar tags
 
 Updated
 Recipe file names (easier to understand what each does)

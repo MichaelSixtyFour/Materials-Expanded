@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "matex:toolmortar"
+      "tag": "matex:mortar"
     },
     {
       "tag": "forge:ores/lead"

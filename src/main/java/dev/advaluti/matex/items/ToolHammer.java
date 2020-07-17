@@ -17,7 +17,7 @@ public class ToolHammer extends Item implements IForgeItem, IToolMortar {
     public ToolHammer() {
         super(new Properties()
                 .group(ModSetup.MATEX_GROUP)
-                .defaultMaxDamage(128)
+                .defaultMaxDamage(64)
         );
     }
 
