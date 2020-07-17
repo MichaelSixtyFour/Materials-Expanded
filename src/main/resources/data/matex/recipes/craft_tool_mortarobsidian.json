@@ -2,24 +2,23 @@
   "type": "minecraft:crafting_shaped",
   "pattern":
   [
-    " is",
-    " si",
-    "s  "
+    "csc",
+    " c "
   ],
   "key":
   {
-    "i":
+    "c":
     {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:obsidian"
     },
     "s":
     {
-      "tag": "forge:rods/wooden"
+      "tag": "forge:ingots/steel"
     }
   },
   "result":
   {
-    "item": "matex:toolhammer",
+    "item": "matex:toolmortarobsidian",
     "count": 1
   }
 }
