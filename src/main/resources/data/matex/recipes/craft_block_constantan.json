@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "tag": "forge:ingots/constantan"
+    }
+  },
+  "result":
+  {
+    "item": "matex:blockcupronickel",
+    "count": 1
+  }
+}

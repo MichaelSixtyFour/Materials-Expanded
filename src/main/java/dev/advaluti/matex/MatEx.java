@@ -22,7 +22,7 @@ public class MatEx {
 
         Registration.init();
 
-        // Register the setup method for modloading
+        // Register the setup method for mod loading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(ModSetup::init);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(ClientSetup::init);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(Registration::modSetup);

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "matex:mortar"
+    },
+    {
+      "tag": "forge:ingots/cupronickel"
+    }
+  ],
+  "result":
+  {
+    "item": "matex:dustcupronickel",
+    "count": 1
+  }
+}

@@ -15,6 +15,11 @@
     "matex:ingottitanium",
     "matex:ingottungsten",
     "matex:ingoturanium",
-    "matex:ingotzinc"
+    "matex:ingotzinc",
+    "matex:ingotelectrum",
+    "matex:ingotcupronickel",
+    "matex:ingotaluminiumbrass",
+    "matex:ingotbrass",
+    "matex:ingotinvar"
   ]
 }

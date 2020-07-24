@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/copper"
+    },
+    {
+      "tag": "forge:dusts/copper"
+    },
+    {
+      "tag": "forge:dusts/copper"
+    },
+    {
+      "tag": "forge:dusts/nickel"
+    }
+  ],
+  "result":
+  {
+    "item": "matex:dustelectrum",
+    "count": 2
+  }
+}

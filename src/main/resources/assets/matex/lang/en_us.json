@@ -37,6 +37,11 @@
 
   "block.matex.blocksteel": "Block of Steel",
   "block.matex.blockbronze": "Block of Bronze",
+  "block.matex.blockelectrum": "Block of Electrum",
+  "block.matex.blockcupronickel": "Block of Cupronickel",
+  "block.matex.blockaluminiumbrass": "Block of Aluminium Brass",
+  "block.matex.blockbrass": "Block of Brass",
+  "block.matex.blockinvar": "Block of Invar",
 
   "item.matex.itemsilicon": "Silicon",
   "item.matex.itemfakeslime": "Artificial Slime",
@@ -57,6 +62,11 @@
 
   "item.matex.ingotsteel": "Steel Ingot",
   "item.matex.ingotbronze": "Bronze Ingot",
+  "item.matex.ingotelectrum": "Electrum Ingot",
+  "item.matex.ingotcupronickel": "Cupronickel Ingot",
+  "item.matex.ingotaluminiumbrass": "Aluminium Brass Ingot",
+  "item.matex.ingotbrass": "Brass Ingot",
+  "item.matex.ingotinvar": "Invar Ingot",
 
   "item.matex.dustcopper": "Copper Dust",
   "item.matex.dusttin": "Tin Dust",
@@ -77,6 +87,11 @@
 
   "item.matex.duststeel": "Steel Dust",
   "item.matex.dustbronze": "Bronze Dust",
+  "item.matex.dustelectrum": "Electrum Dust",
+  "item.matex.dustcupronickel": "Cupronickel Dust",
+  "item.matex.dustaluminiumbrass": "Aluminium Brass Dust",
+  "item.matex.dustbrass": "Brass Dust",
+  "item.matex.dustinvar": "Invar Dust",
 
   "item.matex.dustcoal": "Coal Dust",
   "item.matex.dustiron": "Iron Dust",
@@ -102,6 +117,11 @@
 
   "item.matex.nuggetsteel": "Steel Nugget",
   "item.matex.nuggetbronze": "Bronze Nugget",
+  "item.matex.nuggetelectrum": "Electrum Nugget",
+  "item.matex.nuggetcupronickel": "Cupronickel Nugget",
+  "item.matex.nuggetaluminiumbrass": "Aluminium Brass Nugget",
+  "item.matex.nuggetbrass": "Brass Nugget",
+  "item.matex.nuggetinvar": "Invar Nugget",
 
   "item.matex.nuggetcoal": "Coal Nugget",
   "item.matex.nuggetcharcoal": "Charcoal Nugget",
@@ -122,6 +142,11 @@
 
   "item.matex.platesteel": "Steel Plate",
   "item.matex.platebronze": "Bronze Plate",
+  "item.matex.plateelectrum": "Electrum Plate",
+  "item.matex.platecupronickel": "Cupronickel Plate",
+  "item.matex.platealuminiumbrass": "Aluminium Brass Plate",
+  "item.matex.platebrass": "Brass Plate",
+  "item.matex.plateinvar": "Invar Plate",
 
   "item.matex.plateiron": "Iron Plate",
   "item.matex.plategold": "Gold Plate",
@@ -145,6 +170,11 @@
 
   "item.matex.rodsteel": "Steel Rod",
   "item.matex.rodbronze": "Bronze Rod",
+  "item.matex.rodelectrum": "Electrum Rod",
+  "item.matex.rodcupronickel": "Cupronickel Rod",
+  "item.matex.rodaluminiumbrass": "Aluminium Brass Rod",
+  "item.matex.rodbrass": "Brass Rod",
+  "item.matex.rodinvar": "Invar Rod",
 
   "item.matex.rodstone": "Stone Rod",
   "item.matex.rodiron": "Iron Rod",
@@ -169,6 +199,11 @@
 
   "item.matex.gearsteel": "Steel Gear",
   "item.matex.gearbronze": "Bronze Gear",
+  "item.matex.gearelectrum": "Electrum Gear",
+  "item.matex.gearcupronickel": "Cupronickel Gear",
+  "item.matex.gearaluminiumbrass": "Aluminium Brass Gear",
+  "item.matex.gearbrass": "Brass Gear",
+  "item.matex.gearinvar": "Invar Gear",
 
   "item.matex.gearwood": "Wooden Gear",
   "item.matex.gearstone": "Stone Gear",

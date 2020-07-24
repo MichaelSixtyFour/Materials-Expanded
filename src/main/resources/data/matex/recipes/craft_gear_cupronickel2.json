@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " x ",
+    "xox",
+    " x "
+  ],
+  "key":
+  {
+    "o":
+    {
+      "tag": "forge:plates/constantan"
+    },
+    "x":
+    {
+      "tag": "forge:rods/constantan"
+    }
+  },
+  "result":
+  {
+    "item": "matex:gearcupronickel",
+    "count": 1
+  }
+}

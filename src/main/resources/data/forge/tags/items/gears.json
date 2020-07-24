@@ -22,6 +22,11 @@
     "matex:geargold",
     "matex:geardiamond",
     "matex:gearemerald",
-    "matex:gearnetherite"
+    "matex:gearnetherite",
+    "matex:gearelectrum",
+    "matex:gearcupronickel",
+    "matex:gearaluminiumbrass",
+    "matex:gearbrass",
+    "matex:gearinvar"
   ]
 }

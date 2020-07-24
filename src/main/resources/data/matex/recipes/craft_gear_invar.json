@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " x ",
+    "xox",
+    " x "
+  ],
+  "key":
+  {
+    "o":
+    {
+      "tag": "forge:plates/invar"
+    },
+    "x":
+    {
+      "tag": "forge:rods/invar"
+    }
+  },
+  "result":
+  {
+    "item": "matex:gearinvar",
+    "count": 1
+  }
+}

@@ -16,6 +16,11 @@
     "matex:blocktitanium",
     "matex:blocktungsten",
     "matex:blockuranium",
-    "matex:blockzinc"
+    "matex:blockzinc",
+    "matex:blockelectrum",
+    "matex:blockcupronickel",
+    "matex:blockaluminiumbrass",
+    "matex:blockbrass",
+    "matex:blockinvar"
   ]
 }

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/aluminium"
+    },
+    {
+      "tag": "forge:dusts/aluminium"
+    },
+    {
+      "tag": "forge:dusts/aluminium"
+    },
+    {
+      "tag": "forge:dusts/copper"
+    }
+  ],
+  "result":
+  {
+    "item": "matex:dustaluminiumbrass",
+    "count": 2
+  }
+}

@@ -20,6 +20,11 @@
     "matex:plategold",
     "matex:platediamond",
     "matex:plateemerald",
-    "matex:platenetherite"
+    "matex:platenetherite",
+    "matex:plateelectrum",
+    "matex:platecupronickel",
+    "matex:platealuminiumbrass",
+    "matex:platebrass",
+    "matex:plateinvar"
   ]
 }

@@ -24,6 +24,11 @@
     "matex:dustdiamond",
     "matex:dustemerald",
     "matex:dustquartz",
-    "matex:dustnetherite"
+    "matex:dustnetherite",
+    "matex:dustelectrum",
+    "matex:dustcupronickel",
+    "matex:dustaluminiumbrass",
+    "matex:dustbrass",
+    "matex:dustinvar"
   ]
 }
