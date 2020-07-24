@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:storage_blocks/aluminum"
+    }
+  ],
+  "result":
+  {
+    "item": "matex:ingotaluminium",
+    "count": 9
+  }
+}

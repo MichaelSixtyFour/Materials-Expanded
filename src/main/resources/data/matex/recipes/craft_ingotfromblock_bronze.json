@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:storage_blocks/bronze"
+    }
+  ],
+  "result":
+  {
+    "item": "matex:ingotbronze",
+    "count": 9
+  }
+}

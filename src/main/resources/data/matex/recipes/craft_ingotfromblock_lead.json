@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:storage_blocks/lead"
+    }
+  ],
+  "result":
+  {
+    "item": "matex:ingotlead",
+    "count": 9
+  }
+}
