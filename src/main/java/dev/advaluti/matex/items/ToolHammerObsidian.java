@@ -16,7 +16,7 @@ public class ToolHammerObsidian extends Item implements IForgeItem, IToolHammer 
 
     public ToolHammerObsidian() {
         super(new Properties()
-                .group(ModSetup.MATEX_GROUP)
+                .group(ModSetup.MATEXTOOLS_GROUP)
                 .defaultMaxDamage(512)
         );
     }

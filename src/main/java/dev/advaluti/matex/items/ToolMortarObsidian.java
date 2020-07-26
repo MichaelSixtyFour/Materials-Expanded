@@ -16,7 +16,7 @@ public class ToolMortarObsidian extends Item implements IForgeItem, IToolMortar 
 
     public ToolMortarObsidian() {
         super(new Properties()
-                .group(ModSetup.MATEX_GROUP)
+                .group(ModSetup.MATEXTOOLS_GROUP)
                 .defaultMaxDamage(128)
         );
     }
