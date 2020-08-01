@@ -23,8 +23,8 @@ public enum BaseToolMaterial implements IItemTier {
     ALUMINIUMBRASS(2, 450, 6.0F, 1.5F, 18, () -> Ingredient.fromItems(Registration.INGOTALUMINIUMBRASS.get())),
     BRASS(2, 400, 4.0F, 2.0F, 10, () -> Ingredient.fromItems(Registration.INGOTBRASS.get())),
     INVAR(2, 350, 4.0F, 2.5F, 8, () -> Ingredient.fromItems(Registration.INGOTINVAR.get())),
-    STEEL(2, 750, 6.0F, 3.0F, 12, () -> Ingredient.fromItems(Registration.INGOTSTEEL.get())),
-    BRONZE(2, 850, 6.0F, 3.0F, 8, () -> Ingredient.fromItems(Registration.INGOTBRONZE.get()));
+    STEEL(2, 750, 6.0F, 2.0F, 12, () -> Ingredient.fromItems(Registration.INGOTSTEEL.get())),
+    BRONZE(2, 850, 6.0F, 2.0F, 8, () -> Ingredient.fromItems(Registration.INGOTBRONZE.get()));
 
     private final int harvestLevel;
     private final int itemDurability;
@@ -66,7 +66,7 @@ public enum BaseToolMaterial implements IItemTier {
         return this.enchantability;
     }
 
-    @Override
+    //@Override
     public Ingredient getRepairMaterial() {
         return repairMaterial.get();
     }

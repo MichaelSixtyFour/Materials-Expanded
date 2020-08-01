@@ -18,7 +18,7 @@ public class ModSetup {
     public static final ItemGroup MATEXTOOLS_GROUP = new ItemGroup("matextools") {
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(Registration.AXECOPPER.get());
+            return new ItemStack(Registration.TOOLMORTAR.get());
         }
     };
 

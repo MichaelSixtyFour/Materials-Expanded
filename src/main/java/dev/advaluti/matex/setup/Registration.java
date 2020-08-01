@@ -5,6 +5,7 @@ import dev.advaluti.matex.items.*;
 import dev.advaluti.matex.materials.BaseArmorMaterial;
 import dev.advaluti.matex.materials.BaseToolMaterial;
 import dev.advaluti.matex.world.OreGen;
+import jdk.nashorn.api.scripting.ScriptObjectMirror;
 import net.minecraft.block.Block;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
@@ -23,11 +24,41 @@ public class Registration {
     private static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MOD_ID);
     private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MOD_ID);
 
+    public static String[] toolMaterials = {"copper", "tin", "lead", "aluminium", "silver", "osmium", "zinc", "tungsten", "platinum", "nickel", "titanium",
+            "steel", "bronze", "electrum", "cupronickel",  "brass", "aluminiumbrass", "invar"};
+
     public static void init() {
+        for (String toolMaterial : toolMaterials) {
+            final String material = toolMaterial.toUpperCase();
+
+            //TOOLS
+            final RegistryObject<SwordItem> SWORDREGISTER = ITEMS.register("sword" + toolMaterial, () ->
+                    new SwordItem(BaseToolMaterial.valueOf(material), 3, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
+            final RegistryObject<ShovelItem> SHOVELREGISTER = ITEMS.register("shovel" + toolMaterial, () ->
+                    new ShovelItem(BaseToolMaterial.valueOf(material), 2, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
+            final RegistryObject<PickaxeItem> PICKAXEREGISTER = ITEMS.register("pickaxe" + toolMaterial, () ->
+                    new PickaxeItem(BaseToolMaterial.valueOf(material), 2, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
+            final RegistryObject<AxeItem> AXEREGISTER = ITEMS.register("axe" + toolMaterial, () ->
+                    new AxeItem(BaseToolMaterial.valueOf(material), 5, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
+            final RegistryObject<HoeItem> HOEREGISTER = ITEMS.register("hoe" + toolMaterial, () ->
+                    new HoeItem(BaseToolMaterial.valueOf(material), 0, -1.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
+
+            //ARMOR
+            final RegistryObject<ArmorItem> HELMETREGISTER = ITEMS.register("helmet" + toolMaterial, () ->
+                    new ArmorItem(BaseArmorMaterial.valueOf(material), EquipmentSlotType.HEAD, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
+            final RegistryObject<ArmorItem> CHESTPLATEREGISTER = ITEMS.register("chestplate" + toolMaterial, () ->
+                    new ArmorItem(BaseArmorMaterial.valueOf(material), EquipmentSlotType.CHEST, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
+            final RegistryObject<ArmorItem> LEGGINGSREGISTER = ITEMS.register("leggings" + toolMaterial, () ->
+                    new ArmorItem(BaseArmorMaterial.valueOf(material), EquipmentSlotType.LEGS, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
+            final RegistryObject<ArmorItem> BOOTSREGISTER = ITEMS.register("boots" + toolMaterial, () ->
+                    new ArmorItem(BaseArmorMaterial.valueOf(material), EquipmentSlotType.FEET, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
+        }
+
         BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
 
     }
+
 
     //TOOLS
     public static final RegistryObject<ToolMortar> TOOLMORTAR = ITEMS.register("toolmortar", ToolMortar::new);
@@ -321,234 +352,6 @@ public class Registration {
     //MISC
     public static final RegistryObject<MiscItemBase> ITEMSILICON = ITEMS.register("itemsilicon", MiscItemBase::new);
     public static final RegistryObject<MiscItemBase> ITEMFAKESLIME = ITEMS.register("itemfakeslime", MiscItemBase::new);
-
-    //TOOLS AND ARMOR
-
-    // COPPER
-    public static final RegistryObject<SwordItem> SWORDCOPPER = ITEMS.register("swordcopper", () ->
-            new SwordItem(BaseToolMaterial.COPPER, 4, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<ShovelItem> SHOVELCOPPER = ITEMS.register("shovelcopper", () ->
-            new ShovelItem(BaseToolMaterial.COPPER, 2, -3.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<PickaxeItem> PICKAXECOPPER = ITEMS.register("pickaxecopper", () ->
-            new PickaxeItem(BaseToolMaterial.COPPER, 2, -2.8F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<AxeItem> AXECOPPER = ITEMS.register("axecopper", () ->
-            new AxeItem(BaseToolMaterial.COPPER, 6, -3.1F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<HoeItem> HOECOPPER = ITEMS.register("hoecopper", () ->
-            new HoeItem(BaseToolMaterial.COPPER, 0, -1.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-
-    public static final RegistryObject<ArmorItem> HELMETCOPPER = ITEMS.register("helmetcopper", () ->
-            new ArmorItem(BaseArmorMaterial.COPPER, EquipmentSlotType.HEAD, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<ArmorItem> CHESTPLATECOPPER = ITEMS.register("chestplatecopper", () ->
-            new ArmorItem(BaseArmorMaterial.COPPER, EquipmentSlotType.CHEST, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<ArmorItem> LEGGINGSCOPPER = ITEMS.register("leggingscopper", () ->
-            new ArmorItem(BaseArmorMaterial.COPPER, EquipmentSlotType.LEGS, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<ArmorItem> BOOTSCOPPER = ITEMS.register("bootscopper", () ->
-            new ArmorItem(BaseArmorMaterial.COPPER, EquipmentSlotType.FEET, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-
-
-    // TIN
-    public static final RegistryObject<SwordItem> SWORDTIN = ITEMS.register("swordtin", () ->
-            new SwordItem(BaseToolMaterial.TIN, 4, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<ShovelItem> SHOVELTIN = ITEMS.register("shoveltin", () ->
-            new ShovelItem(BaseToolMaterial.TIN, 2, -3.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<PickaxeItem> PICKAXETIN = ITEMS.register("pickaxetin", () ->
-            new PickaxeItem(BaseToolMaterial.TIN, 2, -2.8F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<AxeItem> AXETIN = ITEMS.register("axetin", () ->
-            new AxeItem(BaseToolMaterial.TIN, 6, -3.1F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<HoeItem> HOETIN = ITEMS.register("hoetin", () ->
-            new HoeItem(BaseToolMaterial.TIN, 0, -1.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-
-    // LEAD
-    public static final RegistryObject<SwordItem> SWORDLEAD = ITEMS.register("swordlead", () ->
-            new SwordItem(BaseToolMaterial.LEAD, 4, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<ShovelItem> SHOVELLEAD = ITEMS.register("shovellead", () ->
-            new ShovelItem(BaseToolMaterial.LEAD, 2, -3.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<PickaxeItem> PICKAXELEAD = ITEMS.register("pickaxelead", () ->
-            new PickaxeItem(BaseToolMaterial.LEAD, 2, -2.8F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<AxeItem> AXELEAD = ITEMS.register("axelead", () ->
-            new AxeItem(BaseToolMaterial.LEAD, 6, -3.1F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<HoeItem> HOELEAD = ITEMS.register("hoelead", () ->
-            new HoeItem(BaseToolMaterial.LEAD, 0, -1.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-
-    // ALUMINIUM
-    public static final RegistryObject<SwordItem> SWORDALUMINIUM = ITEMS.register("swordaluminium", () ->
-            new SwordItem(BaseToolMaterial.ALUMINIUM, 4, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<ShovelItem> SHOVELALUMINIUM = ITEMS.register("shovelaluminium", () ->
-            new ShovelItem(BaseToolMaterial.ALUMINIUM, 2, -3.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<PickaxeItem> PICKAXEALUMINIUM = ITEMS.register("pickaxealuminium", () ->
-            new PickaxeItem(BaseToolMaterial.ALUMINIUM, 2, -2.8F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<AxeItem> AXEALUMINIUM = ITEMS.register("axealuminium", () ->
-            new AxeItem(BaseToolMaterial.ALUMINIUM, 6, -3.1F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<HoeItem> HOEALUMINIUM = ITEMS.register("hoealuminium", () ->
-            new HoeItem(BaseToolMaterial.ALUMINIUM, 0, -1.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-
-    // SILVER
-    public static final RegistryObject<SwordItem> SWORDSILVER = ITEMS.register("swordsilver", () ->
-            new SwordItem(BaseToolMaterial.SILVER, 4, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<ShovelItem> SHOVELSILVER = ITEMS.register("shovelsilver", () ->
-            new ShovelItem(BaseToolMaterial.SILVER, 2, -3.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<PickaxeItem> PICKAXESILVER = ITEMS.register("pickaxesilver", () ->
-            new PickaxeItem(BaseToolMaterial.SILVER, 2, -2.8F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<AxeItem> AXESILVER = ITEMS.register("axesilver", () ->
-            new AxeItem(BaseToolMaterial.SILVER, 6, -3.1F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<HoeItem> HOESILVER = ITEMS.register("hoesilver", () ->
-            new HoeItem(BaseToolMaterial.SILVER, 0, -1.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-
-    // OSMIUM
-    public static final RegistryObject<SwordItem> SWORDOSMIUM = ITEMS.register("swordosmium", () ->
-            new SwordItem(BaseToolMaterial.OSMIUM, 4, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<ShovelItem> SHOVELOSMIUM = ITEMS.register("shovelosmium", () ->
-            new ShovelItem(BaseToolMaterial.OSMIUM, 2, -3.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<PickaxeItem> PICKAXEOSMIUM = ITEMS.register("pickaxeosmium", () ->
-            new PickaxeItem(BaseToolMaterial.OSMIUM, 2, -2.8F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<AxeItem> AXEOSMIUM = ITEMS.register("axeosmium", () ->
-            new AxeItem(BaseToolMaterial.OSMIUM, 6, -3.1F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<HoeItem> HOEOSMIUM = ITEMS.register("hoeosmium", () ->
-            new HoeItem(BaseToolMaterial.OSMIUM, 0, -1.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-
-    // ZINC
-    public static final RegistryObject<SwordItem> SWORDZINC = ITEMS.register("swordzinc", () ->
-            new SwordItem(BaseToolMaterial.ZINC, 4, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<ShovelItem> SHOVELZINC = ITEMS.register("shovelzinc", () ->
-            new ShovelItem(BaseToolMaterial.ZINC, 2, -3.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<PickaxeItem> PICKAXEZINC = ITEMS.register("pickaxezinc", () ->
-            new PickaxeItem(BaseToolMaterial.ZINC, 2, -2.8F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<AxeItem> AXEZINC = ITEMS.register("axezinc", () ->
-            new AxeItem(BaseToolMaterial.ZINC, 6, -3.1F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<HoeItem> HOEZINC = ITEMS.register("hoezinc", () ->
-            new HoeItem(BaseToolMaterial.ZINC, 0, -1.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-
-    // TUNGSTEN
-    public static final RegistryObject<SwordItem> SWORDTUNGSTEN = ITEMS.register("swordtungsten", () ->
-            new SwordItem(BaseToolMaterial.TUNGSTEN, 4, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<ShovelItem> SHOVELTUNGSTEN = ITEMS.register("shoveltungsten", () ->
-            new ShovelItem(BaseToolMaterial.TUNGSTEN, 2, -3.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<PickaxeItem> PICKAXETUNGSTEN = ITEMS.register("pickaxetungsten", () ->
-            new PickaxeItem(BaseToolMaterial.TUNGSTEN, 2, -2.8F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<AxeItem> AXETUNGSTEN = ITEMS.register("axetungsten", () ->
-            new AxeItem(BaseToolMaterial.TUNGSTEN, 6, -3.1F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<HoeItem> HOETUNGSTEN = ITEMS.register("hoetungsten", () ->
-            new HoeItem(BaseToolMaterial.TUNGSTEN, 0, -1.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-
-    // PLATINUM
-    public static final RegistryObject<SwordItem> SWORDPLATINUM = ITEMS.register("swordplatinum", () ->
-            new SwordItem(BaseToolMaterial.PLATINUM, 4, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<ShovelItem> SHOVELPLATINUM = ITEMS.register("shovelplatinum", () ->
-            new ShovelItem(BaseToolMaterial.PLATINUM, 2, -3.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<PickaxeItem> PICKAXEPLATINUM = ITEMS.register("pickaxeplatinum", () ->
-            new PickaxeItem(BaseToolMaterial.PLATINUM, 2, -2.8F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<AxeItem> AXEPLATINUM = ITEMS.register("axeplatinum", () ->
-            new AxeItem(BaseToolMaterial.PLATINUM, 6, -3.1F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<HoeItem> HOEPLATINUM = ITEMS.register("hoeplatinum", () ->
-            new HoeItem(BaseToolMaterial.PLATINUM, 0, -1.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-
-    // NICKEL
-    public static final RegistryObject<SwordItem> SWORDNICKEL = ITEMS.register("swordnickel", () ->
-            new SwordItem(BaseToolMaterial.NICKEL, 4, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<ShovelItem> SHOVELNICKEL = ITEMS.register("shovelnickel", () ->
-            new ShovelItem(BaseToolMaterial.NICKEL, 2, -3.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<PickaxeItem> PICKAXENICKEL = ITEMS.register("pickaxenickel", () ->
-            new PickaxeItem(BaseToolMaterial.NICKEL, 2, -2.8F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<AxeItem> AXENICKEL = ITEMS.register("axenickel", () ->
-            new AxeItem(BaseToolMaterial.NICKEL, 6, -3.1F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<HoeItem> HOENICKEL = ITEMS.register("hoenickel", () ->
-            new HoeItem(BaseToolMaterial.NICKEL, 0, -1.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-
-    // TITANIUM
-    public static final RegistryObject<SwordItem> SWORDTITANIUM = ITEMS.register("swordtitanium", () ->
-            new SwordItem(BaseToolMaterial.TITANIUM, 4, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<ShovelItem> SHOVELTITANIUM = ITEMS.register("shoveltitanium", () ->
-            new ShovelItem(BaseToolMaterial.TITANIUM, 2, -3.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<PickaxeItem> PICKAXETITANIUM = ITEMS.register("pickaxetitanium", () ->
-            new PickaxeItem(BaseToolMaterial.TITANIUM, 2, -2.8F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<AxeItem> AXETITANIUM = ITEMS.register("axetitanium", () ->
-            new AxeItem(BaseToolMaterial.TITANIUM, 6, -3.1F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<HoeItem> HOETITANIUM = ITEMS.register("hoetitanium", () ->
-            new HoeItem(BaseToolMaterial.TITANIUM, 0, -1.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-
-    //STEEL
-    public static final RegistryObject<SwordItem> SWORDSTEEL = ITEMS.register("swordsteel", () ->
-            new SwordItem(BaseToolMaterial.STEEL, 4, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<ShovelItem> SHOVELSTEEL = ITEMS.register("shovelsteel", () ->
-            new ShovelItem(BaseToolMaterial.STEEL, 2, -3.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<PickaxeItem> PICKAXESTEEL = ITEMS.register("pickaxesteel", () ->
-            new PickaxeItem(BaseToolMaterial.STEEL, 2, -2.8F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<AxeItem> AXESTEEL = ITEMS.register("axesteel", () ->
-            new AxeItem(BaseToolMaterial.STEEL, 4, -3.1F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<HoeItem> HOESTEEL = ITEMS.register("hoesteel", () ->
-            new HoeItem(BaseToolMaterial.STEEL, 0, -1.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-
-    //BRONZE
-    public static final RegistryObject<SwordItem> SWORDBRONZE = ITEMS.register("swordbronze", () ->
-            new SwordItem(BaseToolMaterial.BRONZE, 4, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<ShovelItem> SHOVELBRONZE = ITEMS.register("shovelbronze", () ->
-            new ShovelItem(BaseToolMaterial.BRONZE, 2, -3.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<PickaxeItem> PICKAXEBRONZE = ITEMS.register("pickaxebronze", () ->
-            new PickaxeItem(BaseToolMaterial.BRONZE, 2, -2.8F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<AxeItem> AXEBRONZE = ITEMS.register("axebronze", () ->
-            new AxeItem(BaseToolMaterial.BRONZE, 4, -3.1F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<HoeItem> HOEBRONZE = ITEMS.register("hoebronze", () ->
-            new HoeItem(BaseToolMaterial.BRONZE, 0, -1.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-
-    // ELECTRUM
-    public static final RegistryObject<SwordItem> SWORDELECTRUM = ITEMS.register("swordelectrum", () ->
-            new SwordItem(BaseToolMaterial.ELECTRUM, 4, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<ShovelItem> SHOVELELECTRUM = ITEMS.register("shovelelectrum", () ->
-            new ShovelItem(BaseToolMaterial.ELECTRUM, 2, -3.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<PickaxeItem> PICKAXEELECTRUM = ITEMS.register("pickaxeelectrum", () ->
-            new PickaxeItem(BaseToolMaterial.ELECTRUM, 2, -2.8F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<AxeItem> AXEELECTRUM = ITEMS.register("axeelectrum", () ->
-            new AxeItem(BaseToolMaterial.ELECTRUM, 4, -3.1F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<HoeItem> HOEELECTRUM = ITEMS.register("hoeelectrum", () ->
-            new HoeItem(BaseToolMaterial.ELECTRUM, 0, -1.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-
-    // CUPRONICKEL
-    public static final RegistryObject<SwordItem> SWORDCUPRONICKEL = ITEMS.register("swordcupronickel", () ->
-            new SwordItem(BaseToolMaterial.CUPRONICKEL, 4, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<ShovelItem> SHOVELCUPRONICKEL = ITEMS.register("shovelcupronickel", () ->
-            new ShovelItem(BaseToolMaterial.CUPRONICKEL, 2, -3.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<PickaxeItem> PICKAXECUPRONICKEL = ITEMS.register("pickaxecupronickel", () ->
-            new PickaxeItem(BaseToolMaterial.CUPRONICKEL, 2, -2.8F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<AxeItem> AXECUPRONICKEL = ITEMS.register("axecupronickel", () ->
-            new AxeItem(BaseToolMaterial.CUPRONICKEL, 4, -3.1F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<HoeItem> HOECUPRONICKEL = ITEMS.register("hoecupronickel", () ->
-            new HoeItem(BaseToolMaterial.CUPRONICKEL, 0, -1.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-
-    // BRASS
-    public static final RegistryObject<SwordItem> SWORDBRASS = ITEMS.register("swordbrass", () ->
-            new SwordItem(BaseToolMaterial.BRASS, 4, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<ShovelItem> SHOVELBRASS = ITEMS.register("shovelbrass", () ->
-            new ShovelItem(BaseToolMaterial.BRASS, 2, -3.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<PickaxeItem> PICKAXEBRASS = ITEMS.register("pickaxebrass", () ->
-            new PickaxeItem(BaseToolMaterial.BRASS, 2, -2.8F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<AxeItem> AXEBRASS = ITEMS.register("axebrass", () ->
-            new AxeItem(BaseToolMaterial.BRASS, 4, -3.1F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<HoeItem> HOEBRASS = ITEMS.register("hoebrass", () ->
-            new HoeItem(BaseToolMaterial.BRASS, 0, -1.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-
-    // ALUMINIUM BRASS
-    public static final RegistryObject<SwordItem> SWORDALUMINIUMBRASS = ITEMS.register("swordaluminiumbrass", () ->
-            new SwordItem(BaseToolMaterial.ALUMINIUMBRASS, 4, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<ShovelItem> SHOVELALUMINIUMBRASS = ITEMS.register("shovelaluminiumbrass", () ->
-            new ShovelItem(BaseToolMaterial.ALUMINIUMBRASS, 2, -3.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<PickaxeItem> PICKAXEALUMINIUMBRASS = ITEMS.register("pickaxealuminiumbrass", () ->
-            new PickaxeItem(BaseToolMaterial.ALUMINIUMBRASS, 2, -2.8F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<AxeItem> AXEALUMINIUMBRASS = ITEMS.register("axealuminiumbrass", () ->
-            new AxeItem(BaseToolMaterial.ALUMINIUMBRASS, 4, -3.1F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<HoeItem> HOEALUMINIUMBRASS = ITEMS.register("hoealuminiumbrass", () ->
-            new HoeItem(BaseToolMaterial.ALUMINIUMBRASS, 0, -1.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-
-    // INVAR
-    public static final RegistryObject<SwordItem> SWORDINVAR = ITEMS.register("swordinvar", () ->
-            new SwordItem(BaseToolMaterial.INVAR, 4, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<ShovelItem> SHOVELINVAR = ITEMS.register("shovelinvar", () ->
-            new ShovelItem(BaseToolMaterial.INVAR, 2, -3.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<PickaxeItem> PICKAXEINVAR = ITEMS.register("pickaxeinvar", () ->
-            new PickaxeItem(BaseToolMaterial.INVAR, 2, -2.8F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<AxeItem> AXEINVAR = ITEMS.register("axeinvar", () ->
-            new AxeItem(BaseToolMaterial.INVAR, 4, -3.1F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-    public static final RegistryObject<HoeItem> HOEINVAR = ITEMS.register("hoeinvar", () ->
-            new HoeItem(BaseToolMaterial.INVAR, 0, -1.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
 
     //ORE GEN
     public static void modSetup(final FMLCommonSetupEvent event) {
