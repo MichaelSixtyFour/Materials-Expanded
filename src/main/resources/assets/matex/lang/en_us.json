@@ -308,6 +308,8 @@
   "item.matex.hoebrass": "Brass Hoe",
   "item.matex.hoeinvar": "Invar Hoe",
 
+  "item.matex.helmetcopper": "Copper Helmet",
+
   "itemGroup.matexgeneral": "Materials Expanded - General",
   "itemGroup.matextools": "Materials Expanded - Tools"
 }

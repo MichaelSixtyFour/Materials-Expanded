@@ -2,9 +2,11 @@ package dev.advaluti.matex.setup;
 
 import dev.advaluti.matex.blocks.*;
 import dev.advaluti.matex.items.*;
+import dev.advaluti.matex.materials.BaseArmorMaterial;
 import dev.advaluti.matex.materials.BaseToolMaterial;
 import dev.advaluti.matex.world.OreGen;
 import net.minecraft.block.Block;
+import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
@@ -320,7 +322,7 @@ public class Registration {
     public static final RegistryObject<MiscItemBase> ITEMSILICON = ITEMS.register("itemsilicon", MiscItemBase::new);
     public static final RegistryObject<MiscItemBase> ITEMFAKESLIME = ITEMS.register("itemfakeslime", MiscItemBase::new);
 
-    //TOOLS
+    //TOOLS AND ARMOR
 
     // COPPER
     public static final RegistryObject<SwordItem> SWORDCOPPER = ITEMS.register("swordcopper", () ->
@@ -333,6 +335,16 @@ public class Registration {
             new AxeItem(BaseToolMaterial.COPPER, 6, -3.1F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
     public static final RegistryObject<HoeItem> HOECOPPER = ITEMS.register("hoecopper", () ->
             new HoeItem(BaseToolMaterial.COPPER, 0, -1.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
+
+    public static final RegistryObject<ArmorItem> HELMETCOPPER = ITEMS.register("helmetcopper", () ->
+            new ArmorItem(BaseArmorMaterial.COPPER, EquipmentSlotType.HEAD, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
+    public static final RegistryObject<ArmorItem> CHESTPLATECOPPER = ITEMS.register("chestplatecopper", () ->
+            new ArmorItem(BaseArmorMaterial.COPPER, EquipmentSlotType.CHEST, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
+    public static final RegistryObject<ArmorItem> LEGGINGSCOPPER = ITEMS.register("leggingscopper", () ->
+            new ArmorItem(BaseArmorMaterial.COPPER, EquipmentSlotType.LEGS, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
+    public static final RegistryObject<ArmorItem> BOOTSCOPPER = ITEMS.register("bootscopper", () ->
+            new ArmorItem(BaseArmorMaterial.COPPER, EquipmentSlotType.FEET, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
+
 
     // TIN
     public static final RegistryObject<SwordItem> SWORDTIN = ITEMS.register("swordtin", () ->
