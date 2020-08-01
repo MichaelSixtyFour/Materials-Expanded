@@ -5,7 +5,7 @@
       "tag": "matex:mortar"
     },
     {
-      "item": "minecraft:emerald"
+      "tag": "forge:gems/emerald"
     }
   ],
   "result":

@@ -5,7 +5,7 @@
       "tag": "matex:mortar"
     },
     {
-      "item": "minecraft:diamond"
+      "tag": "forge:gems/diamond"
     }
   ],
   "result":
