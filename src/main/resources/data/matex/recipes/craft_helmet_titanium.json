@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "ooo",
+    "o o"
+  ],
+  "key":
+  {
+    "o":
+    {
+      "tag": "forge:ingots/titanium"
+    }
+  },
+  "result":
+  {
+    "item": "matex:helmettitanium",
+    "count": 1
+  }
+}

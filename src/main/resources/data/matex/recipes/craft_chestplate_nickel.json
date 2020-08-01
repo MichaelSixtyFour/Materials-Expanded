@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "o o",
+    "ooo",
+    "ooo"
+  ],
+  "key":
+  {
+    "o":
+    {
+      "tag": "forge:ingots/nickel"
+    }
+  },
+  "result":
+  {
+    "item": "matex:chestplatenickel",
+    "count": 1
+  }
+}

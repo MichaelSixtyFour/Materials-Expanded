@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "o",
+    "o",
+    "x"
+  ],
+  "key":
+  {
+    "o":
+    {
+      "tag": "forge:ingots/invar"
+    },
+    "x":
+    {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "result":
+  {
+    "item": "matex:swordinvar",
+    "count": 1
+  }
+}

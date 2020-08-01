@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "o o",
+    "ooo",
+    "ooo"
+  ],
+  "key":
+  {
+    "o":
+    {
+      "tag": "forge:ingots/steel"
+    }
+  },
+  "result":
+  {
+    "item": "matex:chestplatesteel",
+    "count": 1
+  }
+}

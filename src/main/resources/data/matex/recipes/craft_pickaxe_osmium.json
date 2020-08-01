@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "ooo",
+    " x ",
+    " x "
+  ],
+  "key":
+  {
+    "o":
+    {
+      "tag": "forge:ingots/osmium"
+    },
+    "x":
+    {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "result":
+  {
+    "item": "matex:pickaxeosmium",
+    "count": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "o",
+    "x",
+    "x"
+  ],
+  "key":
+  {
+    "o":
+    {
+      "tag": "forge:ingots/platinum"
+    },
+    "x":
+    {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "result":
+  {
+    "item": "matex:shovelplatinum",
+    "count": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "oo",
+    " x",
+    " x"
+  ],
+  "key":
+  {
+    "o":
+    {
+      "tag": "forge:ingots/copper"
+    },
+    "x":
+    {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "result":
+  {
+    "item": "matex:hoecopper",
+    "count": 1
+  }
+}

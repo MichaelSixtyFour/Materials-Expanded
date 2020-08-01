@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "ooo",
+    "o o",
+    "o o"
+  ],
+  "key":
+  {
+    "o":
+    {
+      "tag": "forge:ingots/platinum"
+    }
+  },
+  "result":
+  {
+    "item": "matex:leggingsplatinum",
+    "count": 1
+  }
+}

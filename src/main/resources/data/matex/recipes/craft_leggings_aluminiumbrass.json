@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "ooo",
+    "o o",
+    "o o"
+  ],
+  "key":
+  {
+    "o":
+    {
+      "tag": "forge:ingots/aluminiumbrass"
+    }
+  },
+  "result":
+  {
+    "item": "matex:leggingsaluminiumbrass",
+    "count": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "ooo",
+    " x ",
+    " x "
+  ],
+  "key":
+  {
+    "o":
+    {
+      "tag": "forge:ingots/aluminium"
+    },
+    "x":
+    {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "result":
+  {
+    "item": "matex:pickaxealuminium",
+    "count": 1
+  }
+}

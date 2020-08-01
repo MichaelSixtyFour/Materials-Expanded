@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "o o",
+    "o o"
+  ],
+  "key":
+  {
+    "o":
+    {
+      "tag": "forge:ingots/aluminumbrass"
+    }
+  },
+  "result":
+  {
+    "item": "matex:bootsaluminiumbrass",
+    "count": 1
+  }
+}

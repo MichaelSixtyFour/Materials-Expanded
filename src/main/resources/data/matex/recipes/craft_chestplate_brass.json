@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "o o",
+    "ooo",
+    "ooo"
+  ],
+  "key":
+  {
+    "o":
+    {
+      "tag": "forge:ingots/brass"
+    }
+  },
+  "result":
+  {
+    "item": "matex:chestplatebrass",
+    "count": 1
+  }
+}

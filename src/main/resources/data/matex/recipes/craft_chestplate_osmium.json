@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "o o",
+    "ooo",
+    "ooo"
+  ],
+  "key":
+  {
+    "o":
+    {
+      "tag": "forge:ingots/osmium"
+    }
+  },
+  "result":
+  {
+    "item": "matex:chestplateosmium",
+    "count": 1
+  }
+}

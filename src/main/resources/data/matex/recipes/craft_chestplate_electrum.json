@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "o o",
+    "ooo",
+    "ooo"
+  ],
+  "key":
+  {
+    "o":
+    {
+      "tag": "forge:ingots/electrum"
+    }
+  },
+  "result":
+  {
+    "item": "matex:chestplateelectrum",
+    "count": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "o",
+    "x",
+    "x"
+  ],
+  "key":
+  {
+    "o":
+    {
+      "tag": "forge:ingots/aluminumbrass"
+    },
+    "x":
+    {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "result":
+  {
+    "item": "matex:shovelaluminiumbrass",
+    "count": 1
+  }
+}

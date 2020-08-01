@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "o o",
+    "ooo",
+    "ooo"
+  ],
+  "key":
+  {
+    "o":
+    {
+      "tag": "forge:ingots/aluminiumbrass"
+    }
+  },
+  "result":
+  {
+    "item": "matex:chestplatealuminiumbrass",
+    "count": 1
+  }
+}

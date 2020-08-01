@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "ooo",
+    "o o",
+    "o o"
+  ],
+  "key":
+  {
+    "o":
+    {
+      "tag": "forge:ingots/lead"
+    }
+  },
+  "result":
+  {
+    "item": "matex:leggingslead",
+    "count": 1
+  }
+}

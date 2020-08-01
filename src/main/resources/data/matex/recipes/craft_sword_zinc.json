@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "o",
+    "o",
+    "x"
+  ],
+  "key":
+  {
+    "o":
+    {
+      "tag": "forge:ingots/zinc"
+    },
+    "x":
+    {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "result":
+  {
+    "item": "matex:swordzinc",
+    "count": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "oo",
+    "ox",
+    " x"
+  ],
+  "key":
+  {
+    "o":
+    {
+      "tag": "forge:ingots/lead"
+    },
+    "x":
+    {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "result":
+  {
+    "item": "matex:axelead",
+    "count": 1
+  }
+}

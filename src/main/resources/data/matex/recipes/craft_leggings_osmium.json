@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "ooo",
+    "o o",
+    "o o"
+  ],
+  "key":
+  {
+    "o":
+    {
+      "tag": "forge:ingots/osmium"
+    }
+  },
+  "result":
+  {
+    "item": "matex:leggingsosmium",
+    "count": 1
+  }
+}
