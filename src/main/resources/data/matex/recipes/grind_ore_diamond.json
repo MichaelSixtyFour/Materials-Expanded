@@ -5,7 +5,7 @@
       "tag": "matex:mortar"
     },
     {
-      "item": "minecraft:diamond_ore"
+      "tag": "forge:ores/diamond"
     }
   ],
   "result":
