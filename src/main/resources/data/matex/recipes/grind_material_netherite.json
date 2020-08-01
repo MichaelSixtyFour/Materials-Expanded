@@ -5,12 +5,12 @@
       "item": "matex:toolmortarobsidian"
     },
     {
-      "tag": "forge:ingots/osmium"
+      "tag": "forge:ingots/netherite"
     }
   ],
   "result":
   {
-    "item": "matex:dustnickel",
+    "item": "matex:dustnetherite",
     "count": 1
   }
 }

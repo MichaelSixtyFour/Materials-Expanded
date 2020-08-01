@@ -5,12 +5,12 @@
       "tag": "matex:mortar"
     },
     {
-      "item": "minecraft:quartz"
+      "item": "minecraft:emerald"
     }
   ],
   "result":
   {
-    "item": "matex:dustquartz",
+    "item": "matex:dustemerald",
     "count": 1
   }
 }
