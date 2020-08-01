@@ -1,14 +1,10 @@
 package dev.advaluti.matex;
 
-import dev.advaluti.matex.setup.ClientSetup;
-import dev.advaluti.matex.setup.ModSetup;
-import dev.advaluti.matex.setup.Registration;
+import dev.advaluti.matex.setup.*;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 @Mod(MatEx.MOD_ID)
 public class MatEx {
@@ -18,8 +14,10 @@ public class MatEx {
     //private static final Logger LOGGER = LogManager.getLogger();
 
     public MatEx() {
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, MatExConfig.spec);
+        // Load the config file
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ConfigGeneral.commonGeneral);
 
+        // Register items/blocks
         Registration.init();
 
         // Register the setup method for mod loading

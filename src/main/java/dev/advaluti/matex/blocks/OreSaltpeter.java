@@ -1,6 +1,6 @@
 package dev.advaluti.matex.blocks;
 
-import dev.advaluti.matex.MatExConfig;
+import dev.advaluti.matex.setup.ConfigGeneral;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -15,7 +15,7 @@ public class OreSaltpeter extends Block {
                 .sound(SoundType.STONE)
                 .hardnessAndResistance(2.5f)
                 .harvestTool(ToolType.PICKAXE)
-                .harvestLevel(MatExConfig.HarvestSaltpeter.get())
+                .harvestLevel(ConfigGeneral.HarvestSaltpeter.get())
         );
     }
 }

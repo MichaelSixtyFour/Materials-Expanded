@@ -1,6 +1,6 @@
 package dev.advaluti.matex.blocks;
 
-import dev.advaluti.matex.MatExConfig;
+import dev.advaluti.matex.setup.ConfigGeneral;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -13,7 +13,7 @@ public class OreThorium extends Block {
                 .sound(SoundType.STONE)
                 .hardnessAndResistance(5.0f)
                 .harvestTool(ToolType.PICKAXE)
-                .harvestLevel(MatExConfig.HarvestThorium.get())
+                .harvestLevel(ConfigGeneral.HarvestThorium.get())
         );
     }
 }

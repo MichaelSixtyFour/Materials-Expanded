@@ -1,10 +1,10 @@
-package dev.advaluti.matex;
+package dev.advaluti.matex.setup;
 
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.config.ModConfig;
 
-public class MatExConfig {
+public class ConfigGeneral {
 
     public static final String CATEGORY_MATEX = "matex";
     public static final String CATEGORY_GENERAL = "general";
@@ -13,24 +13,7 @@ public class MatExConfig {
     public static final String CATEGORY_CLAY = "clay";
     public static final String CATEGORY_TERRACOTTA = "terracotta";
 
-    public static final String CATEGORY_ALUMINIUM = "aluminium";
-    public static final String CATEGORY_COPPER = "copper";
-    public static final String CATEGORY_LEAD = "lead";
-    public static final String CATEGORY_NICKEL = "nickel";
-    public static final String CATEGORY_OSMIUM = "osmium";
-    public static final String CATEGORY_PLATINUM = "platinum";;
-    public static final String CATEGORY_RAWSILICON = "rawsilicon";
-    public static final String CATEGORY_SALTPETER = "saltpeter";
-    public static final String CATEGORY_SILVER = "silver";
-    public static final String CATEGORY_SULFUR = "sulfur";
-    public static final String CATEGORY_THORIUM = "thorium";
-    public static final String CATEGORY_TIN = "tin";
-    public static final String CATEGORY_TITANIUM = "titanium";
-    public static final String CATEGORY_TUNGSTEN = "tungsten";
-    public static final String CATEGORY_URANIUM = "uranium";
-    public static final String CATEGORY_ZINC = "zinc";
-
-    public static ForgeConfigSpec spec;
+    public static ForgeConfigSpec commonGeneral;
 
     public static ForgeConfigSpec.BooleanValue enableOreGen;
     public static ForgeConfigSpec.BooleanValue disableMortarOreGrind;
@@ -89,12 +72,6 @@ public class MatExConfig {
     public static ForgeConfigSpec.IntValue VPCPlatinum;
     public static ForgeConfigSpec.IntValue MinHeightPlatinum;
     public static ForgeConfigSpec.IntValue MaxHeightPlatinum;
-
-    public static ForgeConfigSpec.BooleanValue enableRawSilicon;
-    public static ForgeConfigSpec.IntValue VSRawSilicon;
-    public static ForgeConfigSpec.IntValue VPCRawSilicon;
-    public static ForgeConfigSpec.IntValue MinHeightRawSilicon;
-    public static ForgeConfigSpec.IntValue MaxHeightRawSilicon;
 
     public static ForgeConfigSpec.BooleanValue enableSaltpeter;
     public static ForgeConfigSpec.IntValue VSSaltpeter;
@@ -166,7 +143,10 @@ public class MatExConfig {
 
     public static ForgeConfigSpec.IntValue HarvestSaltpeter;
     public static ForgeConfigSpec.IntValue HarvestSulfur;
-    public static ForgeConfigSpec.IntValue HarvestRawSilicon;
+
+    //TOOLS
+    public static ForgeConfigSpec.BooleanValue enableArmor;
+    public static ForgeConfigSpec.BooleanValue enableTools;
 
     static {
 
@@ -175,8 +155,11 @@ public class MatExConfig {
         BUILDER.comment("Materials Expanded config").push(CATEGORY_MATEX);
             BUILDER.comment("General settings").push(CATEGORY_GENERAL);
             enableOreGen = BUILDER.comment("Enable all ore generation (default: true)").define("enableOreGen", true);
-            disableMortarOreGrind = BUILDER.comment("Set to true to stop ore grinding being possible through the mortar").define("disableMortarOreGrind", false);
-            disableMortarIngotGrind = BUILDER.comment("Set to true to stop ingot grinding being possible through the mortar").define("disableMortarIngotGrind", false);
+            BUILDER.comment("WARNING: disabling items/blocks will cause recipe errors to be spilled in console!");
+            enableTools = BUILDER.comment("Enable all tool items (default: true)").define("enableTools", true);
+            enableArmor = BUILDER.comment("Enable all armor items (default: true)").define("enableArmor", true);
+            //disableMortarOreGrind = BUILDER.comment("Set to true to stop ore grinding being possible through the mortar").define("disableMortarOreGrind", false);
+            //disableMortarIngotGrind = BUILDER.comment("Set to true to stop ingot grinding being possible through the mortar").define("disableMortarIngotGrind", false);
             BUILDER.pop();
 
             BUILDER.comment("Clay settings").push(CATEGORY_CLAY);
@@ -199,7 +182,7 @@ public class MatExConfig {
 
         BUILDER.comment("Metals settings").push(CATEGORY_METALS);
 
-            BUILDER.comment("Aluminium settings").push(CATEGORY_ALUMINIUM);
+            BUILDER.comment("Aluminium settings").push("aluminium");
             enableAluminium = BUILDER.comment("Enable Aluminium ore generation (default: true)").define("enableAluminium", true);
             enableAluminium = BUILDER.comment("Enable Aluminium ore generation (default: true)").define("enableAluminium", true);
             VSAluminium = BUILDER.comment("Vein size").defineInRange("VSAluminium", 8, 0, 50);
@@ -209,7 +192,7 @@ public class MatExConfig {
             HarvestAluminium = BUILDER.comment("Harvest level").defineInRange("HarvestAluminium", 1, 0, 4);
             BUILDER.pop();
 
-            BUILDER.comment("Copper settings").push(CATEGORY_COPPER);
+            BUILDER.comment("Copper settings").push("copper");
             enableCopper = BUILDER.comment("Enable Copper ore generation (default: true)").define("enableCopper", true);
             VSCopper = BUILDER.comment("Vein size").defineInRange("VSCopper", 12, 0, 50);
             VPCCopper = BUILDER.comment("Veins per chunk").defineInRange("VPCCopper", 8, 0, 50);
@@ -218,7 +201,7 @@ public class MatExConfig {
             HarvestCopper = BUILDER.comment("Harvest level").defineInRange("HarvestCopper", 1, 0, 4);
             BUILDER.pop();
 
-            BUILDER.comment("Lead settings").push(CATEGORY_LEAD);
+            BUILDER.comment("Lead settings").push("lead");
             enableLead = BUILDER.comment("Enable Lead ore generation (default: true)").define("enableLead", true);
             VSLead = BUILDER.comment("Vein size").defineInRange("VSLead", 8, 0, 50);
             VPCLead = BUILDER.comment("Veins per chunk").defineInRange("VPCLead", 8, 0, 50);
@@ -252,15 +235,6 @@ public class MatExConfig {
             MinHeightPlatinum = BUILDER.comment("Minimum height").defineInRange("MinHeightPlatinum", 4, 0, 255);
             MaxHeightPlatinum = BUILDER.comment("Maximum height").defineInRange("MaxHeightPlatinum", 24, 0, 255);
             HarvestPlatinum = BUILDER.comment("Harvest level").defineInRange("HarvestPlatinum", 2, 0, 4);
-            BUILDER.pop();
-
-            BUILDER.comment("Raw silicon settings").push("rawsilicon");
-            enableRawSilicon = BUILDER.comment("Enable Raw Silicon ore generation (default: true)").define("enableRawSilicon", true);
-            VSRawSilicon = BUILDER.comment("Vein size").defineInRange("VSRawSilicon", 8, 0, 50);
-            VPCRawSilicon = BUILDER.comment("Veins per chunk").defineInRange("VPCRawSilicon", 5, 0, 50);
-            MinHeightRawSilicon = BUILDER.comment("Minimum height").defineInRange("MinHeightRawSilicon", 8, 0, 255);
-            MaxHeightRawSilicon = BUILDER.comment("Maximum height").defineInRange("MaxHeightRawSilicon", 64, 0, 255);
-            HarvestRawSilicon = BUILDER.comment("Harvest level").defineInRange("HarvestRawSilicon", 0, 0, 2);
             BUILDER.pop();
 
             BUILDER.comment("Saltpeter settings").push("saltpeter");
@@ -346,7 +320,7 @@ public class MatExConfig {
 
         BUILDER.pop();
 
-        spec = BUILDER.build();
+        commonGeneral = BUILDER.build();
     }
 
     @SubscribeEvent

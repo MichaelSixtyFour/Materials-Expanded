@@ -32,26 +32,29 @@ public class Registration {
             final String material = toolMaterial.toUpperCase();
 
             //TOOLS
-            final RegistryObject<SwordItem> SWORDREGISTER = ITEMS.register("sword" + toolMaterial, () ->
-                    new SwordItem(BaseToolMaterial.valueOf(material), 3, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-            final RegistryObject<ShovelItem> SHOVELREGISTER = ITEMS.register("shovel" + toolMaterial, () ->
-                    new ShovelItem(BaseToolMaterial.valueOf(material), 2, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-            final RegistryObject<PickaxeItem> PICKAXEREGISTER = ITEMS.register("pickaxe" + toolMaterial, () ->
-                    new PickaxeItem(BaseToolMaterial.valueOf(material), 2, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-            final RegistryObject<AxeItem> AXEREGISTER = ITEMS.register("axe" + toolMaterial, () ->
-                    new AxeItem(BaseToolMaterial.valueOf(material), 5, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-            final RegistryObject<HoeItem> HOEREGISTER = ITEMS.register("hoe" + toolMaterial, () ->
-                    new HoeItem(BaseToolMaterial.valueOf(material), 0, -1.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-
+            if(ConfigGeneral.enableTools.get()) {
+                final RegistryObject<SwordItem> SWORDREGISTER = ITEMS.register("sword" + toolMaterial, () ->
+                        new SwordItem(BaseToolMaterial.valueOf(material), 3, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
+                final RegistryObject<ShovelItem> SHOVELREGISTER = ITEMS.register("shovel" + toolMaterial, () ->
+                        new ShovelItem(BaseToolMaterial.valueOf(material), 2, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
+                final RegistryObject<PickaxeItem> PICKAXEREGISTER = ITEMS.register("pickaxe" + toolMaterial, () ->
+                        new PickaxeItem(BaseToolMaterial.valueOf(material), 2, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
+                final RegistryObject<AxeItem> AXEREGISTER = ITEMS.register("axe" + toolMaterial, () ->
+                        new AxeItem(BaseToolMaterial.valueOf(material), 5, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
+                final RegistryObject<HoeItem> HOEREGISTER = ITEMS.register("hoe" + toolMaterial, () ->
+                        new HoeItem(BaseToolMaterial.valueOf(material), 0, -1.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
+            }
             //ARMOR
-            final RegistryObject<ArmorItem> HELMETREGISTER = ITEMS.register("helmet" + toolMaterial, () ->
-                    new ArmorItem(BaseArmorMaterial.valueOf(material), EquipmentSlotType.HEAD, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-            final RegistryObject<ArmorItem> CHESTPLATEREGISTER = ITEMS.register("chestplate" + toolMaterial, () ->
-                    new ArmorItem(BaseArmorMaterial.valueOf(material), EquipmentSlotType.CHEST, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-            final RegistryObject<ArmorItem> LEGGINGSREGISTER = ITEMS.register("leggings" + toolMaterial, () ->
-                    new ArmorItem(BaseArmorMaterial.valueOf(material), EquipmentSlotType.LEGS, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-            final RegistryObject<ArmorItem> BOOTSREGISTER = ITEMS.register("boots" + toolMaterial, () ->
-                    new ArmorItem(BaseArmorMaterial.valueOf(material), EquipmentSlotType.FEET, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
+            if(ConfigGeneral.enableArmor.get()) {
+                final RegistryObject<ArmorItem> HELMETREGISTER = ITEMS.register("helmet" + toolMaterial, () ->
+                        new ArmorItem(BaseArmorMaterial.valueOf(material), EquipmentSlotType.HEAD, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
+                final RegistryObject<ArmorItem> CHESTPLATEREGISTER = ITEMS.register("chestplate" + toolMaterial, () ->
+                        new ArmorItem(BaseArmorMaterial.valueOf(material), EquipmentSlotType.CHEST, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
+                final RegistryObject<ArmorItem> LEGGINGSREGISTER = ITEMS.register("leggings" + toolMaterial, () ->
+                        new ArmorItem(BaseArmorMaterial.valueOf(material), EquipmentSlotType.LEGS, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
+                final RegistryObject<ArmorItem> BOOTSREGISTER = ITEMS.register("boots" + toolMaterial, () ->
+                        new ArmorItem(BaseArmorMaterial.valueOf(material), EquipmentSlotType.FEET, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
+            }
         }
 
         BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
