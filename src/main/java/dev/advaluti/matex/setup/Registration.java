@@ -21,8 +21,8 @@ import static dev.advaluti.matex.MatEx.MOD_ID;
 @Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
 public class Registration {
 
-    private static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MOD_ID);
-    private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MOD_ID);
+    private static final DeferredRegister<Block> BLOCKS = new DeferredRegister(ForgeRegistries.BLOCKS, MOD_ID);
+    private static final DeferredRegister<Item> ITEMS = new DeferredRegister(ForgeRegistries.ITEMS, MOD_ID);
 
     public static String[] toolMaterials = {"copper", "tin", "lead", "aluminium", "silver", "osmium", "zinc", "tungsten", "platinum", "nickel", "titanium",
             "steel", "bronze", "electrum", "cupronickel",  "brass", "aluminiumbrass", "invar"};
@@ -42,7 +42,7 @@ public class Registration {
                 final RegistryObject<AxeItem> AXEREGISTER = ITEMS.register("axe" + toolMaterial, () ->
                         new AxeItem(BaseToolMaterial.valueOf(material), 5, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
                 final RegistryObject<HoeItem> HOEREGISTER = ITEMS.register("hoe" + toolMaterial, () ->
-                        new HoeItem(BaseToolMaterial.valueOf(material), 0, -1.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
+                        new HoeItem(BaseToolMaterial.valueOf(material), 0, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
             }
             //ARMOR
             if(ConfigGeneral.enableArmor.get()) {
@@ -234,7 +234,6 @@ public class Registration {
     public static final RegistryObject<DustBase> DUSTDIAMOND = ITEMS.register("dustdiamond", DustBase::new);
     public static final RegistryObject<DustBase> DUSTEMERALD = ITEMS.register("dustemerald", DustBase::new);
     public static final RegistryObject<DustBase> DUSTQUARTZ = ITEMS.register("dustquartz", DustBase::new);
-    public static final RegistryObject<DustBase> DUSTNETHERITE = ITEMS.register("dustnetherite", DustBase::new);
 
     //NUGGETS
     public static final RegistryObject<NuggetBase> NUGGETCOPPER = ITEMS.register("nuggetcopper", NuggetBase::new);
@@ -289,7 +288,6 @@ public class Registration {
     public static final RegistryObject<PlateBase> PLATEGOLD = ITEMS.register("plategold", PlateBase::new);
     public static final RegistryObject<PlateBase> PLATEDIAMOND = ITEMS.register("platediamond", PlateBase::new);
     public static final RegistryObject<PlateBase> PLATEEMERALD = ITEMS.register("plateemerald", PlateBase::new);
-    public static final RegistryObject<PlateBase> PLATENETHERITE = ITEMS.register("platenetherite", PlateBase::new);
 
     //RODS
     public static final RegistryObject<RodBase> RODCOPPER = ITEMS.register("rodcopper", RodBase::new);
@@ -319,7 +317,6 @@ public class Registration {
     public static final RegistryObject<RodBase> RODGOLD = ITEMS.register("rodgold", RodBase::new);
     public static final RegistryObject<RodBase> RODDIAMOND = ITEMS.register("roddiamond", RodBase::new);
     public static final RegistryObject<RodBase> RODEMERALD = ITEMS.register("rodemerald", RodBase::new);
-    public static final RegistryObject<RodBase> RODNETHERITE = ITEMS.register("rodnetherite", RodBase::new);
 
     //GEARS
     public static final RegistryObject<GearBase> GEARCOPPER = ITEMS.register("gearcopper", GearBase::new);
@@ -350,7 +347,6 @@ public class Registration {
     public static final RegistryObject<GearBase> GEARGOLD = ITEMS.register("geargold", GearBase::new);
     public static final RegistryObject<GearBase> GEARDIAMOND = ITEMS.register("geardiamond", GearBase::new);
     public static final RegistryObject<GearBase> GEAREMERALD = ITEMS.register("gearemerald", GearBase::new);
-    public static final RegistryObject<GearBase> GEARNETHERITE = ITEMS.register("gearnetherite", GearBase::new);
 
     //MISC
     public static final RegistryObject<MiscItemBase> ITEMSILICON = ITEMS.register("itemsilicon", MiscItemBase::new);
