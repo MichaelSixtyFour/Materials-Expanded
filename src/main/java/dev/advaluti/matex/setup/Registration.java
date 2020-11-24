@@ -24,8 +24,11 @@ public class Registration {
     private static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MOD_ID);
     private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MOD_ID);
 
-    public static String[] toolMaterials = {"copper", "tin", "lead", "aluminium", "silver", "osmium", "zinc", "tungsten", "platinum", "nickel", "titanium",
-            "steel", "bronze", "electrum", "cupronickel",  "brass", "aluminiumbrass", "invar"};
+    public static String[] toolMaterials = {"copper", "tin", "lead", "aluminium", "silver", "osmium", "zinc", "tungsten", "platinum", "nickel", "titanium", "steel", "bronze", "electrum", "cupronickel",  "brass", "aluminiumbrass", "invar"};
+    //public static String[] toolMaterials = {};
+    //public static String[] armorMaterials = {};
+
+    //manage tool/armor material enabling
 
     public static void init() {
         for (String toolMaterial : toolMaterials) {

@@ -8,6 +8,7 @@ public class ConfigGeneral {
 
     public static final String CATEGORY_MATEX = "matex";
     public static final String CATEGORY_GENERAL = "general";
+    public static final String CATEGORY_MATERIALS = "materials";
     public static final String CATEGORY_METALS = "metals";
 
     public static final String CATEGORY_CLAY = "clay";
@@ -24,6 +25,27 @@ public class ConfigGeneral {
     //public static ForgeConfigSpec.BooleanValue enableDusts;
     //public static ForgeConfigSpec.BooleanValue enableCoalNuggets;
     //public static ForgeConfigSpec.BooleanValue enableMortar;
+
+    public static ForgeConfigSpec.BooleanValue enableToolCopper;
+    public static ForgeConfigSpec.BooleanValue enableToolTin;
+    public static ForgeConfigSpec.BooleanValue enableToolLead;
+    public static ForgeConfigSpec.BooleanValue enableToolAluminium;
+    public static ForgeConfigSpec.BooleanValue enableToolSilver;
+    public static ForgeConfigSpec.BooleanValue enableToolOsmium;
+    public static ForgeConfigSpec.BooleanValue enableToolZinc;
+    public static ForgeConfigSpec.BooleanValue enableToolTungsten;
+    public static ForgeConfigSpec.BooleanValue enableToolPlatinum;
+    public static ForgeConfigSpec.BooleanValue enableToolNickel;
+    public static ForgeConfigSpec.BooleanValue enableToolTitanium;
+    //public static ForgeConfigSpec.BooleanValue enableToolUranium;
+    //public static ForgeConfigSpec.BooleanValue enableToolThorium;
+    public static ForgeConfigSpec.BooleanValue enableToolBronze;
+    public static ForgeConfigSpec.BooleanValue enableToolSteel;
+    public static ForgeConfigSpec.BooleanValue enableToolElectrum;
+    public static ForgeConfigSpec.BooleanValue enableToolCupronickel;
+    public static ForgeConfigSpec.BooleanValue enableToolAluminiumBrass;
+    public static ForgeConfigSpec.BooleanValue enableToolBrass;
+    public static ForgeConfigSpec.BooleanValue enableToolInvar;
 
     public static ForgeConfigSpec.BooleanValue enableClay;
     public static ForgeConfigSpec.IntValue VSClay;
@@ -178,6 +200,16 @@ public class ConfigGeneral {
             MaxHeightTerracotta = BUILDER.comment("Maximum height").defineInRange("MaxHeightTerracotta",64, 0, 255);
             BUILDER.pop();
 
+        BUILDER.pop();
+
+        BUILDER.comment("Material settings").push(CATEGORY_MATERIALS);
+            BUILDER.comment("Terracotta settings").push(CATEGORY_TERRACOTTA);
+            enableTerracotta = BUILDER.comment("Enable underground Terracotta generation (default: true)").define("enableTerracotta", true);
+            VSTerracotta = BUILDER.comment("Vein size").defineInRange("VSTerracotta",6, 0, 50);
+            VPCTerracotta = BUILDER.comment("Veins per chunk").defineInRange("VPCTerracotta",4, 0, 50);
+            MinHeightTerracotta = BUILDER.comment("Minimum height").defineInRange("MinHeightTerracotta",8, 0, 255);
+            MaxHeightTerracotta = BUILDER.comment("Maximum height").defineInRange("MaxHeightTerracotta",64, 0, 255);
+            BUILDER.pop();
         BUILDER.pop();
 
         BUILDER.comment("Metals settings").push(CATEGORY_METALS);
