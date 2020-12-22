@@ -30,7 +30,7 @@ import java.util.ArrayList;
 @Mod.EventBusSubscriber
 public class NewOreGen {
 
-    private static final ArrayList<ConfiguredFeature<?, ?>> overworldOres = new ArrayList<ConfiguredFeature<?, ?>>();
+    private static final ArrayList<ConfiguredFeature<?, ?>> overworldOres = new ArrayList<>();
 
     public static void registerOres() {
         //field_241882_a is for generating in stone, granite, diorite, and andesite
@@ -111,12 +111,12 @@ public class NewOreGen {
         // CLAY AND TERRACOTTA
 
         overworldOres.add(register("gen_terracotta", Feature.ORE.withConfiguration(new OreFeatureConfig(
-                OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, Blocks.TERRACOTTA.getDefaultState(), 4)) //Vein Size
+                OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, Blocks.TERRACOTTA.getDefaultState(), 16)) //Vein Size
                 .range(ConfigGeneral.MaxHeightTerracotta.get()).square() //Spawn height start
                 .func_242731_b(ConfigGeneral.VPCTerracotta.get()))); //Chunk spawn frequency
 
         overworldOres.add(register("gen_clay", Feature.ORE.withConfiguration(new OreFeatureConfig(
-                OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, Blocks.CLAY.getDefaultState(), 4)) //Vein Size
+                OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, Blocks.CLAY.getDefaultState(), 16)) //Vein Size
                 .range(ConfigGeneral.MaxHeightClay.get()).square() //Spawn height start
                 .func_242731_b(ConfigGeneral.VPCClay.get()))); //Chunk spawn frequency
     }

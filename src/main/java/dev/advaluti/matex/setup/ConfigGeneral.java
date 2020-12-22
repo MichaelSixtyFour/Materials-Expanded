@@ -192,15 +192,15 @@ public class ConfigGeneral {
             VSTerracotta = BUILDER.comment("Vein size").defineInRange("VSTerracotta",6, 0, 50);
             VPCTerracotta = BUILDER.comment("Chunk spawn frequency").defineInRange("VPCTerracotta", 32, 0, 128);
             //MinHeightTerracotta = BUILDER.comment("Minimum height").defineInRange("MinHeightTerracotta",8, 0, 255);
-            MaxHeightTerracotta = BUILDER.comment("Maximum height").defineInRange("MaxHeightTerracotta",64, 0, 255);
+            MaxHeightTerracotta = BUILDER.comment("Maximum height").defineInRange("MaxHeightTerracotta",16, 0, 255);
             BUILDER.pop();
 
             BUILDER.comment("Clay settings").push(CATEGORY_CLAY);
             enableClay = BUILDER.comment("Enable underground Clay generation (default: true)").define("enableClay", true);
             VSClay = BUILDER.comment("Vein size").defineInRange("VSClay",12, 0, 50);
-            VPCClay = BUILDER.comment("Chunk spawn frequency").defineInRange("VPCClay", 32, 0, 128);
+            VPCClay = BUILDER.comment("Chunk spawn frequency").defineInRange("VPCClay", 16, 0, 128);
             //MinHeightClay = BUILDER.comment("Minimum height").defineInRange("MinHeightClay",8, 0, 255);
-            MaxHeightClay = BUILDER.comment("Maximum height").defineInRange("MaxHeightClay",96, 0, 255);
+            MaxHeightClay = BUILDER.comment("Maximum height").defineInRange("MaxHeightClay",64, 0, 255);
             BUILDER.pop();
         BUILDER.pop();
 
