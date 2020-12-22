@@ -4,8 +4,7 @@ import dev.advaluti.matex.blocks.*;
 import dev.advaluti.matex.items.*;
 import dev.advaluti.matex.materials.BaseArmorMaterial;
 import dev.advaluti.matex.materials.BaseToolMaterial;
-import dev.advaluti.matex.world.OreGen;
-import jdk.nashorn.api.scripting.ScriptObjectMirror;
+import dev.advaluti.matex.world.*;
 import net.minecraft.block.Block;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
@@ -361,6 +360,6 @@ public class Registration {
 
     //ORE GEN
     public static void modSetup(final FMLCommonSetupEvent event) {
-        OreGen.OreGenerate();
+        NewOreGen.registerOres();
     }
 }
