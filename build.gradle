@@ -13,8 +13,8 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.16.3-v1.7.1'
-group = 'dev.advaluti.matex' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+version = '1.16.3-v1.8.0'
+group = 'dev.michaelsixtyfour.matex' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'matex'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
@@ -117,11 +117,11 @@ jar {
     manifest {
         attributes([
                 "Specification-Title": "MaterialsExpanded",
-                "Specification-Vendor": "advaluti",
+                "Specification-Vendor": "michaelsixtyfour",
                 "Specification-Version": "1", // We are version 1 of ourselves
                 "Implementation-Title": project.name,
-                "Implementation-Version": "1.16.3-v1.7.1",
-                "Implementation-Vendor" :"advaluti",
+                "Implementation-Version": "1.16.3-v1.8.0",
+                "Implementation-Vendor" :"michaelsixtyfour",
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
