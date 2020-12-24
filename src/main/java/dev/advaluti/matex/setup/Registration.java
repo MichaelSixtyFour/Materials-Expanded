@@ -15,6 +15,8 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
+import java.util.ArrayList;
+
 import static dev.advaluti.matex.MatEx.MOD_ID;
 
 @Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
@@ -24,8 +26,7 @@ public class Registration {
     private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MOD_ID);
 
     public static String[] toolMaterials = {"copper", "tin", "lead", "aluminium", "silver", "osmium", "zinc", "tungsten", "platinum", "nickel", "titanium", "steel", "bronze", "electrum", "cupronickel",  "brass", "aluminiumbrass", "invar"};
-    //public static String[] toolMaterials = {};
-    //public static String[] armorMaterials = {};
+    public static String[] armorMaterials = {"copper", "tin", "lead", "aluminium", "silver", "osmium", "zinc", "tungsten", "platinum", "nickel", "titanium", "steel", "bronze", "electrum", "cupronickel",  "brass", "aluminiumbrass", "invar"};
 
     //manage tool/armor material enabling
 
@@ -34,7 +35,7 @@ public class Registration {
             final String material = toolMaterial.toUpperCase();
 
             //TOOLS
-            if(ConfigGeneral.enableTools.get()) {
+            if (ConfigGeneral.enableTools.get()) {
                 final RegistryObject<SwordItem> SWORDREGISTER = ITEMS.register("sword" + toolMaterial, () ->
                         new SwordItem(BaseToolMaterial.valueOf(material), 3, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
                 final RegistryObject<ShovelItem> SHOVELREGISTER = ITEMS.register("shovel" + toolMaterial, () ->
@@ -46,15 +47,20 @@ public class Registration {
                 final RegistryObject<HoeItem> HOEREGISTER = ITEMS.register("hoe" + toolMaterial, () ->
                         new HoeItem(BaseToolMaterial.valueOf(material), 0, -1.0F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
             }
+        }
+
+        for (String armorMaterial : armorMaterials) {
+            final String material = armorMaterial.toUpperCase();
+
             //ARMOR
             if(ConfigGeneral.enableArmor.get()) {
-                final RegistryObject<ArmorItem> HELMETREGISTER = ITEMS.register("helmet" + toolMaterial, () ->
+                final RegistryObject<ArmorItem> HELMETREGISTER = ITEMS.register("helmet" + armorMaterial, () ->
                         new ArmorItem(BaseArmorMaterial.valueOf(material), EquipmentSlotType.HEAD, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-                final RegistryObject<ArmorItem> CHESTPLATEREGISTER = ITEMS.register("chestplate" + toolMaterial, () ->
+                final RegistryObject<ArmorItem> CHESTPLATEREGISTER = ITEMS.register("chestplate" + armorMaterial, () ->
                         new ArmorItem(BaseArmorMaterial.valueOf(material), EquipmentSlotType.CHEST, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-                final RegistryObject<ArmorItem> LEGGINGSREGISTER = ITEMS.register("leggings" + toolMaterial, () ->
+                final RegistryObject<ArmorItem> LEGGINGSREGISTER = ITEMS.register("leggings" + armorMaterial, () ->
                         new ArmorItem(BaseArmorMaterial.valueOf(material), EquipmentSlotType.LEGS, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
-                final RegistryObject<ArmorItem> BOOTSREGISTER = ITEMS.register("boots" + toolMaterial, () ->
+                final RegistryObject<ArmorItem> BOOTSREGISTER = ITEMS.register("boots" + armorMaterial, () ->
                         new ArmorItem(BaseArmorMaterial.valueOf(material), EquipmentSlotType.FEET, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
             }
         }

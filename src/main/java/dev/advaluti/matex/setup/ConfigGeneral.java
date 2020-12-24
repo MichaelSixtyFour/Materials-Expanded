@@ -9,10 +9,8 @@ public class ConfigGeneral {
     public static final String CATEGORY_MATEX = "matex";
     public static final String CATEGORY_GENERAL = "general";
     public static final String CATEGORY_MATERIALS = "materials";
-    public static final String CATEGORY_METALS = "metals";
-
-    public static final String CATEGORY_CLAY = "clay";
-    public static final String CATEGORY_TERRACOTTA = "terracotta";
+    public static final String CATEGORY_METALS = "metals";;
+    public static final String CATEGORY_EQUIPMENT = "equipment";
 
     public static ForgeConfigSpec commonGeneral;
 
@@ -47,106 +45,108 @@ public class ConfigGeneral {
     public static ForgeConfigSpec.BooleanValue enableToolBrass;
     public static ForgeConfigSpec.BooleanValue enableToolInvar;
 
+    public static ForgeConfigSpec.BooleanValue enableArmorCopper;
+    public static ForgeConfigSpec.BooleanValue enableArmorTin;
+    public static ForgeConfigSpec.BooleanValue enableArmorLead;
+    public static ForgeConfigSpec.BooleanValue enableArmorAluminium;
+    public static ForgeConfigSpec.BooleanValue enableArmorSilver;
+    public static ForgeConfigSpec.BooleanValue enableArmorOsmium;
+    public static ForgeConfigSpec.BooleanValue enableArmorZinc;
+    public static ForgeConfigSpec.BooleanValue enableArmorTungsten;
+    public static ForgeConfigSpec.BooleanValue enableArmorPlatinum;
+    public static ForgeConfigSpec.BooleanValue enableArmorNickel;
+    public static ForgeConfigSpec.BooleanValue enableArmorTitanium;
+    public static ForgeConfigSpec.BooleanValue enableArmorBronze;
+    public static ForgeConfigSpec.BooleanValue enableArmorSteel;
+    public static ForgeConfigSpec.BooleanValue enableArmorElectrum;
+    public static ForgeConfigSpec.BooleanValue enableArmorCupronickel;
+    public static ForgeConfigSpec.BooleanValue enableArmorAluminiumBrass;
+    public static ForgeConfigSpec.BooleanValue enableArmorBrass;
+    public static ForgeConfigSpec.BooleanValue enableArmorInvar;
+
     public static ForgeConfigSpec.BooleanValue enableClay;
     public static ForgeConfigSpec.IntValue VSClay;
     public static ForgeConfigSpec.IntValue VPCClay;
-    public static ForgeConfigSpec.IntValue MinHeightClay;
     public static ForgeConfigSpec.IntValue MaxHeightClay;
 
     public static ForgeConfigSpec.BooleanValue enableTerracotta;
     public static ForgeConfigSpec.IntValue VSTerracotta;
     public static ForgeConfigSpec.IntValue VPCTerracotta;
-    public static ForgeConfigSpec.IntValue MinHeightTerracotta;
     public static ForgeConfigSpec.IntValue MaxHeightTerracotta;
 
     public static ForgeConfigSpec.BooleanValue enableAluminium;
     public static ForgeConfigSpec.IntValue VSAluminium;
     public static ForgeConfigSpec.IntValue VPCAluminium;
-    public static ForgeConfigSpec.IntValue MinHeightAluminium;
     public static ForgeConfigSpec.IntValue MaxHeightAluminium;
 
     public static ForgeConfigSpec.BooleanValue enableCopper;
     public static ForgeConfigSpec.IntValue VSCopper;
     public static ForgeConfigSpec.IntValue VPCCopper;
-    public static ForgeConfigSpec.IntValue MinHeightCopper;
     public static ForgeConfigSpec.IntValue MaxHeightCopper;
 
     public static ForgeConfigSpec.BooleanValue enableLead;
     public static ForgeConfigSpec.IntValue VSLead;
     public static ForgeConfigSpec.IntValue VPCLead;
-    public static ForgeConfigSpec.IntValue MinHeightLead;
     public static ForgeConfigSpec.IntValue MaxHeightLead;
 
     public static ForgeConfigSpec.BooleanValue enableNickel;
     public static ForgeConfigSpec.IntValue VSNickel;
     public static ForgeConfigSpec.IntValue VPCNickel;
-    public static ForgeConfigSpec.IntValue MinHeightNickel;
     public static ForgeConfigSpec.IntValue MaxHeightNickel;
 
     public static ForgeConfigSpec.BooleanValue enableOsmium;
     public static ForgeConfigSpec.IntValue VSOsmium;
     public static ForgeConfigSpec.IntValue VPCOsmium;
-    public static ForgeConfigSpec.IntValue MinHeightOsmium;
     public static ForgeConfigSpec.IntValue MaxHeightOsmium;
 
     public static ForgeConfigSpec.BooleanValue enablePlatinum;
     public static ForgeConfigSpec.IntValue VSPlatinum;
     public static ForgeConfigSpec.IntValue VPCPlatinum;
-    public static ForgeConfigSpec.IntValue MinHeightPlatinum;
     public static ForgeConfigSpec.IntValue MaxHeightPlatinum;
 
     public static ForgeConfigSpec.BooleanValue enableSaltpeter;
     public static ForgeConfigSpec.IntValue VSSaltpeter;
     public static ForgeConfigSpec.IntValue VPCSaltpeter;
-    public static ForgeConfigSpec.IntValue MinHeightSaltpeter;
     public static ForgeConfigSpec.IntValue MaxHeightSaltpeter;
 
     public static ForgeConfigSpec.BooleanValue enableSilver;
     public static ForgeConfigSpec.IntValue VSSilver;
     public static ForgeConfigSpec.IntValue VPCSilver;
-    public static ForgeConfigSpec.IntValue MinHeightSilver;
     public static ForgeConfigSpec.IntValue MaxHeightSilver;
 
     public static ForgeConfigSpec.BooleanValue enableSulfur;
     public static ForgeConfigSpec.IntValue VSSulfur;
     public static ForgeConfigSpec.IntValue VPCSulfur;
-    public static ForgeConfigSpec.IntValue MinHeightSulfur;
     public static ForgeConfigSpec.IntValue MaxHeightSulfur;
 
     public static ForgeConfigSpec.BooleanValue enableThorium;
     public static ForgeConfigSpec.IntValue VSThorium;
     public static ForgeConfigSpec.IntValue VPCThorium;
-    public static ForgeConfigSpec.IntValue MinHeightThorium;
     public static ForgeConfigSpec.IntValue MaxHeightThorium;
 
     public static ForgeConfigSpec.BooleanValue enableTin;
     public static ForgeConfigSpec.IntValue VSTin;
     public static ForgeConfigSpec.IntValue VPCTin;
-    public static ForgeConfigSpec.IntValue MinHeightTin;
     public static ForgeConfigSpec.IntValue MaxHeightTin;
 
     public static ForgeConfigSpec.BooleanValue enableTitanium;
     public static ForgeConfigSpec.IntValue VSTitanium;
     public static ForgeConfigSpec.IntValue VPCTitanium;
-    public static ForgeConfigSpec.IntValue MinHeightTitanium;
     public static ForgeConfigSpec.IntValue MaxHeightTitanium;
 
     public static ForgeConfigSpec.BooleanValue enableTungsten;
     public static ForgeConfigSpec.IntValue VSTungsten;
     public static ForgeConfigSpec.IntValue VPCTungsten;
-    public static ForgeConfigSpec.IntValue MinHeightTungsten;
     public static ForgeConfigSpec.IntValue MaxHeightTungsten;
 
     public static ForgeConfigSpec.BooleanValue enableUranium;
     public static ForgeConfigSpec.IntValue VSUranium;
     public static ForgeConfigSpec.IntValue VPCUranium;
-    public static ForgeConfigSpec.IntValue MinHeightUranium;
     public static ForgeConfigSpec.IntValue MaxHeightUranium;
 
     public static ForgeConfigSpec.BooleanValue enableZinc;
     public static ForgeConfigSpec.IntValue VSZinc;
     public static ForgeConfigSpec.IntValue VPCZinc;
-    public static ForgeConfigSpec.IntValue MinHeightZinc;
     public static ForgeConfigSpec.IntValue MaxHeightZinc;
 
     public static ForgeConfigSpec.IntValue HarvestAluminium;
@@ -178,8 +178,6 @@ public class ConfigGeneral {
             BUILDER.comment("General settings").push(CATEGORY_GENERAL);
             enableOreGen = BUILDER.comment("Enable all ore generation (default: true)").define("enableOreGen", true);
             BUILDER.comment("WARNING: disabling items/blocks will cause recipe errors to be spilled in console!");
-            enableTools = BUILDER.comment("Enable all tool items (default: true)").define("enableTools", true);
-            enableArmor = BUILDER.comment("Enable all armor items (default: true)").define("enableArmor", true);
             //disableMortarOreGrind = BUILDER.comment("Set to true to stop ore grinding being possible through the mortar").define("disableMortarOreGrind", false);
             //disableMortarIngotGrind = BUILDER.comment("Set to true to stop ingot grinding being possible through the mortar").define("disableMortarIngotGrind", false);
             BUILDER.pop();
@@ -187,7 +185,7 @@ public class ConfigGeneral {
         BUILDER.pop();
 
         BUILDER.comment("Material settings").push(CATEGORY_MATERIALS);
-            BUILDER.comment("Terracotta settings").push(CATEGORY_TERRACOTTA);
+            BUILDER.comment("Terracotta settings").push("terracotta");
             enableTerracotta = BUILDER.comment("Enable underground Terracotta generation (default: true)").define("enableTerracotta", true);
             VSTerracotta = BUILDER.comment("Vein size").defineInRange("VSTerracotta",6, 0, 50);
             VPCTerracotta = BUILDER.comment("Chunk spawn frequency").defineInRange("VPCTerracotta", 32, 0, 128);
@@ -195,13 +193,19 @@ public class ConfigGeneral {
             MaxHeightTerracotta = BUILDER.comment("Maximum height").defineInRange("MaxHeightTerracotta",16, 0, 255);
             BUILDER.pop();
 
-            BUILDER.comment("Clay settings").push(CATEGORY_CLAY);
+            BUILDER.comment("Clay settings").push("clay");
             enableClay = BUILDER.comment("Enable underground Clay generation (default: true)").define("enableClay", true);
             VSClay = BUILDER.comment("Vein size").defineInRange("VSClay",12, 0, 50);
             VPCClay = BUILDER.comment("Chunk spawn frequency").defineInRange("VPCClay", 16, 0, 128);
             //MinHeightClay = BUILDER.comment("Minimum height").defineInRange("MinHeightClay",8, 0, 255);
             MaxHeightClay = BUILDER.comment("Maximum height").defineInRange("MaxHeightClay",64, 0, 255);
             BUILDER.pop();
+        BUILDER.pop();
+
+        BUILDER.comment("Tools/armor settings").push(CATEGORY_EQUIPMENT);
+            enableTools = BUILDER.comment("Enable all tool items (default: true)").define("enableTools", true);
+            enableArmor = BUILDER.comment("Enable all armor items (default: true)").define("enableArmor", true);
+            BUILDER.comment("WARNING: disabling tools/armor will cause recipe errors to be spilled in console!");
         BUILDER.pop();
 
         BUILDER.comment("Metals settings").push(CATEGORY_METALS);
