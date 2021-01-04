@@ -198,7 +198,7 @@ public class ConfigGeneral {
             VSClay = BUILDER.comment("Vein size").defineInRange("VSClay",12, 0, 50);
             VPCClay = BUILDER.comment("Chunk spawn frequency").defineInRange("VPCClay", 16, 0, 128);
             //MinHeightClay = BUILDER.comment("Minimum height").defineInRange("MinHeightClay",8, 0, 255);
-            MaxHeightClay = BUILDER.comment("Maximum height").defineInRange("MaxHeightClay",64, 0, 255);
+            MaxHeightClay = BUILDER.comment("Maximum height").defineInRange("MaxHeightClay",56, 0, 255);
             BUILDER.pop();
         BUILDER.pop();
 
@@ -214,27 +214,27 @@ public class ConfigGeneral {
             enableAluminium = BUILDER.comment("Enable Aluminium ore generation (default: true)").define("enableAluminium", true);
             enableAluminium = BUILDER.comment("Enable Aluminium ore generation (default: true)").define("enableAluminium", true);
             VSAluminium = BUILDER.comment("Vein size").defineInRange("VSAluminium", 8, 0, 50);
-            VPCAluminium = BUILDER.comment("Chunk spawn frequency").defineInRange("VPCAluminium", 64, 0, 128);
+            VPCAluminium = BUILDER.comment("Chunk spawn frequency").defineInRange("VPCAluminium", 56, 0, 128);
             //MinHeightAluminium = BUILDER.comment("Minium height").defineInRange("MinHeightAluminium", 8, 0, 255);
-            MaxHeightAluminium = BUILDER.comment("Maximum height").defineInRange("MaxHeightAluminium", 64, 0, 255);
+            MaxHeightAluminium = BUILDER.comment("Maximum height").defineInRange("MaxHeightAluminium", 56, 0, 255);
             HarvestAluminium = BUILDER.comment("Harvest level").defineInRange("HarvestAluminium", 1, 0, 4);
             BUILDER.pop();
 
             BUILDER.comment("Copper settings").push("copper");
             enableCopper = BUILDER.comment("Enable Copper ore generation (default: true)").define("enableCopper", true);
             VSCopper = BUILDER.comment("Vein size").defineInRange("VSCopper", 12, 0, 50);
-            VPCCopper = BUILDER.comment("Chunk spawn frequency").defineInRange("VPCCopper", 64, 0, 128);
+            VPCCopper = BUILDER.comment("Chunk spawn frequency").defineInRange("VPCCopper", 56, 0, 128);
             //MinHeightCopper = BUILDER.comment("Minimum height").defineInRange("MinHeightCopper", 30, 0, 255);
-            MaxHeightCopper = BUILDER.comment("Maximum height").defineInRange("MaxHeightCopper", 90, 0, 255);
+            MaxHeightCopper = BUILDER.comment("Maximum height").defineInRange("MaxHeightCopper", 76, 0, 255);
             HarvestCopper = BUILDER.comment("Harvest level").defineInRange("HarvestCopper", 1, 0, 4);
             BUILDER.pop();
 
             BUILDER.comment("Lead settings").push("lead");
             enableLead = BUILDER.comment("Enable Lead ore generation (default: true)").define("enableLead", true);
             VSLead = BUILDER.comment("Vein size").defineInRange("VSLead", 8, 0, 50);
-            VPCLead = BUILDER.comment("Chunk spawn frequency").defineInRange("VPCLead", 64, 0, 128);
+            VPCLead = BUILDER.comment("Chunk spawn frequency").defineInRange("VPCLead", 56, 0, 128);
             //MinHeightLead = BUILDER.comment("Minimum height").defineInRange("MinHeightLead", 8, 0, 255);
-            MaxHeightLead = BUILDER.comment("Maximum height").defineInRange("MaxHeightLead", 64, 0, 255);
+            MaxHeightLead = BUILDER.comment("Maximum height").defineInRange("MaxHeightLead", 56, 0, 255);
             HarvestLead = BUILDER.comment("Harvest level").defineInRange("HarvestLead", 1, 0, 4);
             BUILDER.pop();
 
@@ -243,16 +243,16 @@ public class ConfigGeneral {
             VSNickel = BUILDER.comment("Vein size").defineInRange("VSNickel", 8, 0, 50);
             VPCNickel = BUILDER.comment("Chunk spawn frequency").defineInRange("VPCNickel", 48, 0, 128);
             //MinHeightNickel = BUILDER.comment("Minimum height").defineInRange("MinHeightNickel", 4, 0, 255);
-            MaxHeightNickel = BUILDER.comment("Maximum height").defineInRange("MaxHeightNickel", 64, 0, 255);
+            MaxHeightNickel = BUILDER.comment("Maximum height").defineInRange("MaxHeightNickel", 56, 0, 255);
             HarvestNickel = BUILDER.comment("Harvest level").defineInRange("HarvestNickel", 2, 0, 4);
             BUILDER.pop();
 
             BUILDER.comment("Osmium settings").push("osmium");
             enableOsmium = BUILDER.comment("Enable Osmium ore generation (default: true)").define("enableOsmium", true);
             VSOsmium = BUILDER.comment("Vein size").defineInRange("VSOsmium", 8, 0, 50);
-            VPCOsmium = BUILDER.comment("Chunk spawn frequency").defineInRange("VPCOsmium", 64, 0, 128);
+            VPCOsmium = BUILDER.comment("Chunk spawn frequency").defineInRange("VPCOsmium", 56, 0, 128);
             //MinHeightOsmium = BUILDER.comment("Minimum height").defineInRange("MinHeightOsmium", 8, 0, 255);
-            MaxHeightOsmium = BUILDER.comment("Maximum height").defineInRange("MaxHeightOsmium", 64, 0, 255);
+            MaxHeightOsmium = BUILDER.comment("Maximum height").defineInRange("MaxHeightOsmium", 56, 0, 255);
             HarvestOsmium = BUILDER.comment("Harvest level").defineInRange("HarvestOsmium", 2, 0, 4);
             BUILDER.pop();
 
@@ -268,7 +268,7 @@ public class ConfigGeneral {
             BUILDER.comment("Saltpeter settings").push("saltpeter");
             enableSaltpeter = BUILDER.comment("Enable Saltpeter ore generation (default: true)").define("enableSaltpeter", true);
             VSSaltpeter = BUILDER.comment("Vein size").defineInRange("VSSaltpeter", 12, 0, 50);
-            VPCSaltpeter = BUILDER.comment("Chunk spawn frequency").defineInRange("VPCSaltpeter", 64, 0, 128);
+            VPCSaltpeter = BUILDER.comment("Chunk spawn frequency").defineInRange("VPCSaltpeter", 56, 0, 128);
             //MinHeightSaltpeter = BUILDER.comment("Minimum height").defineInRange("MinHeightSaltpeter", 24, 0, 255);
             MaxHeightSaltpeter = BUILDER.comment("Maximum height").defineInRange("MaxHeightSaltpeter", 72, 0, 255);
             HarvestSaltpeter = BUILDER.comment("Harvest level").defineInRange("HarvestSaltpeter", 0, 0, 4);
@@ -286,7 +286,7 @@ public class ConfigGeneral {
             BUILDER.comment("Sulfur settings").push("sulfur");
             enableSulfur = BUILDER.comment("Enable Sulfur ore generation (default: true)").define("enableSulfur", true);
             VSSulfur = BUILDER.comment("Vein size").defineInRange("VSSulfur", 12, 0, 50);
-            VPCSulfur = BUILDER.comment("Chunk spawn frequency").defineInRange("VPCSulfur", 64, 0, 128);
+            VPCSulfur = BUILDER.comment("Chunk spawn frequency").defineInRange("VPCSulfur", 56, 0, 128);
             //MinHeightSulfur = BUILDER.comment("Minimum height").defineInRange("MinHeightSulfur", 24, 0, 255);
             MaxHeightSulfur = BUILDER.comment("Maximum height").defineInRange("MaxHeightSulfur", 72, 0, 255);
             HarvestSulfur = BUILDER.comment("Harvest level").defineInRange("HarvestSulfur", 0, 0, 4);
@@ -304,16 +304,16 @@ public class ConfigGeneral {
             BUILDER.comment("Tin settings").push("tin");
             enableTin = BUILDER.comment("Enable Tin ore generation (default: true)").define("enableTin", true);
             VSTin = BUILDER.comment("Vein size").defineInRange("VSTin", 12, 0, 50);
-            VPCTin = BUILDER.comment("Chunk spawn frequency").defineInRange("VPCTin", 64, 0, 128);
+            VPCTin = BUILDER.comment("Chunk spawn frequency").defineInRange("VPCTin", 56, 0, 128);
             //MinHeightTin = BUILDER.comment("Minimum height").defineInRange("MinHeightTin", 8, 0, 255);
-            MaxHeightTin = BUILDER.comment("Maximum height").defineInRange("MaxHeightTin", 72, 0, 255);
+            MaxHeightTin = BUILDER.comment("Maximum height").defineInRange("MaxHeightTin", 60, 0, 255);
             HarvestTin = BUILDER.comment("Harvest level").defineInRange("HarvestTin", 1, 0, 4);
             BUILDER.pop();
 
             BUILDER.comment("Titanium settings").push("titanium");
             enableTitanium = BUILDER.comment("Enable Titanium ore generation (default: true)").define("enableTitanium", true);
             VSTitanium = BUILDER.comment("Vein size").defineInRange("VSTitanium", 8, 0, 50);
-            VPCTitanium = BUILDER.comment("Chunk spawn frequency").defineInRange("VPCTitanium", 64, 0, 128);
+            VPCTitanium = BUILDER.comment("Chunk spawn frequency").defineInRange("VPCTitanium", 56, 0, 128);
             //MinHeightTitanium = BUILDER.comment("Minimum height").defineInRange("MinHeightTitanium", 4, 0, 255);
             MaxHeightTitanium = BUILDER.comment("Maximum height").defineInRange("MaxHeightTitanium", 48, 0, 255);
             HarvestTitanium = BUILDER.comment("Harvest level").defineInRange("HarvestTitanium", 2, 0, 4);
@@ -322,7 +322,7 @@ public class ConfigGeneral {
             BUILDER.comment("Tungsten settings").push("tungsten");
             enableTungsten = BUILDER.comment("Enable Tungsten ore generation (default: true)").define("enableTungsten", true);
             VSTungsten = BUILDER.comment("Vein size").defineInRange("VSTungsten", 8, 0, 50);
-            VPCTungsten = BUILDER.comment("Chunk spawn frequency").defineInRange("VPCTungsten", 64, 0, 128);
+            VPCTungsten = BUILDER.comment("Chunk spawn frequency").defineInRange("VPCTungsten", 56, 0, 128);
             //MinHeightTungsten = BUILDER.comment("Minimum height").defineInRange("MinHeightTungsten", 8, 0, 255);
             MaxHeightTungsten = BUILDER.comment("Maximum height").defineInRange("MaxHeightTungsten", 48, 0, 255);
             HarvestTungsten = BUILDER.comment("Harvest level").defineInRange("HarvestTungsten", 2, 0, 4);
@@ -340,9 +340,9 @@ public class ConfigGeneral {
             BUILDER.comment("Zinc settings").push("zinc");
             enableZinc = BUILDER.comment("Enable Zinc ore generation (default: true)").define("enableZinc", true);
             VSZinc = BUILDER.comment("Vein size").defineInRange("VSZinc", 8, 0, 50);
-            VPCZinc = BUILDER.comment("Chunk spawn frequency").defineInRange("VPCZinc", 64, 0, 128);
+            VPCZinc = BUILDER.comment("Chunk spawn frequency").defineInRange("VPCZinc", 56, 0, 128);
             //MinHeightZinc = BUILDER.comment("Minimum height").defineInRange("MinHeightZinc", 8, 0, 255);
-            MaxHeightZinc = BUILDER.comment("Maximum height").defineInRange("MaxHeightZinc", 64, 0, 255);
+            MaxHeightZinc = BUILDER.comment("Maximum height").defineInRange("MaxHeightZinc", 56, 0, 255);
             HarvestZinc = BUILDER.comment("Harvest level").defineInRange("HarvestZinc", 2, 0, 4);
             BUILDER.pop();
 
