@@ -4,7 +4,7 @@ license="MIT"
 
 [[mods]]
 modId="matex"
-version="1.16.3-v1.8.0"
+version="1.16.3-v1.8.1"
 displayName="Materials Expanded"
 #logoFile="examplemod.png" #logo file
 authors="Advaluti"
