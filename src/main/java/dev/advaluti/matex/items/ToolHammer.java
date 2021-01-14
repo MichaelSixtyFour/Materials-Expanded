@@ -18,6 +18,7 @@ public class ToolHammer extends Item implements IForgeItem, IToolHammer {
         super(new Properties()
                 .group(ModSetup.MATEXTOOLS_GROUP)
                 .defaultMaxDamage(64)
+                .maxStackSize(1)
         );
     }
 
