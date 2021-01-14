@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+
+  "ingredient": {
+      "item": "matex:dustcopper"
+  },
+
+  "result": "matex:ingotcopper",
+  "experience": 0.25,
+  "cookingtime": 100
+}

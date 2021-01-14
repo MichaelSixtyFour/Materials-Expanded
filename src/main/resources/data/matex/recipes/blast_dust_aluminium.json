@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+
+  "ingredient": {
+      "item": "matex:dustaluminium"
+  },
+
+  "result": "matex:ingotaluminium",
+  "experience": 0.25,
+  "cookingtime": 100
+}

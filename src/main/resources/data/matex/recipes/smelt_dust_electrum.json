@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+
+  "ingredient": {
+      "item": "matex:dustelectrum"
+  },
+
+  "result": "matex:ingotelectrum",
+  "experience": 0.5,
+  "cookingtime": 200
+}

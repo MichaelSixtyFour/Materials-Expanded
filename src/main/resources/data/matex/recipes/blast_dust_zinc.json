@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+
+  "ingredient": {
+      "item": "matex:dustzinc"
+  },
+
+  "result": "matex:ingotzinc",
+  "experience": 0.25,
+  "cookingtime": 100
+}

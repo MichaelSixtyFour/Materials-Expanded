@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+
+  "ingredient": {
+      "item": "matex:dustlead"
+  },
+
+  "result": "matex:ingotlead",
+  "experience": 0.25,
+  "cookingtime": 100
+}

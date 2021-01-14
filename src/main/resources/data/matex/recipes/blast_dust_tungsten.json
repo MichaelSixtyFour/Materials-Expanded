@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+
+  "ingredient": {
+      "item": "matex:dusttungsten"
+  },
+
+  "result": "matex:ingottungsten",
+  "experience": 0.25,
+  "cookingtime": 100
+}
