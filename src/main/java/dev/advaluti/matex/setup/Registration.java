@@ -1,6 +1,7 @@
 package dev.advaluti.matex.setup;
 
 import dev.advaluti.matex.blocks.*;
+import dev.advaluti.matex.blocks.ores.*;
 import dev.advaluti.matex.items.*;
 import dev.advaluti.matex.materials.BaseArmorMaterial;
 import dev.advaluti.matex.materials.BaseToolMaterial;
@@ -14,8 +15,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-
-import java.util.ArrayList;
 
 import static dev.advaluti.matex.MatEx.MOD_ID;
 
@@ -65,17 +64,154 @@ public class Registration {
             }
         }
 
+
+
+        if (ConfigGeneral.enableMortar.get()) {
+            //MORTAR
+            final RegistryObject<ToolMortar> TOOLMORTAR = ITEMS.register("toolmortar", ToolMortar::new);
+            final RegistryObject<ToolMortarObsidian> TOOLMORTAROBSIDIAN = ITEMS.register("toolmortarobsidian", ToolMortarObsidian::new);
+        }
+
+        if (ConfigGeneral.enableHammer.get()) {
+            //HAMMER
+            final RegistryObject<ToolHammer> TOOLHAMMER = ITEMS.register("toolhammer", ToolHammer::new);
+            final RegistryObject<ToolHammerObsidian> TOOLHAMMEROBSIDIAN = ITEMS.register("toolhammerobsidian", ToolHammerObsidian::new);
+        }
+
+        if (ConfigGeneral.enableMetalBlocks.get()) {
+            //BLOCKS
+            final RegistryObject<MetalBlockBase> BLOCKCOPPER = BLOCKS.register("blockcopper", MetalBlockBase::new);
+            final RegistryObject<Item> BLOCKCOPPER_ITEM = ITEMS.register("blockcopper", () -> new BlockItem(BLOCKCOPPER.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+            final RegistryObject<MetalBlockBase> BLOCKTIN = BLOCKS.register("blocktin", MetalBlockBase::new);
+            final RegistryObject<Item> BLOCKTIN_ITEM = ITEMS.register("blocktin", () -> new BlockItem(BLOCKTIN.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+            final RegistryObject<MetalBlockBase> BLOCKLEAD = BLOCKS.register("blocklead", MetalBlockBase::new);
+            final RegistryObject<Item> BLOCKLEAD_ITEM = ITEMS.register("blocklead", () -> new BlockItem(BLOCKLEAD.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+            final RegistryObject<MetalBlockBase> BLOCKALUMINIUM = BLOCKS.register("blockaluminium", MetalBlockBase::new);
+            final RegistryObject<Item> BLOCKALUMINIUM_ITEM = ITEMS.register("blockaluminium", () -> new BlockItem(BLOCKALUMINIUM.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+            final RegistryObject<MetalBlockBase> BLOCKSILVER = BLOCKS.register("blocksilver", MetalBlockBase::new);
+            final RegistryObject<Item> BLOCKSILVER_ITEM = ITEMS.register("blocksilver", () -> new BlockItem(BLOCKSILVER.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+            final RegistryObject<MetalBlockBase> BLOCKOSMIUM = BLOCKS.register("blockosmium", MetalBlockBase::new);
+            final RegistryObject<Item> BLOCKOSMIUM_ITEM = ITEMS.register("blockosmium", () -> new BlockItem(BLOCKOSMIUM.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+            final RegistryObject<MetalBlockBase> BLOCKZINC = BLOCKS.register("blockzinc", MetalBlockBase::new);
+            final RegistryObject<Item> BLOCKZINC_ITEM = ITEMS.register("blockzinc", () -> new BlockItem(BLOCKZINC.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+            final RegistryObject<MetalBlockBase> BLOCKTUNGSTEN = BLOCKS.register("blocktungsten", MetalBlockBase::new);
+            final RegistryObject<Item> BLOCKTUNGSTEN_ITEM = ITEMS.register("blocktungsten", () -> new BlockItem(BLOCKTUNGSTEN.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+            final RegistryObject<MetalBlockBase> BLOCKPLATINUM = BLOCKS.register("blockplatinum", MetalBlockBase::new);
+            final RegistryObject<Item> BLOCKPLATINUM_ITEM = ITEMS.register("blockplatinum", () -> new BlockItem(BLOCKPLATINUM.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+            final RegistryObject<MetalBlockBase> BLOCKNICKEL = BLOCKS.register("blocknickel", MetalBlockBase::new);
+            final RegistryObject<Item> BLOCKNICKEL_ITEM = ITEMS.register("blocknickel", () -> new BlockItem(BLOCKNICKEL.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+            final RegistryObject<MetalBlockBase> BLOCKTITANIUM = BLOCKS.register("blocktitanium", MetalBlockBase::new);
+            final RegistryObject<Item> BLOCKTITANIUM_ITEM = ITEMS.register("blocktitanium", () -> new BlockItem(BLOCKTITANIUM.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+            final RegistryObject<MetalBlockBase> BLOCKURANIUM = BLOCKS.register("blockuranium", MetalBlockBase::new);
+            final RegistryObject<Item> BLOCKURANIUM_ITEM = ITEMS.register("blockuranium", () -> new BlockItem(BLOCKURANIUM.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+            final RegistryObject<MetalBlockBase> BLOCKTHORIUM = BLOCKS.register("blockthorium", MetalBlockBase::new);
+            final RegistryObject<Item> BLOCKTHORIUM_ITEM = ITEMS.register("blockthorium", () -> new BlockItem(BLOCKTHORIUM.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+            final RegistryObject<MetalBlockBase> BLOCKSTEEL = BLOCKS.register("blocksteel", MetalBlockBase::new);
+            final RegistryObject<Item> BLOCKSTEEL_ITEM = ITEMS.register("blocksteel", () -> new BlockItem(BLOCKSTEEL.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+            final RegistryObject<MetalBlockBase> BLOCKBRONZE = BLOCKS.register("blockbronze", MetalBlockBase::new);
+            final RegistryObject<Item> BLOCKBRONZE_ITEM = ITEMS.register("blockbronze", () -> new BlockItem(BLOCKBRONZE.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+            final RegistryObject<MetalBlockBase> BLOCKELECTRUM = BLOCKS.register("blockelectrum", MetalBlockBase::new);
+            final RegistryObject<Item> BLOCKELECTRUM_ITEM = ITEMS.register("blockelectrum", () -> new BlockItem(BLOCKELECTRUM.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+            final RegistryObject<MetalBlockBase> BLOCKCUPRONICKEL = BLOCKS.register("blockcupronickel", MetalBlockBase::new);
+            final RegistryObject<Item> BLOCKCUPRONICKEL_ITEM = ITEMS.register("blockcupronickel", () -> new BlockItem(BLOCKCUPRONICKEL.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+            final RegistryObject<MetalBlockBase> BLOCKBRASS = BLOCKS.register("blockbrass", MetalBlockBase::new);
+            final RegistryObject<Item> BLOCKBRASS_ITEM = ITEMS.register("blockbrass", () -> new BlockItem(BLOCKBRASS.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+            final RegistryObject<MetalBlockBase> BLOCKALUMINIUMBRASS = BLOCKS.register("blockaluminiumbrass", MetalBlockBase::new);
+            final RegistryObject<Item> BLOCKALUMINIUMBRASS_ITEM = ITEMS.register("blockaluminiumbrass", () -> new BlockItem(BLOCKALUMINIUMBRASS.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+
+            final RegistryObject<MetalBlockBase> BLOCKINVAR = BLOCKS.register("blockinvar", MetalBlockBase::new);
+            final RegistryObject<Item> BLOCKINVAR_ITEM = ITEMS.register("blockinvar", () -> new BlockItem(BLOCKINVAR.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
+        }
+
+        if (ConfigGeneral.enableDusts.get()) {
+            //DUSTS
+            final RegistryObject<DustBase> DUSTCOPPER = ITEMS.register("dustcopper", DustBase::new);
+            final RegistryObject<DustBase> DUSTTIN = ITEMS.register("dusttin", DustBase::new);
+            final RegistryObject<DustBase> DUSTLEAD = ITEMS.register("dustlead", DustBase::new);
+            final RegistryObject<DustBase> DUSTALUMINIUM = ITEMS.register("dustaluminium", DustBase::new);
+            final RegistryObject<DustBase> DUSTSILVER = ITEMS.register("dustsilver", DustBase::new);
+            final RegistryObject<DustBase> DUSTOSMIUM = ITEMS.register("dustosmium", DustBase::new);
+            final RegistryObject<DustBase> DUSTZINC = ITEMS.register("dustzinc", DustBase::new);
+            final RegistryObject<DustBase> DUSTTUNGSTEN = ITEMS.register("dusttungsten", DustBase::new);
+            final RegistryObject<DustBase> DUSTPLATINUM = ITEMS.register("dustplatinum", DustBase::new);
+            final RegistryObject<DustBase> DUSTNICKEL = ITEMS.register("dustnickel", DustBase::new);
+            final RegistryObject<DustBase> DUSTTITANIUM = ITEMS.register("dusttitanium", DustBase::new);
+            final RegistryObject<DustBase> DUSTURANIUM = ITEMS.register("dusturanium", DustBase::new);
+            final RegistryObject<DustBase> DUSTTHORIUM = ITEMS.register("dustthorium", DustBase::new);
+
+            final RegistryObject<DustBase> DUSTSALTPETER = ITEMS.register("dustsaltpeter", DustBase::new);
+            final RegistryObject<DustBase> DUSTSULFUR = ITEMS.register("dustsulfur", DustBase::new);
+
+            final RegistryObject<DustBase> DUSTSTEEL = ITEMS.register("duststeel", DustBase::new);
+            final RegistryObject<DustBase> DUSTBRONZE = ITEMS.register("dustbronze", DustBase::new);
+            final RegistryObject<DustBase> DUSTELECTRUM = ITEMS.register("dustelectrum", DustBase::new);
+            final RegistryObject<DustBase> DUSTCUPRONICKEL = ITEMS.register("dustcupronickel", DustBase::new);
+            final RegistryObject<DustBase> DUSTBRASS = ITEMS.register("dustbrass", DustBase::new);
+            final RegistryObject<DustBase> DUSTALUMINIUMBRASS = ITEMS.register("dustaluminiumbrass", DustBase::new);
+            final RegistryObject<DustBase> DUSTINVAR = ITEMS.register("dustinvar", DustBase::new);
+
+            final RegistryObject<DustBase> DUSTCOAL = ITEMS.register("dustcoal", DustBase::new);
+            final RegistryObject<DustBase> DUSTIRON = ITEMS.register("dustiron", DustBase::new);
+            final RegistryObject<DustBase> DUSTGOLD = ITEMS.register("dustgold", DustBase::new);
+            final RegistryObject<DustBase> DUSTDIAMOND = ITEMS.register("dustdiamond", DustBase::new);
+            final RegistryObject<DustBase> DUSTEMERALD = ITEMS.register("dustemerald", DustBase::new);
+            final RegistryObject<DustBase> DUSTQUARTZ = ITEMS.register("dustquartz", DustBase::new);
+            final RegistryObject<DustBase> DUSTNETHERITE = ITEMS.register("dustnetherite", DustBase::new);
+        }
+
+        if (ConfigGeneral.enableNuggets.get()) {
+            //NUGGETS
+            final RegistryObject<NuggetBase> NUGGETCOPPER = ITEMS.register("nuggetcopper", NuggetBase::new);
+            final RegistryObject<NuggetBase> NUGGETTIN = ITEMS.register("nuggettin", NuggetBase::new);
+            final RegistryObject<NuggetBase> NUGGETLEAD = ITEMS.register("nuggetlead", NuggetBase::new);
+            final RegistryObject<NuggetBase> NUGGETALUMINIUM = ITEMS.register("nuggetaluminium", NuggetBase::new);
+            final RegistryObject<NuggetBase> NUGGETSILVER = ITEMS.register("nuggetsilver", NuggetBase::new);
+            final RegistryObject<NuggetBase> NUGGETOSMIUM = ITEMS.register("nuggetosmium", NuggetBase::new);
+            final RegistryObject<NuggetBase> NUGGETZINC = ITEMS.register("nuggetzinc", NuggetBase::new);
+            final RegistryObject<NuggetBase> NUGGETTUNGSTEN = ITEMS.register("nuggettungsten", NuggetBase::new);
+            final RegistryObject<NuggetBase> NUGGETPLATINUM = ITEMS.register("nuggetplatinum", NuggetBase::new);
+            final RegistryObject<NuggetBase> NUGGETNICKEL = ITEMS.register("nuggetnickel", NuggetBase::new);
+            final RegistryObject<NuggetBase> NUGGETTITANIUM = ITEMS.register("nuggettitanium", NuggetBase::new);
+            final RegistryObject<NuggetBase> NUGGETURANIUM = ITEMS.register("nuggeturanium", NuggetBase::new);
+            final RegistryObject<NuggetBase> NUGGETTHORIUM = ITEMS.register("nuggetthorium", NuggetBase::new);
+
+            final RegistryObject<NuggetBase> NUGGETSTEEL = ITEMS.register("nuggetsteel", NuggetBase::new);
+            final RegistryObject<NuggetBase> NUGGETBRONZE = ITEMS.register("nuggetbronze", NuggetBase::new);
+            final RegistryObject<NuggetBase> NUGGETELECTRUM = ITEMS.register("nuggetelectrum", NuggetBase::new);
+            final RegistryObject<NuggetBase> NUGGETCUPRONICKEL = ITEMS.register("nuggetcupronickel", NuggetBase::new);
+            final RegistryObject<NuggetBase> NUGGETBRASS = ITEMS.register("nuggetbrass", NuggetBase::new);
+            final RegistryObject<NuggetBase> NUGGETALUMINIUMBRASS = ITEMS.register("nuggetaluminiumbrass", NuggetBase::new);
+            final RegistryObject<NuggetBase> NUGGETINVAR = ITEMS.register("nuggetinvar", NuggetBase::new);
+        }
+
+        if (ConfigGeneral.enableCoalNuggets.get()) {
+            //COAL NUGGETS
+            final RegistryObject<FuelNuggetBase> NUGGETCOAL = ITEMS.register("nuggetcoal", FuelNuggetBase::new);
+            final RegistryObject<FuelNuggetBase> NUGGETCHARCOAL = ITEMS.register("nuggetcharcoal", FuelNuggetBase::new);
+        }
+
         BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
 
     }
-
-
-    //TOOLS
-    public static final RegistryObject<ToolMortar> TOOLMORTAR = ITEMS.register("toolmortar", ToolMortar::new);
-    public static final RegistryObject<ToolHammer> TOOLHAMMER = ITEMS.register("toolhammer", ToolHammer::new);
-    public static final RegistryObject<ToolMortarObsidian> TOOLMORTAROBSIDIAN = ITEMS.register("toolmortarobsidian", ToolMortarObsidian::new);
-    public static final RegistryObject<ToolHammerObsidian> TOOLHAMMEROBSIDIAN = ITEMS.register("toolhammerobsidian", ToolHammerObsidian::new);
 
     //MISC ORES
     public static final RegistryObject<OreSaltpeter> ORESALTPETER = BLOCKS.register("oresaltpeter", OreSaltpeter::new);
@@ -124,68 +260,6 @@ public class Registration {
     public static final RegistryObject<OreThorium> ORETHORIUM = BLOCKS.register("orethorium", OreThorium::new);
     public static final RegistryObject<Item> ORETHORIUM_ITEM = ITEMS.register("orethorium", () -> new BlockItem(ORETHORIUM.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
 
-    //BLOCKS
-    public static final RegistryObject<MetalBlockBase> BLOCKCOPPER = BLOCKS.register("blockcopper", MetalBlockBase::new);
-    public static final RegistryObject<Item> BLOCKCOPPER_ITEM = ITEMS.register("blockcopper", () -> new BlockItem(BLOCKCOPPER.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
-    public static final RegistryObject<MetalBlockBase> BLOCKTIN = BLOCKS.register("blocktin", MetalBlockBase::new);
-    public static final RegistryObject<Item> BLOCKTIN_ITEM = ITEMS.register("blocktin", () -> new BlockItem(BLOCKTIN.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
-    public static final RegistryObject<MetalBlockBase> BLOCKLEAD = BLOCKS.register("blocklead", MetalBlockBase::new);
-    public static final RegistryObject<Item> BLOCKLEAD_ITEM = ITEMS.register("blocklead", () -> new BlockItem(BLOCKLEAD.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
-    public static final RegistryObject<MetalBlockBase> BLOCKALUMINIUM = BLOCKS.register("blockaluminium", MetalBlockBase::new);
-    public static final RegistryObject<Item> BLOCKALUMINIUM_ITEM = ITEMS.register("blockaluminium", () -> new BlockItem(BLOCKALUMINIUM.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
-    public static final RegistryObject<MetalBlockBase> BLOCKSILVER = BLOCKS.register("blocksilver", MetalBlockBase::new);
-    public static final RegistryObject<Item> BLOCKSILVER_ITEM = ITEMS.register("blocksilver", () -> new BlockItem(BLOCKSILVER.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
-    public static final RegistryObject<MetalBlockBase> BLOCKOSMIUM = BLOCKS.register("blockosmium", MetalBlockBase::new);
-    public static final RegistryObject<Item> BLOCKOSMIUM_ITEM = ITEMS.register("blockosmium", () -> new BlockItem(BLOCKOSMIUM.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
-    public static final RegistryObject<MetalBlockBase> BLOCKZINC = BLOCKS.register("blockzinc", MetalBlockBase::new);
-    public static final RegistryObject<Item> BLOCKZINC_ITEM = ITEMS.register("blockzinc", () -> new BlockItem(BLOCKZINC.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
-    public static final RegistryObject<MetalBlockBase> BLOCKTUNGSTEN = BLOCKS.register("blocktungsten", MetalBlockBase::new);
-    public static final RegistryObject<Item> BLOCKTUNGSTEN_ITEM = ITEMS.register("blocktungsten", () -> new BlockItem(BLOCKTUNGSTEN.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
-    public static final RegistryObject<MetalBlockBase> BLOCKPLATINUM = BLOCKS.register("blockplatinum", MetalBlockBase::new);
-    public static final RegistryObject<Item> BLOCKPLATINUM_ITEM = ITEMS.register("blockplatinum", () -> new BlockItem(BLOCKPLATINUM.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
-    public static final RegistryObject<MetalBlockBase> BLOCKNICKEL = BLOCKS.register("blocknickel", MetalBlockBase::new);
-    public static final RegistryObject<Item> BLOCKNICKEL_ITEM = ITEMS.register("blocknickel", () -> new BlockItem(BLOCKNICKEL.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
-    public static final RegistryObject<MetalBlockBase> BLOCKTITANIUM = BLOCKS.register("blocktitanium", MetalBlockBase::new);
-    public static final RegistryObject<Item> BLOCKTITANIUM_ITEM = ITEMS.register("blocktitanium", () -> new BlockItem(BLOCKTITANIUM.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
-    public static final RegistryObject<MetalBlockBase> BLOCKURANIUM = BLOCKS.register("blockuranium", MetalBlockBase::new);
-    public static final RegistryObject<Item> BLOCKURANIUM_ITEM = ITEMS.register("blockuranium", () -> new BlockItem(BLOCKURANIUM.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
-    public static final RegistryObject<MetalBlockBase> BLOCKTHORIUM = BLOCKS.register("blockthorium", MetalBlockBase::new);
-    public static final RegistryObject<Item> BLOCKTHORIUM_ITEM = ITEMS.register("blockthorium", () -> new BlockItem(BLOCKTHORIUM.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
-
-    public static final RegistryObject<MetalBlockBase> BLOCKSTEEL = BLOCKS.register("blocksteel", MetalBlockBase::new);
-    public static final RegistryObject<Item> BLOCKSTEEL_ITEM = ITEMS.register("blocksteel", () -> new BlockItem(BLOCKSTEEL.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
-    public static final RegistryObject<MetalBlockBase> BLOCKBRONZE = BLOCKS.register("blockbronze", MetalBlockBase::new);
-    public static final RegistryObject<Item> BLOCKBRONZE_ITEM = ITEMS.register("blockbronze", () -> new BlockItem(BLOCKBRONZE.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
-    public static final RegistryObject<MetalBlockBase> BLOCKELECTRUM = BLOCKS.register("blockelectrum", MetalBlockBase::new);
-    public static final RegistryObject<Item> BLOCKELECTRUM_ITEM = ITEMS.register("blockelectrum", () -> new BlockItem(BLOCKELECTRUM.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
-    public static final RegistryObject<MetalBlockBase> BLOCKCUPRONICKEL = BLOCKS.register("blockcupronickel", MetalBlockBase::new);
-    public static final RegistryObject<Item> BLOCKCUPRONICKEL_ITEM = ITEMS.register("blockcupronickel", () -> new BlockItem(BLOCKCUPRONICKEL.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
-    public static final RegistryObject<MetalBlockBase> BLOCKBRASS = BLOCKS.register("blockbrass", MetalBlockBase::new);
-    public static final RegistryObject<Item> BLOCKBRASS_ITEM = ITEMS.register("blockbrass", () -> new BlockItem(BLOCKBRASS.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
-    public static final RegistryObject<MetalBlockBase> BLOCKALUMINIUMBRASS = BLOCKS.register("blockaluminiumbrass", MetalBlockBase::new);
-    public static final RegistryObject<Item> BLOCKALUMINIUMBRASS_ITEM = ITEMS.register("blockaluminiumbrass", () -> new BlockItem(BLOCKALUMINIUMBRASS.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
-    public static final RegistryObject<MetalBlockBase> BLOCKINVAR = BLOCKS.register("blockinvar", MetalBlockBase::new);
-    public static final RegistryObject<Item> BLOCKINVAR_ITEM = ITEMS.register("blockinvar", () -> new BlockItem(BLOCKINVAR.get(), new Item.Properties().group(ModSetup.MATEX_GROUP)));
-
     //INGOTS
     public static final RegistryObject<IngotBase> INGOTCOPPER = ITEMS.register("ingotcopper", IngotBase::new);
     public static final RegistryObject<IngotBase> INGOTTIN = ITEMS.register("ingottin", IngotBase::new);
@@ -209,66 +283,6 @@ public class Registration {
     public static final RegistryObject<IngotBase> INGOTBRASS = ITEMS.register("ingotbrass", IngotBase::new);
     public static final RegistryObject<IngotBase> INGOTALUMINIUMBRASS = ITEMS.register("ingotaluminiumbrass", IngotBase::new);
     public static final RegistryObject<IngotBase> INGOTINVAR = ITEMS.register("ingotinvar", IngotBase::new);
-
-    //DUSTS
-    public static final RegistryObject<DustBase> DUSTCOPPER = ITEMS.register("dustcopper", DustBase::new);
-    public static final RegistryObject<DustBase> DUSTTIN = ITEMS.register("dusttin", DustBase::new);
-    public static final RegistryObject<DustBase> DUSTLEAD = ITEMS.register("dustlead", DustBase::new);
-    public static final RegistryObject<DustBase> DUSTALUMINIUM = ITEMS.register("dustaluminium", DustBase::new);
-    public static final RegistryObject<DustBase> DUSTSILVER = ITEMS.register("dustsilver", DustBase::new);
-    public static final RegistryObject<DustBase> DUSTOSMIUM = ITEMS.register("dustosmium", DustBase::new);
-    public static final RegistryObject<DustBase> DUSTZINC = ITEMS.register("dustzinc", DustBase::new);
-    public static final RegistryObject<DustBase> DUSTTUNGSTEN = ITEMS.register("dusttungsten", DustBase::new);
-    public static final RegistryObject<DustBase> DUSTPLATINUM = ITEMS.register("dustplatinum", DustBase::new);
-    public static final RegistryObject<DustBase> DUSTNICKEL = ITEMS.register("dustnickel", DustBase::new);
-    public static final RegistryObject<DustBase> DUSTTITANIUM = ITEMS.register("dusttitanium", DustBase::new);
-    public static final RegistryObject<DustBase> DUSTURANIUM = ITEMS.register("dusturanium", DustBase::new);
-    public static final RegistryObject<DustBase> DUSTTHORIUM = ITEMS.register("dustthorium", DustBase::new);
-
-    public static final RegistryObject<DustBase> DUSTSALTPETER = ITEMS.register("dustsaltpeter", DustBase::new);
-    public static final RegistryObject<DustBase> DUSTSULFUR = ITEMS.register("dustsulfur", DustBase::new);
-
-    public static final RegistryObject<DustBase> DUSTSTEEL = ITEMS.register("duststeel", DustBase::new);
-    public static final RegistryObject<DustBase> DUSTBRONZE = ITEMS.register("dustbronze", DustBase::new);
-    public static final RegistryObject<DustBase> DUSTELECTRUM = ITEMS.register("dustelectrum", DustBase::new);
-    public static final RegistryObject<DustBase> DUSTCUPRONICKEL = ITEMS.register("dustcupronickel", DustBase::new);
-    public static final RegistryObject<DustBase> DUSTBRASS = ITEMS.register("dustbrass", DustBase::new);
-    public static final RegistryObject<DustBase> DUSTALUMINIUMBRASS = ITEMS.register("dustaluminiumbrass", DustBase::new);
-    public static final RegistryObject<DustBase> DUSTINVAR = ITEMS.register("dustinvar", DustBase::new);
-
-    public static final RegistryObject<DustBase> DUSTCOAL = ITEMS.register("dustcoal", DustBase::new);
-    public static final RegistryObject<DustBase> DUSTIRON = ITEMS.register("dustiron", DustBase::new);
-    public static final RegistryObject<DustBase> DUSTGOLD = ITEMS.register("dustgold", DustBase::new);
-    public static final RegistryObject<DustBase> DUSTDIAMOND = ITEMS.register("dustdiamond", DustBase::new);
-    public static final RegistryObject<DustBase> DUSTEMERALD = ITEMS.register("dustemerald", DustBase::new);
-    public static final RegistryObject<DustBase> DUSTQUARTZ = ITEMS.register("dustquartz", DustBase::new);
-    public static final RegistryObject<DustBase> DUSTNETHERITE = ITEMS.register("dustnetherite", DustBase::new);
-
-    //NUGGETS
-    public static final RegistryObject<NuggetBase> NUGGETCOPPER = ITEMS.register("nuggetcopper", NuggetBase::new);
-    public static final RegistryObject<NuggetBase> NUGGETTIN = ITEMS.register("nuggettin", NuggetBase::new);
-    public static final RegistryObject<NuggetBase> NUGGETLEAD = ITEMS.register("nuggetlead", NuggetBase::new);
-    public static final RegistryObject<NuggetBase> NUGGETALUMINIUM = ITEMS.register("nuggetaluminium", NuggetBase::new);
-    public static final RegistryObject<NuggetBase> NUGGETSILVER = ITEMS.register("nuggetsilver", NuggetBase::new);
-    public static final RegistryObject<NuggetBase> NUGGETOSMIUM = ITEMS.register("nuggetosmium", NuggetBase::new);
-    public static final RegistryObject<NuggetBase> NUGGETZINC = ITEMS.register("nuggetzinc", NuggetBase::new);
-    public static final RegistryObject<NuggetBase> NUGGETTUNGSTEN = ITEMS.register("nuggettungsten", NuggetBase::new);
-    public static final RegistryObject<NuggetBase> NUGGETPLATINUM = ITEMS.register("nuggetplatinum", NuggetBase::new);
-    public static final RegistryObject<NuggetBase> NUGGETNICKEL = ITEMS.register("nuggetnickel", NuggetBase::new);
-    public static final RegistryObject<NuggetBase> NUGGETTITANIUM = ITEMS.register("nuggettitanium", NuggetBase::new);
-    public static final RegistryObject<NuggetBase> NUGGETURANIUM = ITEMS.register("nuggeturanium", NuggetBase::new);
-    public static final RegistryObject<NuggetBase> NUGGETTHORIUM = ITEMS.register("nuggetthorium", NuggetBase::new);
-
-    public static final RegistryObject<NuggetBase> NUGGETSTEEL = ITEMS.register("nuggetsteel", NuggetBase::new);
-    public static final RegistryObject<NuggetBase> NUGGETBRONZE = ITEMS.register("nuggetbronze", NuggetBase::new);
-    public static final RegistryObject<NuggetBase> NUGGETELECTRUM = ITEMS.register("nuggetelectrum", NuggetBase::new);
-    public static final RegistryObject<NuggetBase> NUGGETCUPRONICKEL = ITEMS.register("nuggetcupronickel", NuggetBase::new);
-    public static final RegistryObject<NuggetBase> NUGGETBRASS = ITEMS.register("nuggetbrass", NuggetBase::new);
-    public static final RegistryObject<NuggetBase> NUGGETALUMINIUMBRASS = ITEMS.register("nuggetaluminiumbrass", NuggetBase::new);
-    public static final RegistryObject<NuggetBase> NUGGETINVAR = ITEMS.register("nuggetinvar", NuggetBase::new);
-
-    public static final RegistryObject<FuelNuggetBase> NUGGETCOAL = ITEMS.register("nuggetcoal", FuelNuggetBase::new);
-    public static final RegistryObject<FuelNuggetBase> NUGGETCHARCOAL = ITEMS.register("nuggetcharcoal", FuelNuggetBase::new);
 
     //PLATES
     public static final RegistryObject<PlateBase> PLATECOPPER = ITEMS.register("platecopper", PlateBase::new);
