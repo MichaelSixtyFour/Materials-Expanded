@@ -18,7 +18,6 @@ public class ToolMortarObsidian extends Item implements IForgeItem, IToolMortar 
         super(new Properties()
                 .group(ModSetup.MATEXTOOLS_GROUP)
                 .defaultMaxDamage(128)
-                .maxStackSize(1)
         );
     }
 
