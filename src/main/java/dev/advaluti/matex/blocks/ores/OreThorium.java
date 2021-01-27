@@ -1,4 +1,4 @@
-package dev.advaluti.matex.blocks;
+package dev.advaluti.matex.blocks.ores;
 
 import dev.advaluti.matex.setup.ConfigGeneral;
 import net.minecraft.block.Block;
@@ -6,14 +6,14 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.common.ToolType;
 
-public class OreSulfur extends Block {
+public class OreThorium extends Block {
 
-    public OreSulfur() {
+    public OreThorium() {
         super(Properties.create(Material.ROCK)
                 .sound(SoundType.STONE)
-                .hardnessAndResistance(2.5f)
+                .hardnessAndResistance(5.0f)
                 .harvestTool(ToolType.PICKAXE)
-                .harvestLevel(ConfigGeneral.HarvestSulfur.get())
+                .harvestLevel(ConfigGeneral.HarvestThorium.get())
         );
     }
 }

@@ -1,4 +1,4 @@
-package dev.advaluti.matex.blocks;
+package dev.advaluti.matex.blocks.ores;
 
 import dev.advaluti.matex.setup.ConfigGeneral;
 import net.minecraft.block.Block;
@@ -6,16 +6,14 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.common.ToolType;
 
-public class OreSaltpeter extends Block {
+public class OreOsmium extends Block {
 
-    //alt names include niter, salt, saltpetre, saltpeter, nitre
-
-    public OreSaltpeter() {
+    public OreOsmium() {
         super(Properties.create(Material.ROCK)
                 .sound(SoundType.STONE)
-                .hardnessAndResistance(2.5f)
+                .hardnessAndResistance(3.5f)
                 .harvestTool(ToolType.PICKAXE)
-                .harvestLevel(ConfigGeneral.HarvestSaltpeter.get())
+                .harvestLevel(ConfigGeneral.HarvestOsmium.get())
         );
     }
 }
