@@ -29,7 +29,7 @@ displayName="Materials for Forge" #mandatory
 # A file name (in the root of the mod JAR) containing a logo for display
 logoFile="logo.png" #optional
 # A text field displayed in the mod UI
-credits="GIitHub Contributors" #optional
+credits="GitHub Contributors" #optional
 # A text field displayed in the mod UI
 authors="MichaelSixtyFour" #optional
 # The description text for the mod (multi line!) (#mandatory)
