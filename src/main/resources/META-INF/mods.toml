@@ -29,7 +29,7 @@ displayName="Materials for Forge" #mandatory
 # A file name (in the root of the mod JAR) containing a logo for display
 logoFile="logo.png" #optional
 # A text field displayed in the mod UI
-credits="GIitHub Contributors" #optional
+credits="GitHub Contributors" #optional
 # A text field displayed in the mod UI
 authors="MichaelSixtyFour" #optional
 # The description text for the mod (multi line!) (#mandatory)
@@ -39,7 +39,7 @@ A material base for 1.17.x, ideal for modpack makers.
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.materialsforge]] #optional
     # the modid of the dependency
-    modId="forge" #mandatory
+    modId="materialsforge" #mandatory
     # Does this dependency have to exist - if not, ordering below must be specified
     mandatory=true #mandatory
     # The version range of the dependency

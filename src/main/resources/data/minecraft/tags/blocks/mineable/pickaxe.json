@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "materialsforge:tin_block",
+    "materialsforge:lead_block",
+    "materialsforge:silver_block",
+    "materialsforge:platinum_block",
+    "materialsforge:titanium_block",
+    "materialsforge:raw_tin_block",
+    "materialsforge:raw_lead_block",
+    "materialsforge:raw_silver_block",
+    "materialsforge:raw_platinum_block",
+    "materialsforge:raw_titanium_block"
+  ]
+}

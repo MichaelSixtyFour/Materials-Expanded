@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "materialsforge:raw_platinum"
+  },
+  "result": "materialsforge:platinum_ingot",
+  "experience": 0.35,
+  "cookingtime": 100
+}

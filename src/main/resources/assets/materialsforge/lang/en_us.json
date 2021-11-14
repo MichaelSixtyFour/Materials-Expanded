@@ -1,0 +1,36 @@
+{
+    "block.materialsforge.tin_ore": "Tin Ore",
+    "item.materialsforge.raw_tin": "Raw Tin",
+    "item.materialsforge.tin_ingot": "Tin Ingot",
+    "block.materialsforge.tin_block": "Block of Tin",
+    "block.materialsforge.raw_tin_block": "Block of Raw Tin",
+
+    "block.materialsforge.lead_ore": "Lead Ore",
+    "item.materialsforge.raw_lead": "Raw Lead",
+    "item.materialsforge.lead_ingot": "Lead Ingot",
+    "block.materialsforge.lead_block": "Block of Lead",
+    "block.materialsforge.raw_lead_block": "Block of Raw Lead",
+
+    "block.materialsforge.silver_ore": "Silver Ore",
+    "item.materialsforge.raw_silver": "Raw Silver",
+    "item.materialsforge.silver_ingot": "Silver Ingot",
+    "block.materialsforge.silver_block": "Block of Silver",
+    "block.materialsforge.raw_silver_block": "Block of Raw Silver",
+
+    "block.materialsforge.platinum_ore": "Platinum Ore",
+    "item.materialsforge.raw_platinum": "Raw Platinum",
+    "item.materialsforge.platinum_ingot": "Platinum Ingot",
+    "block.materialsforge.platinum_block": "Block of Platinum",
+    "block.materialsforge.raw_platinum_block": "Block of Raw Platinum",
+
+    "block.materialsforge.titanium_ore": "Titanium Ore",
+    "item.materialsforge.raw_titanium": "Raw Titanium",
+    "item.materialsforge.titanium_ingot": "Titanium Ingot",
+    "block.materialsforge.titanium_block": "Block of Titanium",
+    "block.materialsforge.raw_titanium_block": "Block of Raw Titanium",
+
+    "item.materialsforge.coal_nugget": "Coal Nugget",
+    "item.materialsforge.charcoal_nugget": "Charcoal Nugget",
+
+    "itemGroup.materialsforge": "Materials"
+}

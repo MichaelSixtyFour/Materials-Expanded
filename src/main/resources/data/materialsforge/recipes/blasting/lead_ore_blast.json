@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "materialsforge:lead_ore"
+  },
+  "result": "materialsforge:lead_ingot",
+  "experience": 0.35,
+  "cookingtime": 100
+}

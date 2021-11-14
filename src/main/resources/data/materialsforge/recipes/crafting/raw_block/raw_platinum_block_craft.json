@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    "WWW",
+    "WWW"
+  ],
+  "key": {
+    "W": {
+      "item": "materialsforge:raw_platinum"
+    }
+  },
+  "result": {
+    "item": "materialsforge:raw_platinum_block",
+    "count": 1
+  }
+}

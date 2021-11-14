@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "materialsforge:silver_ore"
+  },
+  "result": "materialsforge:silver_ingot",
+  "experience": 0.7,
+  "cookingtime": 200
+}

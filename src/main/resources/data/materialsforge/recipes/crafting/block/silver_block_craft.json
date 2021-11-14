@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    "WWW",
+    "WWW"
+  ],
+  "key": {
+    "W": {
+      "item": "materialsforge:silver_ingot"
+    }
+  },
+  "result": {
+    "item": "materialsforge:silver_block",
+    "count": 1
+  }
+}

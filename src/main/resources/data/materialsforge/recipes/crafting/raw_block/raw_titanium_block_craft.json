@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    "WWW",
+    "WWW"
+  ],
+  "key": {
+    "W": {
+      "item": "materialsforge:raw_titanium"
+    }
+  },
+  "result": {
+    "item": "materialsforge:raw_titanium_block",
+    "count": 1
+  }
+}

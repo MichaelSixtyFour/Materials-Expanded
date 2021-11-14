@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+        "layer0": "materialsforge:item/raw_platinum"
+  }
+}
