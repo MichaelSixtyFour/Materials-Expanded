@@ -9,8 +9,9 @@ public class ConfigGeneral {
     public static final String CATEGORY_MATEX = "matex";
     public static final String CATEGORY_GENERAL = "general";
     public static final String CATEGORY_MATERIALS = "materials";
-    public static final String CATEGORY_METALS = "metals";;
+    public static final String CATEGORY_METALS = "metals";
     public static final String CATEGORY_EQUIPMENT = "equipment";
+    public static final String CATEGORY_ARMORTOOLS = "armortools";
 
     public static ForgeConfigSpec commonGeneral;
 
@@ -319,7 +320,12 @@ public class ConfigGeneral {
             HarvestZinc = BUILDER.comment("Harvest level").defineInRange("HarvestZinc", 2, 0, 4);
             BUILDER.pop();
 
+            BUILDER.comment("Armor/tools settings").push(CATEGORY_ARMORTOOLS);
+
+            BUILDER.pop();
+
         BUILDER.pop();
+
 
         commonGeneral = BUILDER.build();
     }
