@@ -1,6 +1,7 @@
 package dev.advaluti.matex.materials;
 
 import dev.advaluti.matex.MatEx;
+import dev.advaluti.matex.setup.ConfigEquipment;
 import dev.advaluti.matex.setup.Registration;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
@@ -12,41 +13,41 @@ import net.minecraft.util.SoundEvents;
 import java.util.function.Supplier;
 
 public enum BaseArmorMaterial implements IArmorMaterial {
-    COPPER(MatEx.MOD_ID + ":copper", 2, new int[] { 1, 2, 3, 2 }, 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
+    COPPER(MatEx.MOD_ID + ":copper", 2, ConfigEquipment.copperValues.get(), ConfigEquipment.copperEnchant.get(), SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
             () -> { return Ingredient.fromItems(Registration.INGOTCOPPER.get());}),
-    TIN(MatEx.MOD_ID + ":tin", 2, new int[] { 1, 2, 3, 2 }, 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
+    TIN(MatEx.MOD_ID + ":tin", 2, ConfigEquipment.tinValues.get(), 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
             () -> { return Ingredient.fromItems(Registration.INGOTTIN.get());}),
-    LEAD(MatEx.MOD_ID + ":lead", 2, new int[] { 1, 2, 3, 2 }, 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
+    LEAD(MatEx.MOD_ID + ":lead", 2, ConfigEquipment.leadValues.get(), 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
             () -> { return Ingredient.fromItems(Registration.INGOTLEAD.get());}),
-    ALUMINIUM(MatEx.MOD_ID + ":aluminium", 2, new int[] { 1, 2, 3, 2 }, 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
+    ALUMINIUM(MatEx.MOD_ID + ":aluminium", 2, ConfigEquipment.aluminiumValues.get(), 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
             () -> { return Ingredient.fromItems(Registration.INGOTALUMINIUM.get());}),
-    SILVER(MatEx.MOD_ID + ":silver", 2, new int[] { 1, 2, 4, 2 }, 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
+    SILVER(MatEx.MOD_ID + ":silver", 2, ConfigEquipment.silverValues.get(), 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
             () -> { return Ingredient.fromItems(Registration.INGOTSILVER.get());}),
-    OSMIUM(MatEx.MOD_ID + ":osmium", 2, new int[] { 1, 2, 4, 2 }, 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
+    OSMIUM(MatEx.MOD_ID + ":osmium", 2, ConfigEquipment.osmiumValues.get(), 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
             () -> { return Ingredient.fromItems(Registration.INGOTOSMIUM.get());}),
-    ZINC(MatEx.MOD_ID + ":zinc", 2, new int[] { 1, 2, 4, 2 }, 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
+    ZINC(MatEx.MOD_ID + ":zinc", 2, ConfigEquipment.zincValues.get(), 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
             () -> { return Ingredient.fromItems(Registration.INGOTZINC.get());}),
-    TUNGSTEN(MatEx.MOD_ID + ":tungsten", 2, new int[] { 1, 2, 4, 2 }, 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
+    TUNGSTEN(MatEx.MOD_ID + ":tungsten", 2, ConfigEquipment.tungstenValues.get(), 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
             () -> { return Ingredient.fromItems(Registration.INGOTTUNGSTEN.get());}),
-    PLATINUM(MatEx.MOD_ID + ":platinum", 2, new int[] { 1, 2, 4, 2 }, 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
+    PLATINUM(MatEx.MOD_ID + ":platinum", 2, ConfigEquipment.platinumValues.get(), 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
             () -> { return Ingredient.fromItems(Registration.INGOTPLATINUM.get());}),
-    NICKEL(MatEx.MOD_ID + ":nickel", 2, new int[] { 2, 3, 4, 3 }, 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
+    NICKEL(MatEx.MOD_ID + ":nickel", 2, ConfigEquipment.nickelValues.get(), 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
             () -> { return Ingredient.fromItems(Registration.INGOTNICKEL.get());}),
-    TITANIUM(MatEx.MOD_ID + ":titanium", 2, new int[] { 2, 3, 4, 3 }, 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
+    TITANIUM(MatEx.MOD_ID + ":titanium", 2, ConfigEquipment.titaniumValues.get(), 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
             () -> { return Ingredient.fromItems(Registration.INGOTTITANIUM.get());}),
-    ELECTRUM(MatEx.MOD_ID + ":electrum", 2, new int[] { 2, 3, 4, 3 }, 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
+    ELECTRUM(MatEx.MOD_ID + ":electrum", 2, ConfigEquipment.electrumValues.get(), 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
         () -> { return Ingredient.fromItems(Registration.INGOTELECTRUM.get());}),
-    CUPRONICKEL(MatEx.MOD_ID + ":cupronickel", 2, new int[] { 2, 3, 4, 3 }, 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
+    CUPRONICKEL(MatEx.MOD_ID + ":cupronickel", 2, ConfigEquipment.cupronickelValues.get(), 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
             () -> { return Ingredient.fromItems(Registration.INGOTCUPRONICKEL.get());}),
-    ALUMINIUMBRASS(MatEx.MOD_ID + ":aluminiumbrass", 2, new int[] { 2, 3, 4, 3 }, 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
+    ALUMINIUMBRASS(MatEx.MOD_ID + ":aluminiumbrass", 2, ConfigEquipment.aluminiumbrassValues.get(), 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
             () -> { return Ingredient.fromItems(Registration.INGOTALUMINIUMBRASS.get());}),
-    BRASS(MatEx.MOD_ID + ":brass", 2, new int[] { 2, 3, 4, 2 }, 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
+    BRASS(MatEx.MOD_ID + ":brass", 2, ConfigEquipment.brassValues.get(), 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
             () -> { return Ingredient.fromItems(Registration.INGOTBRASS.get());}),
-    INVAR(MatEx.MOD_ID + ":invar", 2, new int[] { 2, 3, 4, 2 }, 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
+    INVAR(MatEx.MOD_ID + ":invar", 2, ConfigEquipment.invarValues.get(), 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
             () -> { return Ingredient.fromItems(Registration.INGOTINVAR.get());}),
-    STEEL(MatEx.MOD_ID + ":steel", 2, new int[] { 2, 3, 4, 3 }, 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
+    STEEL(MatEx.MOD_ID + ":steel", 2, ConfigEquipment.steelValues.get(), 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
             () -> { return Ingredient.fromItems(Registration.INGOTSTEEL.get());}),
-    BRONZE(MatEx.MOD_ID + ":bronze", 2, new int[] { 2, 3, 4, 3 }, 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
+    BRONZE(MatEx.MOD_ID + ":bronze", 2, ConfigEquipment.bronzeValues.get(), 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
             () -> { return Ingredient.fromItems(Registration.INGOTBRONZE.get());});
 
 

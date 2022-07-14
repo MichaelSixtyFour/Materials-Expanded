@@ -34,7 +34,7 @@ public class Registration {
             final String material = toolMaterial.toUpperCase();
 
             //TOOLS
-            if (ConfigGeneral.enableTools.get()) {
+            if (ConfigEquipment.enableTools.get()) {
                 final RegistryObject<SwordItem> SWORDREGISTER = ITEMS.register("sword" + toolMaterial, () ->
                         new SwordItem(BaseToolMaterial.valueOf(material), 3, -2.4F, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
                 final RegistryObject<ShovelItem> SHOVELREGISTER = ITEMS.register("shovel" + toolMaterial, () ->
@@ -52,7 +52,7 @@ public class Registration {
             final String material = armorMaterial.toUpperCase();
 
             //ARMOR
-            if(ConfigGeneral.enableArmor.get()) {
+            if(ConfigEquipment.enableArmor.get()) {
                 final RegistryObject<ArmorItem> HELMETREGISTER = ITEMS.register("helmet" + armorMaterial, () ->
                         new ArmorItem(BaseArmorMaterial.valueOf(material), EquipmentSlotType.HEAD, new Item.Properties().group(ModSetup.MATEXTOOLS_GROUP)));
                 final RegistryObject<ArmorItem> CHESTPLATEREGISTER = ITEMS.register("chestplate" + armorMaterial, () ->
